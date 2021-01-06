@@ -17,11 +17,12 @@ Setup using **repl.it** is fairly simple.
     ```py
     shelly = Turtle()
     ```
-1. `shelly` is now a `Turtle` object - but Shelly needs a shape! Under that line, add the following code to give Shelly a shape:
+1. `shelly` is now a `Turtle` object - but Shelly needs a shape! Under that line, add the following code to give Shelly a shape:  
     ```py
     shelly.shape("arrow")
+    ```
 1. Run the code again to see Shelly appear on the screen!
-1. BONUS: Update the code so that instead of an "arrow" shape, the turtle looks like a turtle
+1. **BONUS:** Update the code so that instead of an "arrow" shape, the turtle looks like a turtle
 
 ### Code
 ```py
@@ -41,7 +42,7 @@ Make things a little more interesting by updating the colors.
     paper = shelly.getscreen()
     ```
 1. Now, the `paper` variable stores the screen. Change its color using `bgcolor`
-1. BONUS: Play around with the settings to create a pleasing (or terrible) color scheme!
+1. **BONUS:** Play around with the settings to create a pleasing (or terrible) color scheme!
 
 ### Code
 ```py
@@ -129,7 +130,9 @@ Add the following code to draw a half circle:
 crush.circle(50, 180)
 ```
 
-In the example, the radius of the circle will be `50`, and it will complete a `180` degree rotation. BONUS: instead of a half circle, draw a full circle!
+In the example, the radius of the circle will be `50`, and it will complete a `180` degree rotation.
+
+**BONUS:** instead of a half circle, draw a full circle!
 
 ### A New Starting Point
 Currently, the two turtles are kind of on top of each other. Fix this by adding a new starting point for the `crush` turtle.
