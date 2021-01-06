@@ -1,0 +1,443 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Turtle Code-Along · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="TurtleChallenges.html" />
+    
+    
+    <link rel="prev" href="StudentDesc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ReplSetup.html">
+            
+                <a href="../ReplSetup.html">
+            
+                    
+                    Repl Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="StudentDesc.html">
+            
+                <a href="StudentDesc.html">
+            
+                    
+                    Week 1 - Hello Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="TurtleCodeAlong.html">
+            
+                <a href="TurtleCodeAlong.html">
+            
+                    
+                    Turtle Code-Along
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="TurtleChallenges.html">
+            
+                <a href="TurtleChallenges.html">
+            
+                    
+                    Turtle Challenges
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Turtle Code-Along</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="turtle-code-along">Turtle Code-Along</h1>
+<p>In this introductory activity, use <a href="https://en.wikipedia.org/wiki/Turtle_graphics" target="_blank">turtle graphics</a> to create a drawing in Python!</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Emoji_u1f422.svg" alt=""></p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Setup using <strong>repl.it</strong> is fairly simple.</p>
+<ol>
+<li>Go to the <a href="https://repl.it/@JosephMaxwell/TurtleStart#main.py" target="_blank">TurtleStart</a> repl.it project</li>
+<li>Fork the project, and make sure to log in!</li>
+<li>In the code section, add the following line to <em>import</em> everything from the <strong>turtle</strong> library:<pre><code class="lang-py"> <span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+</code></pre>
+</li>
+<li>Click the green Run button, and notice that nothing happens yet</li>
+<li>Make a new line under the <code>import</code>, and add the following code:<pre><code class="lang-py"> shelly = Turtle()
+</code></pre>
+</li>
+<li><code>shelly</code> is now a <code>Turtle</code> object - but Shelly needs a shape! Under that line, add the following code to give Shelly a shape:
+ ```py
+ shelly.shape(&quot;arrow&quot;)</li>
+<li>Run the code again to see Shelly appear on the screen!</li>
+<li>BONUS: Update the code so that instead of an &quot;arrow&quot; shape, the turtle looks like a turtle</li>
+</ol>
+<h3 id="code">Code</h3>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shelly = Turtle()
+shelly.shape(<span class="hljs-string">&quot;arrow&quot;</span>)
+</code></pre>
+<h2 id="adding-color">Adding Color</h2>
+<p>Make things a little more interesting by updating the colors.</p>
+<ol>
+<li>Make a new line, and add code to change Shelly&apos;s color<ul>
+<li>HINT: this is a lot like how the <code>shape</code> was updated - just using <code>color</code> instead</li>
+</ul>
+</li>
+<li>On the next line, add the following code:<pre><code class="lang-py"> paper = shelly.getscreen()
+</code></pre>
+</li>
+<li>Now, the <code>paper</code> variable stores the screen. Change its color using <code>bgcolor</code></li>
+<li>BONUS: Play around with the settings to create a pleasing (or terrible) color scheme!</li>
+</ol>
+<h3 id="code">Code</h3>
+<pre><code class="lang-py">shelly.color(<span class="hljs-string">&quot;maroon&quot;</span>)
+paper = shelly.getscreen()
+paper.bgcolor(<span class="hljs-string">&quot;gold&quot;</span>)
+</code></pre>
+<h3 id="more-colors">More Colors</h3>
+<p>Although there are many built-in colors, sometimes it is necessary to find a very specific color. In addition to using color names (like &quot;red&quot;, &quot;orange&quot;, etc), turtles can take color values in RGB format! The <a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank">RGB color model</a> is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors. Basically, it is possible to create any digital color with a combination of red, green, and blue!</p>
+<p>Each color (R, G, and B) can take a number from 0 to 255. This represents the amount of the color in the mix. For example, a color with a Red value of 255, a Green value of 0, and a Blue value of 0 would be red.</p>
+<p>Try to guess how the following colors would look:</p>
+<ul>
+<li>Red 255, Green 0, Blue 255</li>
+<li>Red 255, Green 255, Blue 0</li>
+<li>Red 0, Green 0, Blue 255</li>
+<li>Red 255, Green 255, Blue 255</li>
+<li>Red 0, Green 0, Blue 0</li>
+<li>Red 255, Green 128, Blue 0</li>
+</ul>
+<p>The combinations are almost endless! Google has a <a href="https://www.google.com/search?q=color+picker" target="_blank">built-in color picker</a> that developers and designers can utilize to find the perfect color. It displays RGB colors in this format:</p>
+<pre><code>rgb(92, 144, 66)
+</code></pre><p>To translate that into Python code, do the following:</p>
+<pre><code class="lang-py">shelly.color(<span class="hljs-number">92</span>, <span class="hljs-number">144</span>, <span class="hljs-number">66</span>)
+</code></pre>
+<p>This will set the color of the turtle to a dark green. The RGB method allows for much more specific colors, so developers can use precisely the color they need!</p>
+<h2 id="moving-the-turtle">Moving the Turtle</h2>
+<p>One of the most useful turtle abilities is the ability to move across the screen and draw like a pen! Create a blank line, and then add the following command on the next line:</p>
+<pre><code class="lang-python">shelly.forward(<span class="hljs-number">50</span>)
+</code></pre>
+<p>Click the Run button to see the turtle move across the screen! Specifically, it moves <strong>forward</strong> <code>50</code> pixels in the direction it is currently facing (90 degrees).</p>
+<p>It is also possible to turn the turtle. Add the following command on the next line:</p>
+<pre><code class="lang-python">shelly.right(<span class="hljs-number">90</span>)
+</code></pre>
+<p>This command turns the turtle <code>90</code> degrees to the <strong>right</strong>. Previously the direction of the turtle was 90 degrees (pointing to the right), so after turning 90 degrees to the right, the turtle should face down (180 degrees).</p>
+<p>Run the program again to see the turtle move to the right, then turn to face down!</p>
+<h3 id="drawing-a-square">Drawing a Square</h3>
+<p>Add the following commands to the file, under the existing commands:</p>
+<pre><code class="lang-python">shelly.forward(<span class="hljs-number">50</span>)
+shelly.right(<span class="hljs-number">90</span>)
+shelly.forward(<span class="hljs-number">50</span>)
+shelly.right(<span class="hljs-number">90</span>)
+</code></pre>
+<p>Run the program to see what this code does. It should draw part of a square! How does that work? On a piece of paper, or on a whiteboard, try to draw the same square as the turtle:</p>
+<ol>
+<li>Draw the top side from left to right</li>
+<li>Turn the writing utensil and draw the right side from top to bottom</li>
+<li>Turn the writing utensil and draw the bottom side from left to right</li>
+</ol>
+<p>So, the turtle moves <code>50</code> pixels to the right, turns <code>90</code> degrees to face down, moves <code>50</code> pixels down, turns <code>90</code> degrees to face left, moves <code>50</code> pixels to the left, and then turns <code>90</code> degrees to face up!</p>
+<h3 id="bonus">BONUS</h3>
+<p>Try to complete the square that Shelly is drawing.</p>
+<h2 id="another-turtle">Another Turtle</h2>
+<p>Under the existing code, add code to make a new turtle:</p>
+<pre><code class="lang-py">crush = Turtle()
+crush.shape(<span class="hljs-string">&quot;turtle&quot;</span>)
+crush.color(<span class="hljs-string">&quot;white&quot;</span>)
+</code></pre>
+<p>This new turtle will be completely separate from the other one. Instead of drawing a square, it will draw a circle.</p>
+<p>Add the following code to draw a half circle:</p>
+<pre><code class="lang-py">crush.circle(<span class="hljs-number">50</span>, <span class="hljs-number">180</span>)
+</code></pre>
+<p>In the example, the radius of the circle will be <code>50</code>, and it will complete a <code>180</code> degree rotation. BONUS: instead of a half circle, draw a full circle!</p>
+<h3 id="a-new-starting-point">A New Starting Point</h3>
+<p>Currently, the two turtles are kind of on top of each other. Fix this by adding a new starting point for the <code>crush</code> turtle.</p>
+<p><em>Before</em> the commands that make crush draw the circle, add the following command:</p>
+<pre><code class="lang-python">crush.setpos(<span class="hljs-number">-100</span>, <span class="hljs-number">100</span>)
+</code></pre>
+<p>Run the program to see what happens. Crush moves, but there is another issue now!</p>
+<h4 id="removing-the-extra-pen-marks">Removing the Extra Pen Marks</h4>
+<p>When Crush moves to the starting point, the pen draws an extra line! Instead of doing this, the program should lift up the pen before this movement.</p>
+<p>When working with turtles, it is possible to control whether the pen is &quot;up&quot; or &quot;down&quot; (like real life drawing). <em>Before</em> the <code>crush.setpos</code> command, add the following command:</p>
+<pre><code class="lang-python">crush.penup()
+</code></pre>
+<p>This will allow Crush to move without drawing anything! Run the program to see what happens.</p>
+<h4 id="putting-the-pen-back-down">Putting the Pen Back Down</h4>
+<p>Oh no! After lifting up the pen, Crush no longer draws the triangle! Fix this by adding the following command <em>after</em> the <code>crush.setpos</code> command:</p>
+<pre><code class="lang-python">crush.pendown()
+</code></pre>
+<p>This way, Crush will pick up the pen when moving to the starting point, and then put it back down before moving in the triangular fashion. Run the program again to see it work properly!</p>
+<h2 id="other-possibilities">Other Possibilities</h2>
+<p>This only scratches the surface of turtle graphics capabilities. Try to play around with these commands, and check out the <a href="https://docs.python.org/3/library/turtle.html" target="_blank">documentation</a> to see what else is possible!</p>
+<h2 id="final-code">Final Code</h2>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+shelly = Turtle()
+shelly.shape(<span class="hljs-string">&quot;arrow&quot;</span>)
+
+shelly.color(<span class="hljs-string">&quot;gold&quot;</span>)
+paper = shelly.getscreen()
+paper.bgcolor(<span class="hljs-string">&quot;maroon&quot;</span>)
+
+shelly.forward(<span class="hljs-number">50</span>)
+shelly.right(<span class="hljs-number">90</span>)
+shelly.forward(<span class="hljs-number">50</span>)
+shelly.right(<span class="hljs-number">90</span>)
+shelly.forward(<span class="hljs-number">50</span>)
+shelly.right(<span class="hljs-number">90</span>)
+
+crush = Turtle()
+crush.shape(<span class="hljs-string">&quot;turtle&quot;</span>)
+crush.color(<span class="hljs-string">&quot;white&quot;</span>)
+
+crush.penup()
+crush.setpos(<span class="hljs-number">-100</span>, <span class="hljs-number">100</span>)
+crush.pendown()
+
+crush.circle(<span class="hljs-number">50</span>, <span class="hljs-number">180</span>)
+</code></pre>
+<h2 id="challenges">Challenges</h2>
+<p>After the activity, start working on the <a href="TurtleChallenges.html">Turtle Challenges</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 1 - Hello Python">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="TurtleChallenges.html" class="navigation navigation-next " aria-label="Next page: Turtle Challenges">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Turtle Code-Along","level":"1.3.1","depth":2,"next":{"title":"Turtle Challenges","level":"1.3.2","depth":2,"path":"HelloPython/TurtleChallenges.md","ref":"HelloPython/TurtleChallenges.md","articles":[]},"previous":{"title":"Week 1 - Hello Python","level":"1.3","depth":1,"path":"HelloPython/StudentDesc.md","ref":"HelloPython/StudentDesc.md","articles":[{"title":"Turtle Code-Along","level":"1.3.1","depth":2,"path":"HelloPython/TurtleCodeAlong.md","ref":"HelloPython/TurtleCodeAlong.md","articles":[]},{"title":"Turtle Challenges","level":"1.3.2","depth":2,"path":"HelloPython/TurtleChallenges.md","ref":"HelloPython/TurtleChallenges.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"HelloPython/TurtleCodeAlong.md","mtime":"2021-01-06T15:20:00.780Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-06T15:20:39.341Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
