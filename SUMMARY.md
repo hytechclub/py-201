@@ -1,0 +1,4 @@
+- [Repl Setup](ReplSetup.md)
+- [Week 1 - Hello Python](HelloPython/StudentDesc.md)
+  - [Turtle Code-Along](HelloPython/TurtleCodeAlong.md)
+  - [Turtle Challenges](HelloPython/TurtleChallenges.md)
