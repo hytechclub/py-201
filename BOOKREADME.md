@@ -2,7 +2,7 @@
 In this advanced course, discover some of the many capabilities of the Python programming language.
 
 ## Repl Setup
-The C# 101 course will use [Repl](https://repl.it). Please complete the [Repl setup steps](ReplSetup.md) before the course begins.
+The Python 201 course will use [Repl](https://repl.it). Please complete the [Repl setup steps](ReplSetup.md) before the course begins.
 
 ## Zoom Meetings
 The course will meet weekly on TODO via **Zoom** from TODO to TODO ET.
