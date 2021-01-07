@@ -22,6 +22,7 @@ Use **Discord** to ask questions, view announcements, and chat with fellow stude
 Follow the links below to view each week of material.
 
 - [Week 1 (??) - Hello Python](HelloPython/StudentDesc.md)
+- [Week 2 (??) - Basic Programming](BasicProgramming/StudentDesc.md)
 
 ## Goals
 By the end of this course, each student should:

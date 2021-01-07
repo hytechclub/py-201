@@ -1,0 +1,7 @@
+- nicer printing
+- ascii art
+- invalid input check
+- score
+- lizard spock
+- bugs
+- 

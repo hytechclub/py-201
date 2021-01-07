@@ -2,3 +2,6 @@
 - [Week 1 - Hello Python](HelloPython/StudentDesc.md)
   - [Turtle Code-Along](HelloPython/TurtleCodeAlong.md)
   - [Turtle Challenges](HelloPython/TurtleChallenges.md)
+- [Week 2 - Basic Programming](BasicProgramming/StudentDesc.md)
+  - [Rock Paper Scissors Code-Along](BasicProgramming/RPSCodeAlong.md)
+  - [Rock Paper Scissors Challenges](BasicProgramming/RPSChallenges.md)
