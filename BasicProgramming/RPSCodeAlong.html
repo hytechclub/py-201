@@ -1,0 +1,565 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Rock Paper Scissors Code-Along · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="RPSChallenges.html" />
+    
+    
+    <link rel="prev" href="StudentDesc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ReplSetup.html">
+            
+                <a href="../ReplSetup.html">
+            
+                    
+                    Repl Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../HelloPython/StudentDesc.html">
+            
+                <a href="../HelloPython/StudentDesc.html">
+            
+                    
+                    Week 1 - Hello Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../HelloPython/TurtleCodeAlong.html">
+            
+                <a href="../HelloPython/TurtleCodeAlong.html">
+            
+                    
+                    Turtle Code-Along
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../HelloPython/TurtleChallenges.html">
+            
+                <a href="../HelloPython/TurtleChallenges.html">
+            
+                    
+                    Turtle Challenges
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="StudentDesc.html">
+            
+                <a href="StudentDesc.html">
+            
+                    
+                    Week 2 - Basic Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="RPSCodeAlong.html">
+            
+                <a href="RPSCodeAlong.html">
+            
+                    
+                    Rock Paper Scissors Code-Along
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="RPSChallenges.html">
+            
+                <a href="RPSChallenges.html">
+            
+                    
+                    Rock Paper Scissors Challenges
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Rock Paper Scissors Code-Along</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rock-paper-scissors">Rock, Paper, Scissors</h1>
+<p>Follow the instructions below to create a simple Rock Paper Scissors game in Python!</p>
+<h2 id="setting-up">Setting Up</h2>
+<ol>
+<li>Go to <a href="https://repl.it" target="_blank">repl.it</a></li>
+<li>Log in</li>
+<li>Create a new Python Repl project named &quot;Rock Paper Scissors&quot;</li>
+</ol>
+<h2 id="player-input">Player Input</h2>
+<p>The first step is to welcome the player to the game, and ask which move they would like to make.</p>
+<ol>
+<li>Use a <code>print</code> statement to say &quot;Welcome to Rock Paper Scissors!&quot;</li>
+<li>On the next line, use <code>input</code> to ask the user for a move - &quot;Enter R, P, or S: &quot;</li>
+<li>Store the result of the <code>input</code> in a new variable named <code>player_move</code></li>
+</ol>
+<p>The code should look something like this:</p>
+<pre><code class="lang-py">print(<span class="hljs-string">&quot;Welcome to Rock Paper Scissors!&quot;</span>)
+
+player_move = input(<span class="hljs-string">&quot;Enter R, P, or S: &quot;</span>)
+</code></pre>
+<h2 id="computer-choice">Computer Choice</h2>
+<p>Now the player has made a move, it&apos;s time to choose a move for the computer! The computer&apos;s move should be chosen <em>randomly</em>. Using a Python library, it will be possible to generate a random choice from a set of options (&quot;R&quot;, &quot;P&quot;, and &quot;S&quot;).</p>
+<ol>
+<li>At the top of the file, use <code>import random</code> to import the <strong>random</strong> library into the program<ul>
+<li>This provides a <code>random</code> object with a <code>choice</code> function</li>
+</ul>
+</li>
+<li>Under where the <code>player_move</code> is selected, create a new variable named <code>computer_move</code></li>
+<li>Set the <code>computer_move</code> variable to be <code>random.choice(&quot;RPS&quot;)</code><ul>
+<li>This will choose either &quot;R&quot;, &quot;P&quot;, or &quot;S&quot; at random</li>
+</ul>
+</li>
+</ol>
+<p>The code should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> random
+
+print(<span class="hljs-string">&quot;Welcome to Rock Paper Scissors!&quot;</span>)
+player_move = input(<span class="hljs-string">&quot;Enter R, P, or S: &quot;</span>)
+
+computer_move = random.choice(<span class="hljs-string">&quot;RPS&quot;</span>)
+</code></pre>
+<h2 id="basic-battling">Basic Battling</h2>
+<p>Now the player has a move, and the computer has a move... but which will win? Take a look at this table for a refresher on the rules of Rock Paper Scissors:</p>
+<p><img src="https://i.imgur.com/XeUU0KK.png" alt=""></p>
+<p>In total, there are <strong>9</strong> possible outcomes. That&apos;s quite a lot, so instead of trying to code all 9, start with that first row.</p>
+<p>There are three options:</p>
+<ul>
+<li>Player chooses <strong>rock</strong>, Computer chooses <strong>rock</strong> &#x2192; <strong>tie</strong></li>
+<li>Player chooses <strong>rock</strong>, Computer chooses <strong>paper</strong> &#x2192; <strong>loss</strong></li>
+<li>Player chooses <strong>rock</strong>, Computer chooses <strong>scissors</strong> &#x2192; <strong>win</strong></li>
+</ul>
+<p>These all start the same: player chooses rock. That is the first <em>condition</em> for each of these outcomes. In the code, under the <code>computer_move</code> line, create an <code>if</code> statement that checks if the player chose rock:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">if</span> player_move == <span class="hljs-string">&quot;R&quot;</span>:
+</code></pre>
+<p>And what should happen if the player chooses rock? Well, it depends on what the computer chose!</p>
+<h3 id="rock-v-rock">Rock v. Rock</h3>
+<p>Say the computer chose rock as well. That would be the next <em>condition</em>, still within the scope of this first condition:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">if</span> player_move == <span class="hljs-string">&quot;R&quot;</span>:
+    <span class="hljs-keyword">if</span> computer_move == <span class="hljs-string">&quot;R&quot;</span>:
+</code></pre>
+<p>Now, in the block within the <em>second</em> condition, it is known that the player chose rock, AND the computer chose rock. And what should happen in that case? It will be a tie! Print out a message saying as much.</p>
+<pre><code class="lang-py"><span class="hljs-keyword">if</span> player_move == <span class="hljs-string">&quot;R&quot;</span>:
+    <span class="hljs-keyword">if</span> computer_move == <span class="hljs-string">&quot;R&quot;</span>:
+        print(<span class="hljs-string">&quot;Rock v. Rock: Tie&quot;</span>)
+</code></pre>
+<p>Run the program, enter &quot;R&quot;, and see what happens. It should only print something if the computer chooses rock.</p>
+<h3 id="rock-v-paper">Rock v. Paper</h3>
+<p>Add code to handle the case when the computer chooses paper (after the player chose rock). This should be within the block of <code>player_move == &quot;R&quot;</code>, <em>under</em> the <code>computer_move == &quot;R&quot;</code> statement.</p>
+<ol>
+<li>Add an <code>elif</code> checking if the computer chose paper (indented 1 level)</li>
+<li>Within that new <code>elif</code> block, create a <code>print</code> statement (indented 2 levels)</li>
+<li>Add the result - &quot;Rock v. Paper: Computer Wins&quot;</li>
+</ol>
+<h3 id="rock-v-scissors">Rock v. Scissors</h3>
+<p>Add code to handle the case when the computer chooses scissors (after the player chose rock). This should, again, be within the block of <code>player_move == &quot;R&quot;</code>, <em>under</em> the <code>computer_move == &quot;R&quot;</code> statement.</p>
+<ol>
+<li>Add an <code>elif</code> checking if the computer chose scissors (indented 1 level)</li>
+<li>Within that new <code>elif</code> block, create a <code>print</code> statement (indented 2 levels)</li>
+<li>Add the result - &quot;Rock v. Scissors: Player Wins&quot;</li>
+</ol>
+<h3 id="testing-the-code">Testing the Code</h3>
+<p>At this point, the <code>if</code> statement should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">if</span> player_move == <span class="hljs-string">&quot;R&quot;</span>:
+    <span class="hljs-keyword">if</span> computer_move == <span class="hljs-string">&quot;R&quot;</span>:
+        print(<span class="hljs-string">&quot;Rock v. Rock: Tie&quot;</span>)
+    <span class="hljs-keyword">elif</span> computer_move == <span class="hljs-string">&quot;P&quot;</span>:
+        print(<span class="hljs-string">&quot;Rock v. Paper: Computer Wins&quot;</span>)
+    <span class="hljs-keyword">elif</span> computer_move == <span class="hljs-string">&quot;S&quot;</span>:
+        print(<span class="hljs-string">&quot;Rock v. Scissors: Player Wins&quot;</span>)
+</code></pre>
+<p>Run the program, and make sure that all outcomes are possible to reach. They should occur with approximately equal frequency.</p>
+<h2 id="a-battling-function">A Battling Function</h2>
+<p>So far, the program is working, but it is becoming a little unwieldy. Before adding in the other outcomes, <em>define</em> a function to handle the battling outcomes to clear up the main game code.</p>
+<ol>
+<li>Right under the <code>import random</code> statement, create some space in the code</li>
+<li>Define a new function named <code>battle</code><ul>
+<li>The function should take in a <code>player</code> parameter (for the player&apos;s move)</li>
+<li>The function should also take in a <code>computer</code> parameter (for the computer&apos;s move)</li>
+</ul>
+</li>
+<li>Copy the big <code>if</code> statement into the <em>body</em> of the <code>battle</code> function<ul>
+<li>Make sure it is indented one extra level under the definition line</li>
+</ul>
+</li>
+<li>Change <code>computer_move</code> and <code>player_move</code> to <code>computer</code> and <code>player</code> (respectively)</li>
+</ol>
+<p>The function definition should look like this:</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">battle</span><span class="hljs-params">(player, computer)</span>:</span>
+    <span class="hljs-keyword">if</span> player == <span class="hljs-string">&quot;R&quot;</span>:
+        <span class="hljs-keyword">if</span> computer == <span class="hljs-string">&quot;R&quot;</span>:
+            print(<span class="hljs-string">&quot;Rock v. Rock: Tie&quot;</span>)
+        <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;P&quot;</span>:
+            print(<span class="hljs-string">&quot;Rock v. Paper: Computer Wins&quot;</span>)
+        <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;S&quot;</span>:
+            print(<span class="hljs-string">&quot;Rock v. Scissors: Player Wins&quot;</span>)
+</code></pre>
+<p>Now, all that&apos;s left is to <em>call</em> the <code>battle</code> function! Call it at the bottom of the file, passing in the <code>player_move</code> and <code>computer_move</code> values.</p>
+<pre><code class="lang-py">battle(player_move, computer_move)
+</code></pre>
+<p>Run the code, and verify that it behaves in the same way. This was an example of <a href="https://en.wikipedia.org/wiki/Code_refactoring" target="_blank">refactoring</a>; the code changed, but the functionality stayed the same.</p>
+<h2 id="all-battle-results">All Battle Results</h2>
+<p>The next step is to modify the <code>battle</code> function to include all possible results. There are <strong>6</strong> remaining results to add:</p>
+<ul>
+<li>Player chooses <strong>Paper</strong>:<ul>
+<li>Computer chooses <strong>Rock</strong>: Win</li>
+<li>Computer chooses <strong>Paper</strong>: Tie</li>
+<li>Computer chooses <strong>Scissors</strong>: Loss</li>
+</ul>
+</li>
+<li>Player chooses <strong>Scissors</strong>:<ul>
+<li>Computer chooses <strong>Rock</strong>: Loss</li>
+<li>Computer chooses <strong>Paper</strong>: Win</li>
+<li>Computer chooses <strong>Scissors</strong>: Tie</li>
+</ul>
+</li>
+</ul>
+<p>Handle each outcome in the <code>battle</code> function.</p>
+<ol>
+<li>Under the <code>if</code>, add an <code>elif</code> checking if the player selected paper</li>
+<li>Indented one additional level, check the three computer options</li>
+<li>Print the result for each outcome</li>
+<li>Under the player paper <code>elif</code>, check if the player selected scissors</li>
+<li>Again indented one level under, check the three computer options</li>
+<li>Print the results for each outcome</li>
+</ol>
+<p>The code added code should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">elif</span> player == <span class="hljs-string">&quot;P&quot;</span>:
+    <span class="hljs-keyword">if</span> computer == <span class="hljs-string">&quot;R&quot;</span>:
+        print(<span class="hljs-string">&quot;Paper v. Rock: Player Wins&quot;</span>)
+    <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;P&quot;</span>:
+        print(<span class="hljs-string">&quot;Paper v. Paper: Tie&quot;</span>)
+    <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;S&quot;</span>:
+        print(<span class="hljs-string">&quot;Paper v. Scissors: Computer Wins&quot;</span>)
+<span class="hljs-keyword">elif</span> player == <span class="hljs-string">&quot;S&quot;</span>:
+    <span class="hljs-keyword">if</span> computer == <span class="hljs-string">&quot;R&quot;</span>:
+        print(<span class="hljs-string">&quot;Scissors v. Rock: Computer Wins&quot;</span>)
+    <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;P&quot;</span>:
+        print(<span class="hljs-string">&quot;Scissors v. Paper: Player Wins&quot;</span>)
+    <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;S&quot;</span>:
+        print(<span class="hljs-string">&quot;Scissors v. Scissors: Tie&quot;</span>)
+</code></pre>
+<p>Run the program a few more times, and test out the different paths! Try to reach every outcome.</p>
+<h2 id="game-loop">Game Loop</h2>
+<p>Now the game is complete, but it would be nice if rematches were a little easier. Create a game loop that will allow the player to play again as often as desired.</p>
+<ol>
+<li>Above the &quot;Welcome&quot; message, create a new variable named <code>playing</code></li>
+<li>Set the <code>playing</code> variable to equal <code>&quot;y&quot;</code></li>
+<li>Under that, create a <code>while</code> loop that will continue as long as <code>playing</code> is equal to <code>&quot;y&quot;</code></li>
+<li>Indent the main game code, so that it is within the <code>while</code> loop code block</li>
+<li>Find the bottom of the <code>while</code> loop block, still within the same scope</li>
+<li>Create an <code>input</code> statement asking &quot;Would you like to play again (y/n)? &quot;</li>
+<li>Set the <code>playing</code> variable to be the result of the <code>input</code></li>
+</ol>
+<p>The code should look something like this:</p>
+<pre><code class="lang-py">playing = <span class="hljs-string">&quot;y&quot;</span>
+<span class="hljs-keyword">while</span> playing == <span class="hljs-string">&quot;y&quot;</span>:
+    print(<span class="hljs-string">&quot;Welcome to Rock Paper Scissors!&quot;</span>)
+
+    player_move = input(<span class="hljs-string">&quot;Enter R, P, or S: &quot;</span>)
+    computer_move = random.choice(<span class="hljs-string">&quot;RPS&quot;</span>)
+
+    battle(player_move, computer_move)
+
+    playing = input(<span class="hljs-string">&quot;Would you like to play again (y/n)? &quot;</span>)
+</code></pre>
+<p>Run the program, and make sure it is possible to play multiple times!</p>
+<h2 id="final-code">Final Code</h2>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> random
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">battle</span><span class="hljs-params">(player, computer)</span>:</span>
+    <span class="hljs-keyword">if</span> player == <span class="hljs-string">&quot;R&quot;</span>:
+        <span class="hljs-keyword">if</span> computer == <span class="hljs-string">&quot;R&quot;</span>:
+            print(<span class="hljs-string">&quot;Rock v. Rock: Tie&quot;</span>)
+        <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;P&quot;</span>:
+            print(<span class="hljs-string">&quot;Rock v. Paper: Computer Wins&quot;</span>)
+        <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;S&quot;</span>:
+            print(<span class="hljs-string">&quot;Rock v. Scissors: Player Wins&quot;</span>)
+    <span class="hljs-keyword">elif</span> player == <span class="hljs-string">&quot;P&quot;</span>:
+        <span class="hljs-keyword">if</span> computer == <span class="hljs-string">&quot;R&quot;</span>:
+            print(<span class="hljs-string">&quot;Paper v. Rock: Player Wins&quot;</span>)
+        <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;P&quot;</span>:
+            print(<span class="hljs-string">&quot;Paper v. Paper: Tie&quot;</span>)
+        <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;S&quot;</span>:
+            print(<span class="hljs-string">&quot;Paper v. Scissors: Computer Wins&quot;</span>)
+    <span class="hljs-keyword">elif</span> player == <span class="hljs-string">&quot;S&quot;</span>:
+        <span class="hljs-keyword">if</span> computer == <span class="hljs-string">&quot;R&quot;</span>:
+            print(<span class="hljs-string">&quot;Scissors v. Rock: Computer Wins&quot;</span>)
+        <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;P&quot;</span>:
+            print(<span class="hljs-string">&quot;Scissors v. Paper: Player Wins&quot;</span>)
+        <span class="hljs-keyword">elif</span> computer == <span class="hljs-string">&quot;S&quot;</span>:
+            print(<span class="hljs-string">&quot;Scissors v. Scissors: Tie&quot;</span>)
+
+playing = <span class="hljs-string">&quot;y&quot;</span>
+<span class="hljs-keyword">while</span> playing == <span class="hljs-string">&quot;y&quot;</span>:
+    print(<span class="hljs-string">&quot;Welcome to Rock Paper Scissors!&quot;</span>)
+
+    player_move = input(<span class="hljs-string">&quot;Enter R, P, or S: &quot;</span>)
+    computer_move = random.choice(<span class="hljs-string">&quot;RPS&quot;</span>)
+
+    battle(player_move, computer_move)
+
+    playing = input(<span class="hljs-string">&quot;Would you like to play again (y/n)? &quot;</span>)
+</code></pre>
+<h2 id="challenges">Challenges</h2>
+<p>After the activity, start working on the <a href="RPSChallenges.html">Rock Paper Scissors Challenges</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 2 - Basic Programming">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="RPSChallenges.html" class="navigation navigation-next " aria-label="Next page: Rock Paper Scissors Challenges">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Rock Paper Scissors Code-Along","level":"1.4.1","depth":2,"next":{"title":"Rock Paper Scissors Challenges","level":"1.4.2","depth":2,"path":"BasicProgramming/RPSChallenges.md","ref":"BasicProgramming/RPSChallenges.md","articles":[]},"previous":{"title":"Week 2 - Basic Programming","level":"1.4","depth":1,"path":"BasicProgramming/StudentDesc.md","ref":"BasicProgramming/StudentDesc.md","articles":[{"title":"Rock Paper Scissors Code-Along","level":"1.4.1","depth":2,"path":"BasicProgramming/RPSCodeAlong.md","ref":"BasicProgramming/RPSCodeAlong.md","articles":[]},{"title":"Rock Paper Scissors Challenges","level":"1.4.2","depth":2,"path":"BasicProgramming/RPSChallenges.md","ref":"BasicProgramming/RPSChallenges.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"BasicProgramming/RPSCodeAlong.md","mtime":"2021-01-07T20:23:55.052Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-07T20:24:32.260Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

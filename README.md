@@ -7,7 +7,7 @@ Explore the possibilities of Python in this advanced course. After learning the 
 ## Schedule
 
 1. Hello Python - Turtle
-2. `if` Statements, Functions, `for` Loops (console apps)
+2. `if` Statements, Functions, `while` Loops (console apps)
 3. Lists and Dictionaries (console apps)
 4. Building a Chat Bot (console apps)
 5. Building a Chat Bot Pt. 2 - Connecting to Discord (?)
