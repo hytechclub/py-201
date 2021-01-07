@@ -22,12 +22,13 @@ Present the [Hello Python](HelloPython.pptx) PowerPoint Presentation.
 The [activity](TurtleCodeAlong.md) walks through a basic turtle graphics program. The intent is not to teach any specific concept; it is designed to give the students a fun and colorful introduction to the language, and familiarize them with the syntax.
 
 ## Challenges
-With any time remaining after the code-along activity, students can work on the [challenges](TurtleChallenges.md).
+With any time remaining after the code-along activity, students can work on the [challenges](TurtleChallenges.md). If any students create anything cool, take some time for them to share with the rest of the group.
 
 ## Suggested Schedule 
 | Activity | Time |
 |-|-|
 | Introductions & Icebreaker | 45m |
 | PowerPoint | 15m |
-| Code-Along | 45m |
+| Break | 5m |
+| Code-Along | 40m |
 | Challenges | 15m |
