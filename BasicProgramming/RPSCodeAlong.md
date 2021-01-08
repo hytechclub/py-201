@@ -110,13 +110,13 @@ if player_move == "R":
 Run the program, and make sure that all outcomes are possible to reach. They should occur with approximately equal frequency.
 
 ## A Battling Function
-So far, the program is working, but it is becoming a little unwieldy. Before adding in the other outcomes, _define_ a function to handle the battling outcomes to clear up the main game code.
+So far, the program is working, but it is becoming a little unwieldy. Before adding in the other outcomes, define a function to handle the battling outcomes to clear up the main game code.
 
 1. Right under the `import random` statement, create some space in the code
 1. Define a new function named `battle`
     - The function should take in a `player` parameter (for the player's move)
     - The function should also take in a `computer` parameter (for the computer's move)
-1. Copy the big `if` statement into the _body_ of the `battle` function
+1. Copy the big `if` statement, and paste it into the _body_ of the `battle` function
     - Make sure it is indented one extra level under the definition line
 1. Change `computer_move` and `player_move` to `computer` and `player` (respectively)
 
