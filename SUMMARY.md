@@ -5,3 +5,7 @@
 - [Week 2 - Basic Programming](BasicProgramming/StudentDesc.md)
   - [Rock Paper Scissors Code-Along](BasicProgramming/RPSCodeAlong.md)
   - [Rock Paper Scissors Challenges](BasicProgramming/RPSChallenges.md)
+- [Week 3 - Collections](Collections/StudentDesc.md)
+  - [Playlist Warm-up](Collections/PlaylistWarmup.md)
+  - [Sort By Score Code-Along](Collections/ScoreSortCodeAlong.md)
+  - [Sort By Score Challenges](Collections/ScoreSortChallenges.md)
