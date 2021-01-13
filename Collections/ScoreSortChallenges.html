@@ -351,8 +351,48 @@
 </li>
 <li>Run the program, and verify that the sorting works with the new scores!</li>
 </ol>
-<h2 id="3-rock-paper-scissors-redux">3. Rock Paper Scissors Redux</h2>
-<p>This challenge could be pretty challenging. It is totally separate from the score sorting program; start by making a new Repl project and go from there.</p>
+<h2 id="3-custom-players">3. Custom Players</h2>
+<blockquote>
+<p>This challenge may be fairly challenging. Feel free to skip down to the next one if desired.</p>
+</blockquote>
+<p>Right now, the program only uses <a href="https://en.wikipedia.org/wiki/Hard_coding" target="_blank">hard-coded</a> players. This works for demonstrative purposes, but it would be more useful if the user of the program could add their own data. Update the code so this is possible!</p>
+<ol>
+<li>Place the sorting code in a new function: <code>sort</code><ul>
+<li>Take in the collection, and run the existing <code>while</code> code on it</li>
+</ul>
+</li>
+<li>At the bottom of the file, create a <code>while True</code> loop that repeats infinitely</li>
+<li>In the body of the loop, ask the user what to do</li>
+<li>Create an <code>if</code> for each command</li>
+<li>If they want to add a player:<ul>
+<li>Ask them for player information</li>
+<li>Create a new player dictionary</li>
+<li>Add the new dictionary to the <code>players</code> list</li>
+</ul>
+</li>
+<li>If they want to see the players:<ul>
+<li>Sort the players list</li>
+<li>Print out the players in the list</li>
+</ul>
+</li>
+<li>If they want to exit:<ul>
+<li>Use <code>break</code> to exit the loop</li>
+</ul>
+</li>
+</ol>
+<p>This should make it possible for users to add as many players as they would like, and see them sorted!</p>
+<h3 id="bonus-multiple-sorting-methods">BONUS: Multiple Sorting Methods</h3>
+<p>Often, when viewing data, it is possible to sort the data in multiple ways. Add in the ability for the program to sort the players by:</p>
+<ul>
+<li>Score (low to high)</li>
+<li>Name (alphabetical)</li>
+<li>Name (reverse alphabetical)</li>
+</ul>
+<h2 id="4-rock-paper-scissors-redux">4. Rock Paper Scissors Redux</h2>
+<blockquote>
+<p>This challenge could be somewhat challenging.</p>
+</blockquote>
+<p>For this challenge, is totally separate from the score sorting program; start by making a new Repl project and go from there.</p>
 <p>The goal is to create a Rock, Paper, Scissors game using a dictionary. It should be similar to the <a href="../BasicProgramming/RPSCodeAlong.html">Rock Paper Scissors</a> code, but it will simplify things a bit.</p>
 <h3 id="a-dictionary-of-victories">A Dictionary of Victories</h3>
 <p>The old way of doing Rock Paper Scissors involved several <code>if</code> statements. Those worked, but there seemed to be a lot of repetitive code. By using a dictionary, the code will be much more dynamic.</p>
@@ -395,8 +435,11 @@
 <pre><code class="lang-py">battle(<span class="hljs-string">&quot;P&quot;</span>, <span class="hljs-string">&quot;S&quot;</span>)
 </code></pre>
 <p>The code above should cause the program to print out <code>Computer Wins</code>, because paper loses to scissors.</p>
-<h2 id="4-another-sorting-algorithm">4. Another Sorting Algorithm</h2>
-<p>This challenge is quite challenging. Try to implement a <em>different</em> sorting algorithm to sort the list of <code>players</code>! There is a lot of code available online to help. The biggest challenge is adapting the code to work for the specific solution. Here are some ideas:</p>
+<h2 id="5-another-sorting-algorithm">5. Another Sorting Algorithm</h2>
+<blockquote>
+<p>This challenge is quite challenging.</p>
+</blockquote>
+<p>Try to implement a <em>different</em> sorting algorithm to sort the list of <code>players</code>! There is a lot of code available online to help. The biggest challenge is adapting the code to work for the specific solution. Here are some ideas:</p>
 <ul>
 <li><a href="https://www.geeksforgeeks.org/insertion-sort/" target="_blank">Insertion Sort</a></li>
 <li><a href="https://www.geeksforgeeks.org/bubble-sort/" target="_blank">Bubble Sort</a></li>
@@ -446,7 +489,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sort By Score Challenges","level":"1.5.3","depth":2,"previous":{"title":"Sort By Score Code-Along","level":"1.5.2","depth":2,"path":"Collections/ScoreSortCodeAlong.md","ref":"Collections/ScoreSortCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Collections/ScoreSortChallenges.md","mtime":"2021-01-13T12:37:27.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-13T12:38:06.049Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sort By Score Challenges","level":"1.5.3","depth":2,"previous":{"title":"Sort By Score Code-Along","level":"1.5.2","depth":2,"path":"Collections/ScoreSortCodeAlong.md","ref":"Collections/ScoreSortCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Collections/ScoreSortChallenges.md","mtime":"2021-01-13T13:47:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-13T13:47:42.367Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
