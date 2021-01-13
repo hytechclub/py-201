@@ -321,10 +321,10 @@
 <li>Create a new Python Repl project named &quot;Score Sort&quot;</li>
 </ol>
 <h2 id="creating-the-players-dictionaries">Creating the Players (Dictionaries)</h2>
-<p>The first step is to create a few players for the program. Think of some specific people who could be players, or just make people up! Ultimately, each player should have a &quot;name&quot; property and a &quot;score&quot; property.</p>
+<p>The first step is to create a few players for the program. Think of some specific people who could be players, or just make people up! Ultimately, each player should be a <a href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">dictionary</a> with a &quot;name&quot; and a &quot;score&quot;.</p>
 <ol>
 <li>At the top of the <strong>main.py</strong> file, create a <code>player1</code> variable</li>
-<li>Set <code>player1</code> to equal a new <a href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">dictionary</a></li>
+<li>Set <code>player1</code> to equal a new dictionary: <code>{}</code></li>
 <li>Add a <code>&quot;name&quot;</code> key, and set it to some value (e.g. <code>&quot;Alice Kostas&quot;</code>)</li>
 <li>Add a <code>&quot;score&quot;</code> key, and set it to some value (e.g. <code>510</code>)</li>
 <li>Repeat the steps above to create a <code>player2</code> dictionary</li>
@@ -356,7 +356,7 @@ print(player3)
 <p>Now all the data is there, but it is not connected in any way. With this amount of data, it would be easy to simply look at the scores and put the players in order by hand. However, if there were ten or twenty or a thousand players, that would be unfeasible. So how can this data be stored? Using a <a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">list</a> of course!</p>
 <ol>
 <li>Above the <code>player1</code> variable, create a new variable named <code>players</code></li>
-<li>Set the <code>players</code> variable equal to a new list</li>
+<li>Set the <code>players</code> variable equal to a new list: <code>[]</code></li>
 <li>Move the data from each player variable into the list<ul>
 <li>Remove the variable name and equals sign</li>
 <li>Place the dictionary within the square brackets for the list</li>
@@ -439,7 +439,7 @@ print(players)
 <li>While loop, starting at the beginning of the list, going through the end</li>
 <li>For each position, find the maximum between the current position and the end of the list</li>
 <li>Swap the maximum with the current position</li>
-<li>Now, the list up to the current position will be sorted</li>
+<li>Now, the list (up to the current position) will be sorted</li>
 </ul>
 <h3 id="code">Code</h3>
 <pre><code class="lang-py">i = <span class="hljs-number">0</span>
@@ -490,7 +490,7 @@ Return the max after searching the whole list
 </ul>
 </li>
 </ol>
-<h3 id="final-code">Final Code</h3>
+<h3 id="code">Code</h3>
 <pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">find_max_idx</span><span class="hljs-params">(collection, starting_pos)</span>:</span>
     max_idx = starting_pos
 
@@ -655,7 +655,7 @@ print(<span class="hljs-string">&quot;-Top Players-&quot;</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sort By Score Code-Along","level":"1.5.2","depth":2,"next":{"title":"Sort By Score Challenges","level":"1.5.3","depth":2,"path":"Collections/ScoreSortChallenges.md","ref":"Collections/ScoreSortChallenges.md","articles":[]},"previous":{"title":"Playlist Warm-up","level":"1.5.1","depth":2,"path":"Collections/PlaylistWarmup.md","ref":"Collections/PlaylistWarmup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Collections/ScoreSortCodeAlong.md","mtime":"2021-01-12T19:12:00.448Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-12T19:12:39.424Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sort By Score Code-Along","level":"1.5.2","depth":2,"next":{"title":"Sort By Score Challenges","level":"1.5.3","depth":2,"path":"Collections/ScoreSortChallenges.md","ref":"Collections/ScoreSortChallenges.md","articles":[]},"previous":{"title":"Playlist Warm-up","level":"1.5.1","depth":2,"path":"Collections/PlaylistWarmup.md","ref":"Collections/PlaylistWarmup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Collections/ScoreSortCodeAlong.md","mtime":"2021-01-13T12:37:27.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-13T12:38:06.049Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

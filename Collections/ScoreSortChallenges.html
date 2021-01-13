@@ -313,7 +313,7 @@
                                 <h1 id="sort-by-score-challenges">Sort By Score Challenges</h1>
 <p>After completing the <a href="ScoreSortCodeAlong.html">code-along</a>, attempt the challenges below.</p>
 <h2 id="optional-practice-bug-fixes"><em>Optional Practice: Bug Fixes</em></h2>
-<p>View these buggy Repl projects and try to fix them. Test the program and make sure that it works properly!</p>
+<p>View these buggy Repl projects and try to fix them. To make things easier, reference the completed code from the code-along, and compare it to the buggy code. Test each program and make sure that they all work properly!</p>
 <ul>
 <li><a href="https://repl.it/@JosephMaxwell/ScoreSortBug-1" target="_blank">Bug 1</a></li>
 <li><a href="https://repl.it/@JosephMaxwell/ScoreSortBug-2" target="_blank">Bug 2</a></li>
@@ -326,8 +326,8 @@
 <h2 id="1-add-more-data">1. Add More Data</h2>
 <p>Now, getting back to the code-along code. The current list only has a few items, so sorting them isn&apos;t all that impressive. Add at least three more dictionary items to the <code>players</code> list.</p>
 <ol>
-<li>Add a comma at the end of the last item in the list</li>
-<li>Create the structure for the new dictionary <code>{}</code></li>
+<li>Add a comma at the end of the <em>last item</em> in the list</li>
+<li>Create the structure for the new dictionary: <code>{}</code></li>
 <li>Within the new dictionary, add a <code>&quot;name&quot;</code> key with a new value</li>
 <li>Within the new dictionary, add a <code>&quot;score&quot;</code> key with a new value</li>
 <li>Repeat until there are at least three new items</li>
@@ -338,11 +338,17 @@
 <ol>
 <li>Add a <code>&quot;score2&quot;</code> key to each item in the list</li>
 <li>Give a value to each <code>&quot;score2&quot;</code> property</li>
-<li>Find the <code>find_min_idx</code> function definition</li>
+<li>In the other part of the code, find the <code>find_min_idx</code> function definition</li>
 <li>Find the <code>if</code> statement where two things are compared</li>
-<li>Update the condition so that it takes both <code>&quot;score&quot;</code> and <code>&quot;score2&quot;</code> into account</li>
+<li>Update the condition so that it takes both <code>&quot;score&quot;</code> and <code>&quot;score2&quot;</code> into account<ul>
+<li>It should check the <code>score</code> <em>plus</em> the <code>score2</code> value</li>
+</ul>
+</li>
 <li>Find the part of the code that prints out the top players</li>
-<li>Update it so it prints the total score instead of simply the score</li>
+<li>Update it so it prints the total score instead of simply the score<ul>
+<li>Again, it should be <code>score</code> <em>plus</em> <code>score2</code></li>
+</ul>
+</li>
 <li>Run the program, and verify that the sorting works with the new scores!</li>
 </ol>
 <h2 id="3-rock-paper-scissors-redux">3. Rock Paper Scissors Redux</h2>
@@ -385,6 +391,10 @@
 <p>Run the code to make sure it works - but it shouldn&apos;t do anything yet!</p>
 <h3 id="testing">Testing</h3>
 <p>Under the definition of the <code>battle</code> function, call the <code>battle</code> function with a few test inputs. Make sure that every possible outcome can be achieved.</p>
+<p>For example, it could be called in this manner:</p>
+<pre><code class="lang-py">battle(<span class="hljs-string">&quot;P&quot;</span>, <span class="hljs-string">&quot;S&quot;</span>)
+</code></pre>
+<p>The code above should cause the program to print out <code>Computer Wins</code>, because paper loses to scissors.</p>
 <h2 id="4-another-sorting-algorithm">4. Another Sorting Algorithm</h2>
 <p>This challenge is quite challenging. Try to implement a <em>different</em> sorting algorithm to sort the list of <code>players</code>! There is a lot of code available online to help. The biggest challenge is adapting the code to work for the specific solution. Here are some ideas:</p>
 <ul>
@@ -436,7 +446,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sort By Score Challenges","level":"1.5.3","depth":2,"previous":{"title":"Sort By Score Code-Along","level":"1.5.2","depth":2,"path":"Collections/ScoreSortCodeAlong.md","ref":"Collections/ScoreSortCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Collections/ScoreSortChallenges.md","mtime":"2021-01-12T19:12:00.448Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-12T19:12:39.424Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sort By Score Challenges","level":"1.5.3","depth":2,"previous":{"title":"Sort By Score Code-Along","level":"1.5.2","depth":2,"path":"Collections/ScoreSortCodeAlong.md","ref":"Collections/ScoreSortCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Collections/ScoreSortChallenges.md","mtime":"2021-01-13T12:37:27.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-13T12:38:06.049Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
