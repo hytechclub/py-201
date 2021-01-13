@@ -34,8 +34,39 @@ Often, a score will be an amalgamation of several scores. For example, the total
   - Again, it should be `score` _plus_ `score2`
 1. Run the program, and verify that the sorting works with the new scores!
 
-## 3. Rock Paper Scissors Redux
-This challenge could be pretty challenging. It is totally separate from the score sorting program; start by making a new Repl project and go from there.
+## 3. Custom Players
+>This challenge may be fairly challenging. Feel free to skip down to the next one if desired.
+
+Right now, the program only uses [hard-coded](https://en.wikipedia.org/wiki/Hard_coding) players. This works for demonstrative purposes, but it would be more useful if the user of the program could add their own data. Update the code so this is possible!
+
+1. Place the sorting code in a new function: `sort`
+  - Take in the collection, and run the existing `while` code on it
+1. At the bottom of the file, create a `while True` loop that repeats infinitely
+1. In the body of the loop, ask the user what to do
+1. Create an `if` for each command
+1. If they want to add a player:
+  - Ask them for player information
+  - Create a new player dictionary
+  - Add the new dictionary to the `players` list
+1. If they want to see the players:
+  - Sort the players list
+  - Print out the players in the list
+1. If they want to exit:
+  - Use `break` to exit the loop
+
+This should make it possible for users to add as many players as they would like, and see them sorted!
+
+### BONUS: Multiple Sorting Methods
+Often, when viewing data, it is possible to sort the data in multiple ways. Add in the ability for the program to sort the players by:
+
+- Score (low to high)
+- Name (alphabetical)
+- Name (reverse alphabetical)
+
+## 4. Rock Paper Scissors Redux
+>This challenge could be somewhat challenging.
+
+For this challenge, is totally separate from the score sorting program; start by making a new Repl project and go from there.
 
 The goal is to create a Rock, Paper, Scissors game using a dictionary. It should be similar to the [Rock Paper Scissors](../BasicProgramming/RPSCodeAlong.md) code, but it will simplify things a bit.
 
@@ -90,8 +121,10 @@ battle("P", "S")
 
 The code above should cause the program to print out `Computer Wins`, because paper loses to scissors.
 
-## 4. Another Sorting Algorithm
-This challenge is quite challenging. Try to implement a _different_ sorting algorithm to sort the list of `players`! There is a lot of code available online to help. The biggest challenge is adapting the code to work for the specific solution. Here are some ideas:
+## 5. Another Sorting Algorithm
+>This challenge is quite challenging.
+
+Try to implement a _different_ sorting algorithm to sort the list of `players`! There is a lot of code available online to help. The biggest challenge is adapting the code to work for the specific solution. Here are some ideas:
 
 - [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)
 - [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)
