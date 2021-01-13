@@ -2,7 +2,7 @@
 After completing the [code-along](ScoreSortCodeAlong.md), attempt the challenges below.
 
 ## _Optional Practice: Bug Fixes_
-View these buggy Repl projects and try to fix them. Test the program and make sure that it works properly!
+View these buggy Repl projects and try to fix them. To make things easier, reference the completed code from the code-along, and compare it to the buggy code. Test each program and make sure that they all work properly!
 
 - [Bug 1](https://repl.it/@JosephMaxwell/ScoreSortBug-1)
 - [Bug 2](https://repl.it/@JosephMaxwell/ScoreSortBug-2)
@@ -13,8 +13,8 @@ View these buggy Repl projects and try to fix them. Test the program and make su
 ## 1. Add More Data
 Now, getting back to the code-along code. The current list only has a few items, so sorting them isn't all that impressive. Add at least three more dictionary items to the `players` list.
 
-1. Add a comma at the end of the last item in the list
-1. Create the structure for the new dictionary `{}`
+1. Add a comma at the end of the _last item_ in the list
+1. Create the structure for the new dictionary: `{}`
 1. Within the new dictionary, add a `"name"` key with a new value
 1. Within the new dictionary, add a `"score"` key with a new value
 1. Repeat until there are at least three new items
@@ -25,11 +25,13 @@ Often, a score will be an amalgamation of several scores. For example, the total
 
 1. Add a `"score2"` key to each item in the list
 1. Give a value to each `"score2"` property
-1. Find the `find_min_idx` function definition
+1. In the other part of the code, find the `find_min_idx` function definition
 1. Find the `if` statement where two things are compared
 1. Update the condition so that it takes both `"score"` and `"score2"` into account
+  - It should check the `score` _plus_ the `score2` value
 1. Find the part of the code that prints out the top players
 1. Update it so it prints the total score instead of simply the score
+  - Again, it should be `score` _plus_ `score2`
 1. Run the program, and verify that the sorting works with the new scores!
 
 ## 3. Rock Paper Scissors Redux
@@ -79,6 +81,14 @@ Run the code to make sure it works - but it shouldn't do anything yet!
 
 ### Testing
 Under the definition of the `battle` function, call the `battle` function with a few test inputs. Make sure that every possible outcome can be achieved.
+
+For example, it could be called in this manner:
+
+```py
+battle("P", "S")
+```
+
+The code above should cause the program to print out `Computer Wins`, because paper loses to scissors.
 
 ## 4. Another Sorting Algorithm
 This challenge is quite challenging. Try to implement a _different_ sorting algorithm to sort the list of `players`! There is a lot of code available online to help. The biggest challenge is adapting the code to work for the specific solution. Here are some ideas:

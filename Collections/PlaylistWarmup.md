@@ -42,7 +42,7 @@ Now the playlist should have some of the songs, but not all of them yet. Try to 
 1. Under _that_, add another `},`
 1. Repeat the steps above once more
 1. Make sure the titles and artists reflect songs from the **songs.txt** file
-1. Rune the code, and verify that all the songs appear!
+1. Run the code, and verify that all the songs appear!
 
 ## Part 5: Adding Color
 One fun feature of Python is the ability to change the color of text in the console. This is possible using the **colorama** library, with the `Fore` object. Adding any `Fore` value in front of a printed string will turn the text that color. Update the code so that each song has its own color!

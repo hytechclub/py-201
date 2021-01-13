@@ -7,16 +7,16 @@ In this activity, create a program that can sort some players by their score. Th
 1. Create a new Python Repl project named "Score Sort"
 
 ## Creating the Players (Dictionaries)
-The first step is to create a few players for the program. Think of some specific people who could be players, or just make people up! Ultimately, each player should have a "name" property and a "score" property.
+The first step is to create a few players for the program. Think of some specific people who could be players, or just make people up! Ultimately, each player should be a [dictionary](https://www.w3schools.com/python/python_dictionaries.asp) with a "name" and a "score".
 
 1. At the top of the **main.py** file, create a `player1` variable
-1. Set `player1` to equal a new [dictionary](https://www.w3schools.com/python/python_dictionaries.asp)
-1. Add a `"name"` key, and set it to some value (e.g. `"Alice Kostas"`)
-1. Add a `"score"` key, and set it to some value (e.g. `510`)
-1. Repeat the steps above to create a `player2` dictionary
-1. Repeat the steps above to create a `player3` dictionary
-1. Add code at the bottom to print out each created player dictionary
-1. Run the program, and verify that data for the three players appears!
+2. Set `player1` to equal a new dictionary: `{}`
+3. Add a `"name"` key, and set it to some value (e.g. `"Alice Kostas"`)
+4. Add a `"score"` key, and set it to some value (e.g. `510`)
+5. Repeat the steps above to create a `player2` dictionary
+6. Repeat the steps above to create a `player3` dictionary
+7. Add code at the bottom to print out each created player dictionary
+8. Run the program, and verify that data for the three players appears!
 
 ### Code
 ```py
@@ -44,7 +44,7 @@ print(player3)
 Now all the data is there, but it is not connected in any way. With this amount of data, it would be easy to simply look at the scores and put the players in order by hand. However, if there were ten or twenty or a thousand players, that would be unfeasible. So how can this data be stored? Using a [list](https://www.w3schools.com/python/python_lists.asp) of course!
 
 1. Above the `player1` variable, create a new variable named `players`
-1. Set the `players` variable equal to a new list
+1. Set the `players` variable equal to a new list: `[]`
 1. Move the data from each player variable into the list
     - Remove the variable name and equals sign
     - Place the dictionary within the square brackets for the list
@@ -132,7 +132,7 @@ Try to think through what's happening in the algorithm and the code.
 - While loop, starting at the beginning of the list, going through the end
 - For each position, find the maximum between the current position and the end of the list
 - Swap the maximum with the current position
-- Now, the list up to the current position will be sorted
+- Now, the list (up to the current position) will be sorted
 
 ### Code
 ```py
@@ -182,7 +182,7 @@ Now turn that into Python code!
 1. After the `while` loop, return `max_idx`
     - This will have the maximum value index from the whole list
 
-### Final Code
+### Code
 ```py
 def find_max_idx(collection, starting_pos):
 	max_idx = starting_pos
