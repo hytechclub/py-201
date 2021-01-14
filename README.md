@@ -10,7 +10,7 @@ Explore the possibilities of Python in this advanced course. After learning the 
 2. [`if` Statements, Functions, `while` Loops (console apps)](BasicProgramming/)
 3. [Lists and Dictionaries (and algorithms)](Collections/)
 4. Discord Bot
-5. Web scraping
+5. [Web scraping](WebScraping/)
 6. Web server
 7. Database for server
 8.  Final Project
