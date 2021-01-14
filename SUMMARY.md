@@ -9,3 +9,8 @@
   - [Playlist Warm-up](Collections/PlaylistWarmup.md)
   - [Sort By Score Code-Along](Collections/ScoreSortCodeAlong.md)
   - [Sort By Score Challenges](Collections/ScoreSortChallenges.md)
+- [Week 4 - Discord Bot](DiscordBot/StudentDesc.md)
+- [Week 5 - Web Scraping](WebScraping/StudentDesc.md)
+  - [HTML Review Warm-up](WebScraping/HtmlReviewWarmup.md)
+  - [Info Finder Code-Along](WebScraping/InfoFinderCodeAlong.md)
+  - [Info Finder Challenges](WebScraping/InfoFinderChallenges.md)

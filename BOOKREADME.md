@@ -24,6 +24,8 @@ Follow the links below to view each week of material.
 - [Week 1 (??) - Hello Python](HelloPython/StudentDesc.md)
 - [Week 2 (??) - Basic Programming](BasicProgramming/StudentDesc.md)
 - [Week 3 (??) - Collections](Collections/StudentDesc.md)
+- [Week 4 (??) - Discord Bot](DiscordBot/StudentDesc.md)
+- [Week 5 (??) - Web Scraping](WebScraping/StudentDesc.md)
 
 ## Goals
 By the end of this course, each student should:
