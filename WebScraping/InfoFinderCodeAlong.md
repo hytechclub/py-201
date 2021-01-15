@@ -15,7 +15,8 @@ Before figuring out how to use Wikipedia, create the basic loop for the program.
 1. Set the `search` variable to the result of an `input` asking for a search term
 1. Under that, create a variable named `keep_going`
 1. Set the `keep_going` variable to the result of an `input` asking if the user would like to continue (y/n)
-1. Under that, create an `if` statement checking if `keep_going` is NOT equal to `"y"`
+1. Under that, add an empty `print` statement to print a new line
+1. Under _that_, create an `if` statement checking if `keep_going` is NOT equal to `"y"`
 1. In the body of the `if`, print a "Goodbye" message and `break`
 
 Run the program, and verify that the loop can continue as long as the user wants!
@@ -146,10 +147,10 @@ Now it's time to get into the code!
 1. In its place, create a new variable named `html_document`
 1. Set the `html_document` variable to the result of a call to the `BeautifulSoup` function
     - Pass in `html_text` as the first parameter
-    - Pass in `"html.parser"` (in quotes) as the second parameter
-1. Create a new variable named `search_criteria`
+    - Pass in `"html.parser"` (don't forget the quotes) as the second parameter
+1. Under that, create a new variable named `search_criteria`
     - Consider what the program needs to find first
-1. Set the `search_criteria` variable to a new dictionary
+1. Set the `search_criteria` variable to a new dictionary: `{}`
 1. Add a key of `"class"` to the dictionary, with a value of `"mw-parser-output"`
     - This will be able to find the appropriate `div` in the HTML
 1. Under that, create a variable named `content_div`

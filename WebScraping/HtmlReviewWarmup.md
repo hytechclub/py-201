@@ -44,15 +44,15 @@ In CSS, elements can be selected by `id` with `#`, or by `class` with `.`. From 
 
 1. Under the existing rulesets within the `<style></style>` element, create a new line
 1. Create a new ruleset to select all `p` elements within the `<div id="content>`  
-    - Possible with `#content p`
+    - Possible with `#content p {}`
 1. In the ruleset, set the `font-size` property to `20px`
 1. Under that ruleset, create another new line
 1. Create a new ruleset to select the `<div class="images">` element
-    - Possible with `.images`
+    - Possible with `.images {}`
 1. In the ruleset, set the `text-align` property to `center`
 1. Under that ruleset, create another new line
 1. Create a new ruleset to select all of the `img` elements within the `<div class="images">` element
-    - Possible with `.images img`
+    - Possible with `.images img {}`
 1. In the ruleset, set the `width` property to `32%`
 1. Run the project again and see the changes!
     - The paragraph text should be larger

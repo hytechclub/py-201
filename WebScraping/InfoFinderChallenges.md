@@ -44,7 +44,7 @@ Instead of simply printing out all of the paragraphs, ask the user how many to p
 In addition to finding the paragraphs of information on each page, find the table of contents information.
 
 1. In the `get_information` function, find the `html_document` variable
-1. Under that, create a variable named `toc_search`
+1. Under that variable, create a variable named `toc_search`
 1. Set the `toc_search` variable to be a new dictionary: `{}`
 1. In the `toc_search` dictionary, add a key of `"id"` with a value of `"toc"`
 1. Under that, create a variable named `toc`
