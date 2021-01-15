@@ -402,7 +402,8 @@
 <li>Set the <code>search</code> variable to the result of an <code>input</code> asking for a search term</li>
 <li>Under that, create a variable named <code>keep_going</code></li>
 <li>Set the <code>keep_going</code> variable to the result of an <code>input</code> asking if the user would like to continue (y/n)</li>
-<li>Under that, create an <code>if</code> statement checking if <code>keep_going</code> is NOT equal to <code>&quot;y&quot;</code></li>
+<li>Under that, add an empty <code>print</code> statement to print a new line</li>
+<li>Under <em>that</em>, create an <code>if</code> statement checking if <code>keep_going</code> is NOT equal to <code>&quot;y&quot;</code></li>
 <li>In the body of the <code>if</code>, print a &quot;Goodbye&quot; message and <code>break</code></li>
 </ol>
 <p>Run the program, and verify that the loop can continue as long as the user wants!</p>
@@ -516,14 +517,14 @@ print(html_text)
 <li>In its place, create a new variable named <code>html_document</code></li>
 <li>Set the <code>html_document</code> variable to the result of a call to the <code>BeautifulSoup</code> function<ul>
 <li>Pass in <code>html_text</code> as the first parameter</li>
-<li>Pass in <code>&quot;html.parser&quot;</code> (in quotes) as the second parameter</li>
+<li>Pass in <code>&quot;html.parser&quot;</code> (don&apos;t forget the quotes) as the second parameter</li>
 </ul>
 </li>
-<li>Create a new variable named <code>search_criteria</code><ul>
+<li>Under that, create a new variable named <code>search_criteria</code><ul>
 <li>Consider what the program needs to find first</li>
 </ul>
 </li>
-<li>Set the <code>search_criteria</code> variable to a new dictionary</li>
+<li>Set the <code>search_criteria</code> variable to a new dictionary: <code>{}</code></li>
 <li>Add a key of <code>&quot;class&quot;</code> to the dictionary, with a value of <code>&quot;mw-parser-output&quot;</code><ul>
 <li>This will be able to find the appropriate <code>div</code> in the HTML</li>
 </ul>
@@ -675,7 +676,7 @@ paragraphs = content_div.find_all(<span class="hljs-string">&quot;p&quot;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Info Finder Code-Along","level":"1.7.2","depth":2,"next":{"title":"Info Finder Challenges","level":"1.7.3","depth":2,"path":"WebScraping/InfoFinderChallenges.md","ref":"WebScraping/InfoFinderChallenges.md","articles":[]},"previous":{"title":"HTML Review Warm-up","level":"1.7.1","depth":2,"path":"WebScraping/HtmlReviewWarmup.md","ref":"WebScraping/HtmlReviewWarmup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"WebScraping/InfoFinderCodeAlong.md","mtime":"2021-01-14T20:02:45.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-14T20:03:26.020Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Info Finder Code-Along","level":"1.7.2","depth":2,"next":{"title":"Info Finder Challenges","level":"1.7.3","depth":2,"path":"WebScraping/InfoFinderChallenges.md","ref":"WebScraping/InfoFinderChallenges.md","articles":[]},"previous":{"title":"HTML Review Warm-up","level":"1.7.1","depth":2,"path":"WebScraping/HtmlReviewWarmup.md","ref":"WebScraping/HtmlReviewWarmup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"WebScraping/InfoFinderCodeAlong.md","mtime":"2021-01-15T12:46:37.532Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-15T12:47:14.432Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
