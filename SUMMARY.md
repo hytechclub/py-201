@@ -14,3 +14,7 @@
   - [HTML Review Warm-up](WebScraping/HtmlReviewWarmup.md)
   - [Info Finder Code-Along](WebScraping/InfoFinderCodeAlong.md)
   - [Info Finder Challenges](WebScraping/InfoFinderChallenges.md)
+- [Week 6 - Flask Web Server](Flask/StudentDesc.md)
+  - [Flask Basics Warm-up](Flask/FlaskBasics.md)
+  - [Random Joke Code-Along](Flask/FlaskCodeAlong.md)
+  - [Flask Challenges](Flask/FlaskChallenges.md)
