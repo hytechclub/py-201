@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 2 - Basic Programming · GitBook</title>
+        <title>Flask Challenges · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -63,10 +63,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="RPSCodeAlong.html" />
     
-    
-    <link rel="prev" href="../HelloPython/TurtleChallenges.html" />
+    <link rel="prev" href="FlaskCodeAlong.html" />
     
 
     </head>
@@ -166,9 +164,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.4" data-path="../BasicProgramming/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../BasicProgramming/StudentDesc.html">
             
                     
                     Week 2 - Basic Programming
@@ -180,9 +178,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="RPSCodeAlong.html">
+        <li class="chapter " data-level="1.4.1" data-path="../BasicProgramming/RPSCodeAlong.html">
             
-                <a href="RPSCodeAlong.html">
+                <a href="../BasicProgramming/RPSCodeAlong.html">
             
                     
                     Rock Paper Scissors Code-Along
@@ -193,9 +191,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="RPSChallenges.html">
+        <li class="chapter " data-level="1.4.2" data-path="../BasicProgramming/RPSChallenges.html">
             
-                <a href="RPSChallenges.html">
+                <a href="../BasicProgramming/RPSChallenges.html">
             
                     
                     Rock Paper Scissors Challenges
@@ -340,9 +338,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../Flask/StudentDesc.html">
+        <li class="chapter " data-level="1.8" data-path="StudentDesc.html">
             
-                <a href="../Flask/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 6 - Flask Web Server
@@ -354,9 +352,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../Flask/FlaskBasics.html">
+        <li class="chapter " data-level="1.8.1" data-path="FlaskBasics.html">
             
-                <a href="../Flask/FlaskBasics.html">
+                <a href="FlaskBasics.html">
             
                     
                     Flask Basics Warm-up
@@ -367,9 +365,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../Flask/FlaskCodeAlong.html">
+        <li class="chapter " data-level="1.8.2" data-path="FlaskCodeAlong.html">
             
-                <a href="../Flask/FlaskCodeAlong.html">
+                <a href="FlaskCodeAlong.html">
             
                     
                     Random Joke Code-Along
@@ -380,9 +378,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../Flask/FlaskChallenges.html">
+        <li class="chapter active" data-level="1.8.3" data-path="FlaskChallenges.html">
             
-                <a href="../Flask/FlaskChallenges.html">
+                <a href="FlaskChallenges.html">
             
                     
                     Flask Challenges
@@ -428,7 +426,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Week 2 - Basic Programming</a>
+        <a href=".." >Flask Challenges</a>
     </h1>
 </div>
 
@@ -443,15 +441,108 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="basic-programming-in-python">Basic Programming in Python</h1>
-<p>Learn how to use variables, input/output, <code>if</code> statements, <code>while</code> loops, and functions in Python. Review the <strong>Basic Programming PowerPoint Presentation</strong> below. Then, complete the <strong>Rock Paper Scissors Code-Along Activity</strong>. Once that&apos;s done, work on the <strong>Rock Paper Scissors Challenges</strong>.</p>
-<h2 id="basic-programming-powerpoint-presentation">Basic Programming PowerPoint Presentation</h2>
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/py-201/BasicProgramming/BasicProgramming.pptx" width="100%" height="450px" frameborder="0"></iframe>
-
-<h2 id="rock-paper-scissors-code-along-activity">Rock Paper Scissors Code-Along Activity</h2>
-<p>Follow the instructions on <a href="RPSCodeAlong.html">this page</a> to create a simple Rock Paper Scissors game in Python.</p>
-<h2 id="rock-paper-scissors-challenges">Rock Paper Scissors Challenges</h2>
-<p>Once the code-along activity has been completed, go to <a href="RPSChallenges.html">this page</a> to start working on the challenges.</p>
+                                <h1 id="flask-challenges">Flask Challenges</h1>
+<p>After completing the <a href="FlaskCodeAlong.html">code-along</a>, attempt the challenges below. <strong>Note that students will be expected to present their websites, so complete the first challenge (new jokes) at minimum!</strong></p>
+<h2 id="1-new-jokes">1. New Jokes</h2>
+<p>Replace the existing <code>jokes</code> list with a new list; either write your own, or search for some <a href="https://parade.com/1041830/marynliles/clean-jokes/" target="_blank">existing jokes</a>! Make sure the jokes are appropriate.</p>
+<p>After updating the jokes, change up some of the styles. Open the <strong>static/style.css</strong> file, and change the following:</p>
+<ul>
+<li>background color</li>
+<li>text color</li>
+<li>font</li>
+</ul>
+<h2 id="2-quotes">2. Quotes</h2>
+<p>A website about jokes is nice, but it is a little restrictive. Update it so that it provides a random <em>quote</em> in addition to a random joke. This way, there are a lot more options for what to show. Note that this will be extremely similar to the Joke page; for the purposes of this exercise, much of it can be copied and pasted.</p>
+<h3 id="python-code">Python Code</h3>
+<p>Open the <strong>main.py</strong> file, and make the following changes:</p>
+<ol>
+<li>Under the <code>jokes</code> list, create a new list named <code>quotes</code></li>
+<li>For now, add a couple of quotes to the list (more can be added later):  <ul>
+<li>&quot;You miss 100% of the shots you don&apos;t take.&quot;</li>
+<li>&quot;The future ain&apos;t what it used to be.&quot;</li>
+</ul>
+</li>
+<li>Under the <code>joke</code> function, define a function named <code>quote</code>  <ul>
+<li>It should have no parameters</li>
+</ul>
+</li>
+<li>Above the <code>quote</code> function, add the <code>@app.route</code> line, pointing to <code>&quot;/quote&quot;</code></li>
+<li>In the body of the <code>quote</code> function, create a variable named <code>random_quote</code></li>
+<li>Set the <code>random_quote</code> variable to <code>choice(quotes)</code></li>
+<li>Under that, return a call to <code>render_template</code>  <ul>
+<li>Pass in <code>&quot;quote.html&quot;</code> and <code>quote=random_quote</code></li>
+</ul>
+</li>
+<li>Check that the <code>quote</code> function matches the <code>joke</code> function for the most part</li>
+</ol>
+<p>Note that this will not work just yet; there is currently no <strong>quote.html</strong> file.</p>
+<h3 id="html-template-code">HTML Template Code</h3>
+<p>The next step is to add a <strong>quote.html</strong> file and update the <strong>home.html</strong> file.</p>
+<ol>
+<li>In the <strong>templates</strong> folder, create a new file named <strong>quote.html</strong></li>
+<li>Copy the code from the <strong>joke.html</strong> file into the <strong>quote.html</strong> file</li>
+<li>Change the <code>h1</code> text so that it says &quot;Quote Page&quot;</li>
+<li>Change the <code>p</code> text so that it says &quot;Here is a quote for you&quot;</li>
+<li>Change the <code>to</code>  <ul>
+<li>This is because a different value is passed to <code>render_template</code> in the Python</li>
+</ul>
+</li>
+<li>Change the first <code>a</code> text so that it says &quot;Get another quote&quot;</li>
+<li>Open the <strong>home.html</strong> file</li>
+<li>Under the existing <code>a</code> element, add another <code>&lt;a&gt;&lt;/a&gt;</code></li>
+<li>Set the <code>href</code> of the second <code>a</code> to point to <code>/quote</code></li>
+<li>Make the text of the second <code>a</code> say &quot;Get a quote&quot;</li>
+</ol>
+<p>Run the program and verify that it is possible to go to the Quote Page!</p>
+<h3 id="find-more-quotes">Find More Quotes</h3>
+<p>Now the fun part: find more quotes! These can be quotes from movies, books, songs, or whatever else. Update the <code>quotes</code> list in the <strong>main.py</strong> file so that it contains some updated quotes.</p>
+<h2 id="3-a-hello-page">3. A Hello Page</h2>
+<p>Create another page - a &quot;Hello&quot; page - that greets the user based on a name passed in the URL. This is possible using <a href="https://exploreflask.com/en/latest/views.html#built-in-converters" target="_blank">URL Converters</a>. These can turn values from URLs into Python variables.</p>
+<p>By the end of this challenge, the user should be go to a URL like &quot;proj.name.repl.co/hello/<strong>Joan</strong>&quot; and the page should say &quot;Hello Joan!&quot; It should work for any name passed in the URL.</p>
+<h3 id="python-code">Python Code</h3>
+<p>First, change the code in the <strong>main.py</strong> file.</p>
+<ol>
+<li>Under the existing route functions, define a new function named <code>hello</code></li>
+<li>Give the <code>hello</code> function one parameter: <code>username</code></li>
+<li>Above the function, add the <code>@app.route</code> decorator</li>
+<li>For the URL, pass in <code>/hello/&lt;username&gt;</code>  <ul>
+<li>Note the <code>&lt;&gt;</code> around <code>username</code> - that means it will be the parameter!</li>
+</ul>
+</li>
+<li>In the body of the <code>hello</code> function, add a <code>return</code> statement</li>
+<li>Return <code>render_template</code>, passing in <code>&quot;hello.html&quot;</code> and <code>name=username</code><ul>
+<li>This will pass the URL <code>username</code> variable into the <code>&quot;hello.html&quot;</code> template</li>
+</ul>
+</li>
+</ol>
+<p>This will not work just yet, because there is no file named <strong>hello.html</strong>.</p>
+<h3 id="html-template-code">HTML Template Code</h3>
+<p>Next, create a proper HTML template to render.</p>
+<ol>
+<li>In the <strong>templates</strong> folder, create a file named <strong>hello.html</strong></li>
+<li>Open the file, and add basic boiler-plate HTML elements to it: <code>html</code>, <code>body</code></li>
+<li>Between the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> add a <code>&lt;h1&gt;&lt;/h1&gt;</code></li>
+<li>Make the text say: <code>Hello !</code>  <ul>
+<li>This will render the <code>name</code> passed in the Python code</li>
+</ul>
+</li>
+<li>Under the <code>h1</code>, add a <code>p</code> saying &quot;I hope you enjoy the site&quot;</li>
+</ol>
+<p>Now the new route should work! It will not be linked from anywhere, but that should not be a problem.</p>
+<h3 id="testing-the-hello-page">Testing the Hello Page</h3>
+<p>Testing the page is easiest when the site is opened in a new window:</p>
+<p><img src="https://i.imgur.com/TiUlhBV.png" alt=""></p>
+<p>After that, append <code>/hello/Name</code> to see it say hello! Verify that it can say hello to any name provided in the URL.</p>
+<h2 id="4-make-something-new">4. Make Something New</h2>
+<p>Use Flask to create a completely new website! There are several options. If desired, take a look at <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates" target="_blank">this tutorial</a> to learn some more advanced template concepts, which will make it possible to do a lot more with Flask!</p>
+<h2 id="optional-practice-bug-fixing"><em>Optional Practice: Bug Fixing</em></h2>
+<p>Find and fix all of the bugs in the programs below. Note that the projects may have multiple bugs - fix all of them!</p>
+<ul>
+<li><a href="https://repl.it/@JosephMaxwell/FlaskBug-1#main.py" target="_blank">Bug 1</a></li>
+<li><a href="https://repl.it/@JosephMaxwell/FlaskBug-2#main.py" target="_blank">Bug 2</a></li>
+<li><a href="https://repl.it/@JosephMaxwell/FlaskBug-3#main.py" target="_blank">Bug 3</a></li>
+<li><a href="https://repl.it/@JosephMaxwell/FlaskBug-4#main.py" target="_blank">Bug 4</a></li>
+</ul>
 
                                 
                                 </section>
@@ -479,14 +570,10 @@
 
             
                 
-                <a href="../HelloPython/TurtleChallenges.html" class="navigation navigation-prev " aria-label="Previous page: Turtle Challenges">
+                <a href="FlaskCodeAlong.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Random Joke Code-Along">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="RPSCodeAlong.html" class="navigation navigation-next " aria-label="Next page: Rock Paper Scissors Code-Along">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -495,7 +582,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 2 - Basic Programming","level":"1.4","depth":1,"next":{"title":"Rock Paper Scissors Code-Along","level":"1.4.1","depth":2,"path":"BasicProgramming/RPSCodeAlong.md","ref":"BasicProgramming/RPSCodeAlong.md","articles":[]},"previous":{"title":"Turtle Challenges","level":"1.3.2","depth":2,"path":"HelloPython/TurtleChallenges.md","ref":"HelloPython/TurtleChallenges.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"BasicProgramming/StudentDesc.md","mtime":"2021-01-18T19:28:36.280Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-18T19:29:16.659Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Flask Challenges","level":"1.8.3","depth":2,"previous":{"title":"Random Joke Code-Along","level":"1.8.2","depth":2,"path":"Flask/FlaskCodeAlong.md","ref":"Flask/FlaskCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Flask/FlaskChallenges.md","mtime":"2021-01-18T19:28:36.316Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-18T19:29:16.659Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
