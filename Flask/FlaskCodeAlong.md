@@ -1,8 +1,5 @@
 # Random Joke Website
-In this activity, create a Flask Web Server that serves a random joke website. The goal is for the user to be able to enter their name, and then receive a joke.
-
-# Information Finder
-In this activity, create a program that uses Wikipedia to find information. The goal is for the user to enter a search term, and then show the first paragraph of the Wikipedia article for that subject.
+In this activity, create a Flask Web Server that serves a random joke website. The goal is for the user to be able to see a random joke every time the joke page loads.
 
 ## Setting Up
 1. Go to [repl.it](https://repl.it)
@@ -129,7 +126,7 @@ The next step is to create a new route function for the joke page.
 1. Return the result of the call
 1. On the line above the function definition, add an `@app.route`
 1. For the route argument, use `'/joke'`
-    - This means the page will be available at **<examplename.name>.repl.co/joke**
+    - This means the page will be available at **{examplename.name}.repl.co/joke**
 
 Run the project, and notice that the homepage still appears. That's what's supposed to be happening. What's missing is that the homepage has no link to the new page!
 
@@ -199,7 +196,7 @@ Now that the joke is properly passed to the template, it will be possible to dis
 
 1. Open the **templates/joke.html** file
 1. Find the existing joke text
-1. Replace the text with `{{ joke }}`
+1. Replace the text with <code>{{ joke }}</code>
     - Because the `joke` argument was passed in `render_template`, this will contain a joke!
 1. Under the `<blockquote></blockquote>`, create a `<p></p>` element
 1. Within the `<p>` and `</p>`, create an `<a></a>` element
@@ -218,7 +215,7 @@ Now that the joke is properly passed to the template, it will be possible to dis
 Run the project again and test it out! It should generate a random joke every time the joke page loads.
 
 ## Adding Some Style
-The last step is to use CSS to add some style to the site! This isn't strictly necessary, but it can make things much nicer.
+The last step is to use CSS to add some style to the site! This isn't strictly necessary, but it can make the user experience much more engaging.
 
 ### CSS File
 First, create a CSS file in the proper place.

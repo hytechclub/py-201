@@ -38,7 +38,7 @@ The next step is to add a **quote.html** file and update the **home.html** file.
 1. Copy the code from the **joke.html** file into the **quote.html** file
 1. Change the `h1` text so that it says "Quote Page"
 1. Change the `p` text so that it says "Here is a quote for you"
-1. Change the `{{ joke }}` to `{{ quote }}`  
+1. Change the <code>{{ joke }}</code> to <code>{{ quote }}</code>  
    - This is because a different value is passed to `render_template` in the Python
 1. Change the first `a` text so that it says "Get another quote"
 1. Open the **home.html** file
@@ -76,7 +76,7 @@ Next, create a proper HTML template to render.
 1. In the **templates** folder, create a file named **hello.html**
 1. Open the file, and add basic boiler-plate HTML elements to it: `html`, `body`
 1. Between the `<body>` and `</body>` add a `<h1></h1>`
-1. Make the text say: `Hello {{ name }}!`  
+1. Make the text say: <code>Hello {{ name }}!</code>  
     - This will render the `name` passed in the Python code
 1. Under the `h1`, add a `p` saying "I hope you enjoy the site"
 
