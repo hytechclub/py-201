@@ -483,7 +483,7 @@
 <li>Copy the code from the <strong>joke.html</strong> file into the <strong>quote.html</strong> file</li>
 <li>Change the <code>h1</code> text so that it says &quot;Quote Page&quot;</li>
 <li>Change the <code>p</code> text so that it says &quot;Here is a quote for you&quot;</li>
-<li>Change the <code>to</code>  <ul>
+<li>Change the <code>{{ joke }}</code> to <code>{{ quote }}</code> <ul>
 <li>This is because a different value is passed to <code>render_template</code> in the Python</li>
 </ul>
 </li>
@@ -522,7 +522,7 @@
 <li>In the <strong>templates</strong> folder, create a file named <strong>hello.html</strong></li>
 <li>Open the file, and add basic boiler-plate HTML elements to it: <code>html</code>, <code>body</code></li>
 <li>Between the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> add a <code>&lt;h1&gt;&lt;/h1&gt;</code></li>
-<li>Make the text say <code>Hello !</code><ul>
+<li>Make the text say <code>Hello {{ name }}!</code><ul>
 <li>This will render the <code>name</code> passed in the Python code</li>
 </ul>
 </li>
@@ -582,7 +582,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Flask Challenges","level":"1.8.3","depth":2,"previous":{"title":"Random Joke Code-Along","level":"1.8.2","depth":2,"path":"Flask/FlaskCodeAlong.md","ref":"Flask/FlaskCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Flask/FlaskChallenges.md","mtime":"2021-01-19T12:55:09.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-19T12:55:45.422Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Flask Challenges","level":"1.8.3","depth":2,"previous":{"title":"Random Joke Code-Along","level":"1.8.2","depth":2,"path":"Flask/FlaskCodeAlong.md","ref":"Flask/FlaskCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Flask/FlaskChallenges.md","mtime":"2021-01-19T13:53:16.961Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-19T13:53:55.302Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
