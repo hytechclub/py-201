@@ -196,7 +196,7 @@ Now that the joke is properly passed to the template, it will be possible to dis
 
 1. Open the **templates/joke.html** file
 1. Find the existing joke text
-1. Replace the text with ```{{ joke }}```
+1. Replace the text with {% raw %}`{{ joke }}`{% endraw %}
     - Because the `joke` argument was passed in `render_template`, this will contain a joke!
 1. Under the `<blockquote></blockquote>`, create a `<p></p>` element
 1. Within the `<p>` and `</p>`, create an `<a></a>` element
@@ -205,12 +205,14 @@ Now that the joke is properly passed to the template, it will be possible to dis
 1. Within the `a`, add the text "Get another joke"
 
 **templates/joke.html**
+{% raw %}
 ```html
 <blockquote>
     {{ joke }}
 </blockquote>
 <p><a href="?">Get another joke</a></p>
 ```
+{% endraw %}
 
 Run the project again and test it out! It should generate a random joke every time the joke page loads.
 
@@ -315,6 +317,7 @@ app.run(host='0.0.0.0', port=8080)
 ```
 
 **templates/joke.html**
+{% raw %}
 ```html
 <html>
     <head>
@@ -331,6 +334,7 @@ app.run(host='0.0.0.0', port=8080)
     </body>
 </html>
 ```
+{% endraw %}
 
 **static/style.css**
 ```css

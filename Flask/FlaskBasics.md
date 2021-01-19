@@ -70,17 +70,19 @@ That second `name` argument in the call to the `render_template` function means 
 ### In the HTML Template
 On the HTML side, _using_ a variable in a template looks like this:
 
+{% raw %}
 ```html
 <p>Hello, {{ name }}!</p>
 ```
+{% endraw %}
 
-Enclosing something in double curly brackets, `{{` and `}}`, means that Flask will look for a dynamic value by that name. In the example from above, the finally-rendered HTML would look like this:
+Enclosing something in double curly brackets, {% raw %}`{{`{% endraw %} and {% raw %}`}}`{% endraw %}, means that Flask will look for a dynamic value by that name. In the example from above, the finally-rendered HTML would look like this:
 
 ```html
 <p>Hello, Elaine!</p>
 ```
 
-The `render_template` function goes in and _replaces_ the `{{ name }}` in the template with the _value_ of the `name` variable. That way, the same page can say hello to any number of different names!
+The `render_template` function goes in and _replaces_ the {% raw %}`{{ name }}`{% endraw %} in the template with the _value_ of the `name` variable. That way, the same page can say hello to any number of different names!
 
 ## Summary
 Here are some important notes to remember:
@@ -89,6 +91,6 @@ Here are some important notes to remember:
 - Different pages can be **routed** to Python functions using the `@app.route` decorator
 - HTML can be **rendered** from Python using the `render_template` function
 - Variables can be **passed** to the template using keyword arguments
-- Variables can be **referenced** within a template between `{{` and `}}`
+- Variables can be **referenced** within a template between {% raw %}`{{`{% endraw %} and {% raw %}`}}`{% endraw %}
 
 Don't worry if this is a little overwhelming - there will be plenty of time to practice!

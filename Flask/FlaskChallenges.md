@@ -38,7 +38,7 @@ The next step is to add a **quote.html** file and update the **home.html** file.
 1. Copy the code from the **joke.html** file into the **quote.html** file
 1. Change the `h1` text so that it says "Quote Page"
 1. Change the `p` text so that it says "Here is a quote for you"
-1. Change the ```{{ joke }}``` to ```{{ quote }}```  
+1. Change the {% raw %}`{{ joke }}`{% endraw %} to {% raw %}`{{ quote }}`{% endraw %} 
    - This is because a different value is passed to `render_template` in the Python
 1. Change the first `a` text so that it says "Get another quote"
 1. Open the **home.html** file
@@ -76,9 +76,9 @@ Next, create a proper HTML template to render.
 1. In the **templates** folder, create a file named **hello.html**
 1. Open the file, and add basic boiler-plate HTML elements to it: `html`, `body`
 1. Between the `<body>` and `</body>` add a `<h1></h1>`
-2. Make the text say ```Hello {{ name }}!```
+1. Make the text say {% raw %}`Hello {{ name }}!`{% endraw %}
     - This will render the `name` passed in the Python code
-3. Under the `h1`, add a `p` saying "I hope you enjoy the site"
+1. Under the `h1`, add a `p` saying "I hope you enjoy the site"
 
 Now the new route should work! It will not be linked from anywhere, but that should not be a problem.
 
