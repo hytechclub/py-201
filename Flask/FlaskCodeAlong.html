@@ -444,9 +444,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="random-joke-website">Random Joke Website</h1>
-<p>In this activity, create a Flask Web Server that serves a random joke website. The goal is for the user to be able to enter their name, and then receive a joke.</p>
-<h1 id="information-finder">Information Finder</h1>
-<p>In this activity, create a program that uses Wikipedia to find information. The goal is for the user to enter a search term, and then show the first paragraph of the Wikipedia article for that subject.</p>
+<p>In this activity, create a Flask Web Server that serves a random joke website. The goal is for the user to be able to see a random joke every time the joke page loads.</p>
 <h2 id="setting-up">Setting Up</h2>
 <ol>
 <li>Go to <a href="https://repl.it" target="_blank">repl.it</a></li>
@@ -548,7 +546,7 @@ app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>, port=<span cl
 <li>Return the result of the call</li>
 <li>On the line above the function definition, add an <code>@app.route</code></li>
 <li>For the route argument, use <code>&apos;/joke&apos;</code><ul>
-<li>This means the page will be available at <strong><examplename.name>.repl.co/joke</examplename.name></strong></li>
+<li>This means the page will be available at <strong>{examplename.name}.repl.co/joke</strong></li>
 </ul>
 </li>
 </ol>
@@ -607,7 +605,7 @@ app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>, port=<span cl
 <ol>
 <li>Open the <strong>templates/joke.html</strong> file</li>
 <li>Find the existing joke text</li>
-<li>Replace the text with ``<ul>
+<li>Replace the text with <code></code><ul>
 <li>Because the <code>joke</code> argument was passed in <code>render_template</code>, this will contain a joke!</li>
 </ul>
 </li>
@@ -627,7 +625,7 @@ app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>, port=<span cl
 </code></pre>
 <p>Run the project again and test it out! It should generate a random joke every time the joke page loads.</p>
 <h2 id="adding-some-style">Adding Some Style</h2>
-<p>The last step is to use CSS to add some style to the site! This isn&apos;t strictly necessary, but it can make things much nicer.</p>
+<p>The last step is to use CSS to add some style to the site! This isn&apos;t strictly necessary, but it can make the user experience much more engaging.</p>
 <h3 id="css-file">CSS File</h3>
 <p>First, create a CSS file in the proper place.</p>
 <ol>
@@ -794,7 +792,7 @@ app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>, port=<span cl
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Random Joke Code-Along","level":"1.8.2","depth":2,"next":{"title":"Flask Challenges","level":"1.8.3","depth":2,"path":"Flask/FlaskChallenges.md","ref":"Flask/FlaskChallenges.md","articles":[]},"previous":{"title":"Flask Basics Warm-up","level":"1.8.1","depth":2,"path":"Flask/FlaskBasics.md","ref":"Flask/FlaskBasics.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Flask/FlaskCodeAlong.md","mtime":"2021-01-18T19:28:36.316Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-18T19:29:16.659Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Random Joke Code-Along","level":"1.8.2","depth":2,"next":{"title":"Flask Challenges","level":"1.8.3","depth":2,"path":"Flask/FlaskChallenges.md","ref":"Flask/FlaskChallenges.md","articles":[]},"previous":{"title":"Flask Basics Warm-up","level":"1.8.1","depth":2,"path":"Flask/FlaskBasics.md","ref":"Flask/FlaskBasics.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Flask/FlaskCodeAlong.md","mtime":"2021-01-19T12:37:35.764Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-19T12:38:12.493Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
