@@ -196,7 +196,7 @@ Now that the joke is properly passed to the template, it will be possible to dis
 
 1. Open the **templates/joke.html** file
 1. Find the existing joke text
-1. Replace the text with <code>{{ joke }}</code>
+1. Replace the text with ```{{ joke }}```
     - Because the `joke` argument was passed in `render_template`, this will contain a joke!
 1. Under the `<blockquote></blockquote>`, create a `<p></p>` element
 1. Within the `<p>` and `</p>`, create an `<a></a>` element
