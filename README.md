@@ -12,8 +12,10 @@ Explore the possibilities of Python in this advanced course. After learning the 
 4. Discord Bot
 5. [Web Scraping](WebScraping/)
 6. [Flask Web Apps](Flask/)
-7. Database for server
-8.  Final Project
+7. [PyGame](PyGame/)
+   1. Top-down RPG style, simplified
+8. [Repl.it Database](Database/)
+   1. Contacts List terminal app
 9.  Final Project
 10. Final Project
 11. Final Project
