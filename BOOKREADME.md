@@ -7,9 +7,9 @@ The Python 201 course will use [Repl](https://repl.it). Please complete the [Rep
 ## Zoom Meetings
 The course will meet weekly on Wednesdays via **Zoom** from 4:00 p.m. to 6:00 p.m. ET.
 
-The meeting ID is **938 4314 0805**, and the password is **577296**.
+The meeting ID is **991 6575 7548**, and the password is **492265**.
 
-- [Click Here to join from PC, Mac, Linux, iOS or Android](https://hyland.zoom.us/j/93843140805?pwd=OFR1eUhDRjBlWTdYT25nZmlvckhxQT09).
+- [Click Here to join from PC, Mac, Linux, iOS or Android](https://hyland.zoom.us/j/99165757548?pwd=aUlJeFg1OURoNTFyeTdweTJlbVJSQT09).
 - To join by phone: Dial [+1 312 626 6799](tel:+13126266799) and enter the meeting ID and password.
 
 ## Discord
