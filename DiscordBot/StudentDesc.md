@@ -1,6 +1,6 @@
 # Creating a Discord Bot in Python
 
-Learn how to create a Discord bot in Python, using the [`discord.py`](https://pypi.org/project/discord.py/) library. Review the **Chat Bot Introduction PowerPoint Presentation** below. Then, complete the **Discord Chat Bot Code-Along Activity**. Once that's done, work on the **Discord Chat Bot Challenges**.
+Learn how to create a Discord bot in Python, using the [`discord.py`](https://pypi.org/project/discord.py/) library. View the **Chat Bot Introduction PowerPoint Presentation** below. Next, review the **Imports, Arguments, and Decorators PowerPoint Presentation** lecture content. Then, complete the **Discord Chat Bot Code-Along Activity**. Once that's done, work on the **Discord Chat Bot Challenges**.
 
 ## Chat Bot Introduction PowerPoint Presentation
 
