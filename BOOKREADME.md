@@ -56,7 +56,10 @@ Points can be redeemed for a variety of rewards.
 
 | Points | Reward |
 | -- | -- |
-| 3 | Short online game with an instructor (e.g. [Connect 4](https://connect-4.org/en), [Chess](https://lichess.org/setup/friend)) |
+| 3 | Play a short online game with an instructor (e.g. [Connect 4](https://connect-4.org/en), [Chess](https://lichess.org/setup/friend)) |
 | 5 | Add an appropriate song to the class playlist |
+| 5 | An instructor will show you their pet |
 | 10 | Choose an appropriate (<5min) song to play in class |
 | 15 | Choose an appropriate (<5min) video to watch in class |
+| 20 | Get one of Juliette's Humble Bundle games |
+| 25 | Play a game as a class (e.g. [skribbl.io](https://skribbl.io)) |
