@@ -7,7 +7,8 @@ In this activity, create a Discord chat bot that can respond to messages in a Di
 1. Go to [repl.it](https://repl.it)
 1. Log in
 1. Clone the [HyTechClub-Robot-Start repl](https://repl.it/@brebory/HyTechClub-Robot-Start)
-1. Make sure you have a Discord account so you can create and registor your bot
+1. Make sure you have a Discord account so you can create and register your bot
+
 
 ## Creating and Registering the Bot
 
@@ -43,7 +44,8 @@ DISCORD_BOT_SECRET=ABCD.EFGHIJKLMNOPQR.STUVWXYZ
 
 ### Testing the Bot
 
-With the starter code from the Repl, and your Bot Token in the `.env` file, you should now be able to run your Repl and see your bot successfully log in! CLick the Run button at the top of the repl and you should see output similar to the following, except the username should match the username that you gave your bot.
+With the starter code from the Repl, and your Bot Token in the `.env` file, you should now be able to run your Repl and see your bot successfully log in! Click the Run button at the top of the repl and you should see output similar to the following, except the username should match the username that you gave your bot.
+
 
 ```text
 Logged in as: HyTechClub Robot#9248
