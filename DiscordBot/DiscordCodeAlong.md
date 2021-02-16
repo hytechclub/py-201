@@ -32,7 +32,7 @@ ANOTHER_VARIABLE=anothervalue
 Each environment variable should be on it's own line within this file.
 
 1. In the .env file, create a new variable called `DISCORD_BOT_SECRET`
-1. Back in the Discord Developer Portal, navigate to your Bot's page, and find the "Copy" button for your bot's "Token"
+1. Back in the Discord Developer Portal, navigate to your bot's page, and find the "Copy" button for your bot's "Token"
 ![Discord Bot Settings](discord-bot-settings-cropped.jpg)
 1. Click the copy button and paste the Bot Token into your Repl's `.env` file
 
@@ -49,14 +49,15 @@ DISCORD_BOT_SECRET=ABCD.EFGHIJKLMNOPQR.STUVWXYZ
 1. In the `#welcome` channel, click the beaker reaction on MEE6's message to give yourself the Bot Tester role
 1. Copy the "Client ID" from your Discord Application
 ![Discord Application Client ID](discord-app-settings-cropped.jpg)
-1. Invite your bot to the Sandbox server
+1. Invite your bot to the Sandbox server by opening your bot's invite link in a browser
 1. Use the following link format, but replace the `client_id` url parameter with your application's client id
 https://discord.com/oauth2/authorize?client_id=xxxxxx&scope=bot
+1. Follow the prompts in the dialog to add your bot
 ![Discord Bot Invite](discord-bot-add-to-server.jpg)
 
 ## Testing the Bot
 
-With the starter code from the Repl, your Bot Token in the `.env` file, and your Bot added to the Hy-Tech Club Bot Testing Sandbox, you should now be able to run your Repl and see your bot successfully log in! Click the Run button at the top of the repl and you should see output similar to the following, except the username should match the username that you gave your bot. Additionally, in the list of users for the Hy-Tech Club Bot Testing Sandbox, your bot should appear as online.
+With the starter code from the Repl, your Bot Token in the `.env` file, and your bot added to the Hy-Tech Club Bot Testing Sandbox, you should now be able to run your Repl and see your bot successfully log in! Click the Run button at the top of the repl and you should see output similar to the following, except the username should match the username that you gave your bot. Additionally, in the list of users for the Hy-Tech Club Bot Testing Sandbox, your bot should appear as online.
 
 ```text
 Logged in as: HyTechClub Robot#9248
@@ -86,7 +87,7 @@ You will want to reference the [documentation for the discord.py library](https:
 
 ## Review the Repl's Starting Code
 
-Let's break down the starting code from the [HyTechClub-Robot-Start repl](https://repl.it/@brebory/HyTechClub-Robot-Start).
+Let's break down the starting code from the [HyTechClub-Robot-Start repl](https://repl.it/@brebory/HyTechClub-Robot-Start). Take a look at the **main.py** file.
 
 ### Imports and Initialization
 
@@ -163,7 +164,7 @@ async def on_message(message):
 
 ## Logging Received Messages
 
-Currently, the `on_message` event handler doesn't have any visible side effects, so it's not easy to test if it's working correctly. Let's add a log message so we can tell when the Bot is handling messages.
+Currently, the `on_message` event handler doesn't have any visible side effects, so it's not easy to test if it's working correctly. Let's add a log message so we can tell when the bot is handling messages.
 
 1. Under the if statement within the `on_message` function, add a print statement
 1. Print a message that logs both the `message.author` and `message.content` from the received message.
@@ -176,4 +177,149 @@ print("Received message: {} > {}".format(message.author, message.content))
 
 ## Adding the Ping Pong Response
 
-Ok, so the Bot currently writes to your Repl's console, but the whole point of the Chat Bot is to send messages in the Discord server! Let's get the Bot to respond to a simple prompt. When anyone says "ping", the bot should respond with "pong". Or, if you're feeling creative, add any other simple call-and-response you want, like "Marco" "Polo" or anything else you like.
+So, the bot currently writes to your Repl's console, but the whole point of the chat bot is to send messages in the Discord server! Let's get the bot to respond to a simple prompt. When anyone says "ping", the bot should respond with "pong". Or, if you're feeling creative, add any other simple call-and-response you want, like "Marco", "Polo" or anything else you like.
+
+1. At the bottom of the `on_message` event handler, add another `if` statement
+1. In the condition for the `if` statement, check if `message.content` equals your desired prompt
+1. In the body for the `if`, respond to the prompt with your desired answer, using the `message.channel.send` method
+1. Use the `await` keyword to wait for the bot to send the response
+
+Test out your code by posting the message `ping` in the Discord server's **#general** channel. Your bot should respond, and probably some of your classmate's bots will as well! Additionally, you should see messages logged in the console for your Repl for every message sent in the channel.
+
+### Code
+
+```py
+if message.content == "ping"
+  await message.channel.send("pong")
+```
+
+## Adding More Prompts and Responses
+
+Now, if you wanted to add more prompts and responses to the bot, you could add more hard-coded `if` statements to get the job done, but what if your bot needs to respond to hundreds of phrases? Or what if you need to add more prompts and responses on-the-fly? Dictionaries can solve this problem! Next, add a dictionary of prompts and responses and allow your bot to respond in even more ways.
+
+1. At the top of the **main.py** file, right after the line that creates the `bot` variable, create a new variable called `prompts_and_responses`
+1. Set `prompts_and_responses` to a new dictionary `{}`
+1. Add pairs of prompt and response strings to the `prompts_and_responses` dictionary, at least 3
+
+### Code
+
+```py
+prompts_and_responses = {
+    "hello": "Hello there!",
+    "sup": "Hi, I'm HyTechClub Robot!",
+    "how are you?": "I am fine!"
+}
+```
+
+## Looping Over the Prompts and Response Dictionary
+
+The `prompts_and_responses` dictionary can be used by the `on_message` event handler, which will make it much easier and faster to add new prompts and responses to your bot. By using the `keys` method of the dictionary, you can easily loop over all the prompts and search within the message content for those prompts.
+
+1. Find the bottom of the `on_message` function
+1. Add a `for` loop that saves each key from `prompts_and_messages.keys()` in a variable called `prompt`
+1. Within the body of the `for`, add an `if` statement that checks if the `prompt` exists `in` the `message.content`
+1. If the `prompt` was found, print a message that reports that the `prompt` was found in the `message.content`.
+1. If the `prompt` was found, `message.channel.send` the corresponding response from the `prompts_and_responses` dict, and `await` it
+
+### Code
+
+```py
+for prompt in prompts_and_responses.keys():
+  if prompt in message.content:
+    print("Found prompt: {} in message {}"
+      .format(prompt, message.content))
+    await message.channel.send(prompts_and_responses[prompt])
+```
+
+## Commands
+
+The Discord library also allows special handling, called commands, that allow a user to send a message with arguments to the bot, just like calling a function! To add a command to the bot, use the `@bot.command()` decorator. Note that this decorator requires the parenthesis, while the `@bot.event` decorator does not. In order for your bot to work correctly with commands, the `on_message` event handler should await the `bot.process_commands` method. Let's add a command to our bot that simulates rolling a 6-sided die using the [`random`](https://docs.python.org/3/library/random.html) library!
+
+1. At the top of the file with the other `import` statements, add `import random`
+1. At the bottom of the `on_message` function, add `await bot.process_commands(message)`
+1. Below the `on_message` function, add a new async function called `roll` that takes two parameters: `ctx` and `count`
+1. Add an annotation to the `count` parameter to specify that it should be an `int`: `count: int`
+1. Above the new `roll` function, add the `@bot.command()` decorator
+1. In the body of the `roll` function, create a new variable called `message` and set it to the string `"You rolled:\n"`
+1. Use the `range` function to create a `for` loop that executes `count` times
+1. In the body of the `for` loop, create a new variable called `roll` and set it to the result of `random.randint(1, 6)` to simulate a 6-sided die roll 
+1. Append to the `message` variable the following string: `":game_die: {}".format(roll)` to show a dice emoji and the rolled result
+1. Outside of the `for` loop, at the bottom of the `roll` function, use the `ctx.send` method to send the `message` and `await` it
+
+### Code
+
+```py
+import random 
+
+@bot.command()
+async def roll(ctx, count: int):
+  message = "You rolled:\n"
+
+  for _ in range(count):
+    roll = random.randint(1, 6)
+    message += ":game_die: {}".format(roll)
+
+  await ctx.send(message)
+```
+
+## Function Annotations and Converters
+
+In the preceding section, a couple new concepts were introduced. Specifically, the *function annotation* for the `count` variable - this is a newer Python feature that allows you to specify the type that a parameter expects. The Discord library uses this annotation to convert the message's content into whatever type you specify. You'll notice if you send a message like `$roll one`, your bot will not respond, and your Repl's console will have a large error message starting with `Ignoring exception in command roll:`. This is expected - the user did not respond with the expected parameter, so the command did not execute.
+
+Specifically, the [`Converter`](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html#basic-converters) for the argument was unable to parse the user's message. If you're interested in customizing and improving this behavior, you can check out the documentation for [Special Converters](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html#special-converters) for more information. This might come in handy for some of the Challenges this week!
+
+## Final Code
+
+```py
+from discord.ext.commands import Bot
+import os
+import random
+
+bot = Bot(command_prefix="$")
+
+prompts_and_responses = {
+  "hello": "Hello there!",
+  "sup": "Hi, I'm HyTechClub Robot!",
+  "how are you?": "I am fine!"
+}
+
+@bot.event
+async def on_ready():
+  print("Logged in as: {}".format(bot.user))
+  print("Command prefix is: {}".format(bot.command_prefix))
+
+@bot.event
+async def on_message(message):
+  if message.author.bot:
+    return
+
+  print("Recieved message: {} > {}".format(message.author, message.content))
+
+  if message.content == "ping":
+    await message.channel.send("pong")
+
+  for prompt in prompts_and_responses.keys():
+    if prompt in message.content:
+      print("Found prompt: {} in message {}"
+        .format(prompt, message.content))
+      await message.channel.send(prompts_and_responses[prompt])
+
+  await bot.process_commands(message)
+
+@bot.command()
+async def roll(ctx, count: int):
+  message = "You rolled:\n"
+
+  for _ in range(count):
+    roll = random.randint(1, 6)
+    message += ":game_die: {}".format(roll)
+
+  await ctx.send(message)
+
+token = os.environ.get("DISCORD_BOT_SECRET")
+bot.run(token)
+```
+
+## Challenges
+
+After the activity, start working on the [Discord Bot Challenges](DiscordChallenges.md).
