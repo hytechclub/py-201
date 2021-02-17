@@ -260,7 +260,7 @@ async def on_message(message):
   if message.author.bot:
     return
 
-  print("Recieved message: {} > {}".format(message.author, message.content))
+  print("Received message: {} > {}".format(message.author, message.content))
 
   if message.content == "ping":
     await message.channel.send("pong")
