@@ -81,7 +81,7 @@ This challenge may be quite difficult. One variation of the game adds two additi
 
 The outcomes are as follows:
 
-![](http://www.samkass.com/theories/RPSSL.gif)
+![](https://i.imgur.com/jLxotXL.png)
 
 It adds this additional logic:
 
