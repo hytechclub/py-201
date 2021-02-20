@@ -94,6 +94,10 @@ For all elements:
   Swap current with min
 ```
 
+This visual demonstration may be helpful:
+
+![](https://i.stack.imgur.com/mGSJZ.gif)
+
 In this case, it is actually desirable to find the _maximum_ value instead of the minimum. The algorithm won't change too much though. Ultimately, it should work something like this:
 
 ```
@@ -101,10 +105,6 @@ Loop through each element in the list:
   Find the index for the maximum value in the list starting at the current element
   Swap the current element for the maximum value found
 ```
-
-This visual demonstration may be helpful:
-
-![](https://i.stack.imgur.com/mGSJZ.gif)
 
 Don't worry if this seems confusing. It takes a while to understand list sorting - just know that this will work!
 
