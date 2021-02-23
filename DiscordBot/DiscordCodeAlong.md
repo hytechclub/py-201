@@ -6,7 +6,7 @@ In this activity, create a Discord chat bot that can respond to messages in a Di
 
 1. Go to [repl.it](https://repl.it)
 1. Log in
-1. Clone the [HyTechClub-Robot-Start repl](https://repl.it/@brebory/HyTechClub-Robot-Start)
+1. Fork the [HyTechClub-Robot-Start repl](https://repl.it/@brebory/HyTechClub-Robot-Start)
 1. Make sure you have a Discord account so you can create and register your bot
 
 ## Creating and Registering the Bot
@@ -42,18 +42,24 @@ Each environment variable should be on it's own line within this file.
 DISCORD_BOT_SECRET=ABCD.EFGHIJKLMNOPQR.STUVWXYZ
 ```
 
+Your secret value should exactly match the value that you copied from your discord bot page.
+
 ## Adding the Bot to the Sandbox Server
 
 1. If you haven't already created a Discord account, you'll need to for this step
 1. Join the [Hy-Tech Club Chat Bot Sandbox](https://discord.gg/7VUAKkHEvm)
 1. In the `#welcome` channel, click the beaker reaction on MEE6's message to give yourself the Bot Tester role
 1. Copy the "Client ID" from your Discord Application
-![Discord Application Client ID](discord-app-settings-cropped.jpg)
-1. Invite your bot to the Sandbox server by opening your bot's invite link in a browser
-1. Use the following link format, but replace the `client_id` url parameter with your application's client id
-https://discord.com/oauth2/authorize?client_id=xxxxxx&scope=bot
+
+    ![Discord Application Client ID](discord-app-settings-cropped.jpg)
+
+1. Invite your bot to the Sandbox server by opening your bot's invite link in a browser. Use the following link format, but replace the `client_id` url parameter with your application's client id
+
+    https://discord.com/oauth2/authorize?client_id=xxxxxx&scope=bot
+
 1. Follow the prompts in the dialog to add your bot
-![Discord Bot Invite](discord-bot-add-to-server.jpg)
+
+    ![Discord Bot Invite](discord-bot-add-to-server.jpg)
 
 ## Testing the Bot
 
