@@ -20,6 +20,18 @@ Add at least 3 more prompts and responses to the `prompts_and_responses` diction
 1. Repeat until there are at least 3 new items
 1. Run the code, and verify that your Discord bot responds to the new prompts!
 
+## 3. Add Prompts and Responses for a Specific User
+
+Add another dictionary of prompts and responses, called `user_prompts_and_responses`. This should be a nested dictionary, where the first level of nesting is keyed by username, and the second level contains the prompts and responses. Then, modify the `on_message` event handler to allow the bot to search `user_prompts_and_responses` dict for the `message.author.name`, and then use the user's specific dictionary of prompts and responses to process the message in the same way the "global" prompts and responses are handled.
+
+If you notice that you are repeating code in the `on_message` event handler, the second part of this challenge is to create a *helper function* and refactor the `on_message` event handler so that no code is duplicated, through the use of the new helper function.
+
+## 4. Randomize Responses
+
+Next, modify your dictionaries of prompts and responses so that some responses are lists of strings, rather than a single string. Then, use `random.choice` to pick a random response from the list so that the bot can have some variation when responding to the same prompt.
+
+You will want to use the [`isinstance`](https://docs.python.org/3/library/functions.html#isinstance) function in the `on_message` event handler (or your helper function) to determine if a particular response is a straight-up string, or a list of strings, to handle the result accordingly.
+
 ## Commands
 
 The Discord library also allows special message handling, called commands, that allow a user to send a message with arguments to the bot, just like calling a function! To add a command to the bot, use the `@bot.command()` decorator. Note that this decorator requires the parenthesis, while the `@bot.event` decorator does not. In order for your bot to work correctly with commands, the `on_message` event handler should await the `bot.process_commands` method. Let's add a command to our bot that simulates rolling a 6-sided die using the [`random`](https://docs.python.org/3/library/random.html) library!
@@ -57,7 +69,7 @@ In the preceding section, a couple new concepts were introduced. Specifically, t
 
 Specifically, the [`Converter`](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html#basic-converters) for the argument was unable to parse the user's message. If you're interested in customizing and improving this behavior, you can check out the documentation for [Special Converters](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html#special-converters) for more information. This page will come in handy for some of the challenges this week!
 
-## 3. Create a Command to Add More Prompts and Responses
+## 5. Create a Command to Add More Prompts and Responses
 
 Create a new command, called `add`, that will allow the user to add a new prompt and response to the dictionary. The command should take two string parameters,`prompt` and `response`, and add them to the `prompts_and_responses` dictionary.
 
@@ -67,7 +79,7 @@ For example, a user should be able to call the command like this:
 $add "Hakuna" "Matata"
 ```
 
-## 4. Create a Command to Change the Command Prefix
+## 6. Create a Command to Change the Command Prefix
 
 Next, the bot should have a command that allows users to change the `command_prefix`, called `prefix`.
 
@@ -79,7 +91,7 @@ $prefix %
 
 After executing the command, the bot should only process commands with the new prefix.
 
-## 5. Using Special Converters for the Add Command
+## 7. Using Special Converters for the Add Command
 
 Read this [documentation on Special Converters](https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html#special-converters), then modify the `add` command to take a third optional boolean parameter, called `overwrite`, that uses the `typing.Optional` type hint. This parameter should default to `False` and control whether or not the user can overwrite an existing prompt when using the command.
 
