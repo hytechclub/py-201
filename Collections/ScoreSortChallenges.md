@@ -66,7 +66,7 @@ Often, when viewing data, it is possible to sort the data in multiple ways. Add 
 ## 4. Rock Paper Scissors Redux
 >This challenge could be somewhat challenging.
 
-For this challenge, is totally separate from the score sorting program; start by making a new Repl project and go from there.
+This challenge is totally separate from the score sorting program; start by making a new Repl project and go from there.
 
 The goal is to create a Rock, Paper, Scissors game using a dictionary. It should be similar to the [Rock Paper Scissors](../BasicProgramming/RPSCodeAlong.md) code, but it will simplify things a bit.
 
