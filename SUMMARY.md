@@ -10,6 +10,8 @@
   - [Sort By Score Code-Along](Collections/ScoreSortCodeAlong.md)
   - [Sort By Score Challenges](Collections/ScoreSortChallenges.md)
 - [Week 4 - Discord Bot](DiscordBot/StudentDesc.md)
+  - [Discord Code-Along](DiscordBot/DiscordCodeAlong.md)
+  - [Discord Challenges](DiscordBot/DiscordChallenges.md)
 - [Week 5 - Web Scraping](WebScraping/StudentDesc.md)
   - [HTML Review Warm-up](WebScraping/HtmlReviewWarmup.md)
   - [Info Finder Code-Along](WebScraping/InfoFinderCodeAlong.md)
