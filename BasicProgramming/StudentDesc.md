@@ -1,6 +1,9 @@
 # Basic Programming in Python
 Learn how to use variables, input/output, `if` statements, `while` loops, and functions in Python. Review the **Basic Programming PowerPoint Presentation** below. Then, complete the **Rock Paper Scissors Code-Along Activity**. Once that's done, work on the **Rock Paper Scissors Challenges**.
 
+## Session Recording
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/u33xA9oUikg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Basic Programming PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/py-201/BasicProgramming/BasicProgramming.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
