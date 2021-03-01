@@ -9,7 +9,7 @@ Explore the possibilities of Python in this advanced course. After learning the 
 1. [Hello Python - Turtle](HelloPython/)
 2. [`if` Statements, Functions, `while` Loops (console apps)](BasicProgramming/)
 3. [Lists and Dictionaries (and algorithms)](Collections/)
-4. Discord Bot
+4. [Discord Bot](DiscordBot/)
 5. [Web Scraping](WebScraping/)
 6. [Flask Web Apps](Flask/)
 7. [PyGame](PyGame/)
