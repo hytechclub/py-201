@@ -20,3 +20,7 @@
   - [Flask Basics Warm-up](Flask/FlaskBasics.md)
   - [Random Joke Code-Along](Flask/FlaskCodeAlong.md)
   - [Flask Challenges](Flask/FlaskChallenges.md)
+- [Week 7 - Pygame](PyGame/StudentDesc.md)
+  - [Pygame Warm-up](PyGame/PygameWarmup.md)
+  - [Top-down Code-Along](PyGame/TopDownCodeAlong.md)
+  - [Pygame Challenges](PyGame/PygameChallenges.md)
