@@ -7,15 +7,14 @@ Explore the possibilities of Python in this advanced course. After learning the 
 ## Schedule
 
 1. [Hello Python - Turtle](HelloPython/)
-2. [`if` Statements, Functions, `while` Loops (console apps)](BasicProgramming/)
-3. [Lists and Dictionaries (and algorithms)](Collections/)
-4. [Discord Bot](DiscordBot/)
-5. [Web Scraping](WebScraping/)
-6. [Flask Web Apps](Flask/)
-7. [PyGame](PyGame/)
-   1. Top-down RPG style, simplified
-8. [Repl.it Database](Database/)
-   1. Contacts List terminal app
-9.  Final Project
-10. Final Project
-11. Final Project
+1. [`if` Statements, Functions, `while` Loops (console apps)](BasicProgramming/)
+1. [Lists and Dictionaries (and algorithms)](Collections/)
+1. [Discord Bot](DiscordBot/)
+1. [Web Scraping](WebScraping/)
+1. [Flask Web Apps](Flask/)
+1. [PyGame](PyGame/)
+1. [Repl.it Database](Database/)
+   - Contacts List terminal app
+1. Final Project
+1. Final Project
+1. Final Project
