@@ -634,7 +634,7 @@ WIN_HEIGHT = TILE_SIZE * <span class="hljs-number">10</span>
 </li>
 <li>Under the <code>main_pos</code> variable, call the <code>display_surface.blit</code> function<ul>
 <li>For the first argument, pass in <code>main_sprite[&apos;img&apos;]</code></li>
-<li>FOr the second argument, pass in <code>main_pos</code></li>
+<li>For the second argument, pass in <code>main_pos</code></li>
 </ul>
 </li>
 <li>Run the program, and verify that the main sprite appears in the game!</li>
@@ -742,7 +742,7 @@ K_DOWN <span class="hljs-comment"># Down Key press</span>
 <p>Now the program can move a sprite, but it needs to know when a key is pressed. Find the body of the <code>while</code> game loop, and make some space under the <code>draw_sprite</code> function calls. Then, follow the steps below to loop through all events, figure out if a key is pressed, and call the <code>move_sprite</code> function if necessary.</p>
 <ol>
 <li>Create a <code>for</code> loop<ul>
-<li>For item, name it `event</li>
+<li>For the item, name it <code>event</code></li>
 <li>For the collection, use <code>pygame.event.get()</code></li>
 </ul>
 </li>
@@ -813,8 +813,8 @@ font = pygame.font.SysFont(<span class="hljs-string">&apos;Comic Sans MS&apos;</
 </ul>
 </li>
 <li>Under that, create a new variable named <code>text_surface</code></li>
-<li>Set the <code>text_surface</code> variable to `font.render(text, False, (0, 0, 0))<ul>
-<li>This creates the text with the given font and proper message</li>
+<li>Set the <code>text_surface</code> variable to <code>font.render(text, False, (0, 0, 0))</code><ul>
+<li>This creates the text with the font and passed in message</li>
 </ul>
 </li>
 <li>On the next line, call the <code>display_surface.blit</code> function<ul>
@@ -830,7 +830,7 @@ font = pygame.font.SysFont(<span class="hljs-string">&apos;Comic Sans MS&apos;</
   display_surface.blit(text_surface, (<span class="hljs-number">120</span>, <span class="hljs-number">140</span>))
 </code></pre>
 <h3 id="the-gamestatus-variable">The <code>game_status</code> Variable</h3>
-<p>One other thing that is typically important in a game is <strong>state</strong>. In this case, the game will have two states so far: <code>&apos;Playing&apos;</code> and <code>&apos;Win&apos;</code>. Create the <code>game_status</code> variable, set it appropriately, and change the game output based on the value.</p>
+<p>One other thing that is typically important in a game is <strong>state</strong>. So far, this game should have two states: <code>&apos;Playing&apos;</code> and <code>&apos;Win&apos;</code>. Create the <code>game_status</code> variable, set it appropriately, and change the game output based on the value.</p>
 <ol>
 <li>Right above the <code>while</code> loop, create a new variable named <code>game_status</code><ul>
 <li>Set it to <code>&apos;Playing&apos;</code></li>
@@ -876,7 +876,7 @@ font = pygame.font.SysFont(<span class="hljs-string">&apos;Comic Sans MS&apos;</
 <h2 id="defeat">Defeat</h2>
 <p>Now it is possible to win, but the game is pretty boring. The player should not be able to simply walk right through the door. Update the game so that if they try to walk through the door without a key, they lose.</p>
 <h3 id="checking-for-defeat">Checking for Defeat</h3>
-<p>If the <code>game_status</code> is <code>&apos;Lose</code>, the game should change the background to red, and display &quot;You Died&quot; text.</p>
+<p>If the <code>game_status</code> is <code>&apos;Lose&apos;</code>, the game should change the background to red, and display &quot;You Died&quot; text.</p>
 <ol>
 <li>Under the <code>GREEN</code> variable declaration, create a new variable named <code>RED</code></li>
 <li>Set the <code>RED</code> variable to <code>(255, 0, 0)</code></li>
@@ -931,7 +931,7 @@ game_status = <span class="hljs-string">&apos;Playing&apos;</span>
   pygame.display.update()
 </code></pre>
 <h2 id="the-key">The Key</h2>
-<p>Now it is possible to lose the game, but it is no longer possible to win it! The main character should need to pick up a key before going through the door. Create a new key sprite, and let the player pick it up.</p>
+<p>Now it is possible to lose the game, but it is no longer possible to win it! The main character should be able to pick up a key before going through the door. Create a new key sprite, and let the player pick it up.</p>
 <h3 id="the-keysprite-dictionary">The <code>key_sprite</code> Dictionary</h3>
 <p>Creating the <code>key_sprite</code> dictionary will be very similar to creating the other sprite dictionaries.</p>
 <ol>
@@ -1136,7 +1136,7 @@ game_status = <span class="hljs-string">&apos;Playing&apos;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Top-down Code-Along","level":"1.9.2","depth":2,"next":{"title":"Pygame Challenges","level":"1.9.3","depth":2,"path":"PyGame/PygameChallenges.md","ref":"PyGame/PygameChallenges.md","articles":[]},"previous":{"title":"Pygame Warm-up","level":"1.9.1","depth":2,"path":"PyGame/PygameWarmup.md","ref":"PyGame/PygameWarmup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"PyGame/TopDownCodeAlong.md","mtime":"2021-03-04T15:47:26.832Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-04T15:48:04.614Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Top-down Code-Along","level":"1.9.2","depth":2,"next":{"title":"Pygame Challenges","level":"1.9.3","depth":2,"path":"PyGame/PygameChallenges.md","ref":"PyGame/PygameChallenges.md","articles":[]},"previous":{"title":"Pygame Warm-up","level":"1.9.1","depth":2,"path":"PyGame/PygameWarmup.md","ref":"PyGame/PygameWarmup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"PyGame/TopDownCodeAlong.md","mtime":"2021-03-05T12:57:07.227Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-05T12:57:46.198Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
