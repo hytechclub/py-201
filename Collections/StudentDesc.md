@@ -1,6 +1,9 @@
 # Collections in Python
 Learn how to work with [lists](https://www.w3schools.com/python/python_lists.asp) and [dictionaries](https://www.w3schools.com/python/python_dictionaries.asp) in Python, and explore some list sorting algorithms. Start with by completing the **Playlist Warm-up Activity** (with a group). Next, review the **Collections PowerPoint Presentation** below. Then, complete the **Sort By Score Code-Along Activity**. Once that's done, work on the **Sort By Score Challenges**.
 
+## Session Recording
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/BnmuL0S3W44" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Playlist Warm-up Activity
 Once in a group, go to [this page](PlaylistWarmup.md) to complete the warm-up. A link to the multiplayer Repl project will be there, along with instructions for the activity.
 
