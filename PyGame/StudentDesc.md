@@ -5,7 +5,7 @@ Learn how to use [Pygame](https://www.pygame.org/) to build a simple top-down ga
 Play the game linked from [this page](PygameWarmup.md) to see some of what is possible with Pygame.
 
 ## Pygame PowerPoint Presentation
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/py-201/Pygame/Pygame.pptx' width='100%' height='450px' frameborder='0'></iframe>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/py-201/PyGame/Pygame.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Top-Down Game Code-Along Activity
 Follow the instructions on [this page](TopDownCodeAlong.md) to create a basic tile-based top-down game in Pygame.

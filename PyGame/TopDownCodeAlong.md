@@ -133,7 +133,7 @@ Now that the data is there for the main sprite, it's time to draw it. This will 
     - This is the same thing but for the `y` coordinate
 1. Under the `main_pos` variable, call the `display_surface.blit` function
     - For the first argument, pass in `main_sprite['img']`
-    - FOr the second argument, pass in `main_pos`
+    - For the second argument, pass in `main_pos`
 1. Run the program, and verify that the main sprite appears in the game!
 
 The new code within the body of the `while` loop should look something like this:
@@ -252,7 +252,7 @@ def move_sprite(sprite, event_key):
 Now the program can move a sprite, but it needs to know when a key is pressed. Find the body of the `while` game loop, and make some space under the `draw_sprite` function calls. Then, follow the steps below to loop through all events, figure out if a key is pressed, and call the `move_sprite` function if necessary.
 
 1. Create a `for` loop
-    - For item, name it `event
+    - For the item, name it `event`
     - For the collection, use `pygame.event.get()`
 1. In the body of the `for` loop, create an `if` statement
 1. In the `if` condition, check if `event.type == KEYDOWN`
@@ -321,8 +321,8 @@ The program also needs a way to display the final message when the game ends. De
 1. In the body of the `draw_end_text` function, call the `display_surface.fill` function
     - Pass in the `bg_color` parameter
 1. Under that, create a new variable named `text_surface`
-1. Set the `text_surface` variable to `font.render(text, False, (0, 0, 0))
-    - This creates the text with the given font and proper message
+1. Set the `text_surface` variable to `font.render(text, False, (0, 0, 0))`
+    - This creates the text with the font and passed in message
 1. On the next line, call the `display_surface.blit` function
     - Pass in `text_surface` as the first argument
     - Pass in `(120, 140)` for the second argument (this is the location on the screen)
@@ -337,7 +337,7 @@ def draw_end_text(text, bg_color):
 ```
 
 ### The `game_status` Variable
-One other thing that is typically important in a game is **state**. In this case, the game will have two states so far: `'Playing'` and `'Win'`. Create the `game_status` variable, set it appropriately, and change the game output based on the value.
+One other thing that is typically important in a game is **state**. So far, this game should have two states: `'Playing'` and `'Win'`. Create the `game_status` variable, set it appropriately, and change the game output based on the value.
 
 1. Right above the `while` loop, create a new variable named `game_status`
     - Set it to `'Playing'`
@@ -381,7 +381,7 @@ while True:
 Now it is possible to win, but the game is pretty boring. The player should not be able to simply walk right through the door. Update the game so that if they try to walk through the door without a key, they lose.
 
 ### Checking for Defeat
-If the `game_status` is `'Lose`, the game should change the background to red, and display "You Died" text.
+If the `game_status` is `'Lose'`, the game should change the background to red, and display "You Died" text.
 
 1. Under the `GREEN` variable declaration, create a new variable named `RED`
 1. Set the `RED` variable to `(255, 0, 0)`
@@ -437,7 +437,7 @@ while True:
 ```
 
 ## The Key
-Now it is possible to lose the game, but it is no longer possible to win it! The main character should need to pick up a key before going through the door. Create a new key sprite, and let the player pick it up.
+Now it is possible to lose the game, but it is no longer possible to win it! The main character should be able to pick up a key before going through the door. Create a new key sprite, and let the player pick it up.
 
 ### The `key_sprite` Dictionary
 Creating the `key_sprite` dictionary will be very similar to creating the other sprite dictionaries.

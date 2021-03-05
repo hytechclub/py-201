@@ -16,7 +16,7 @@ For an added challenge to the player, make the key appear somewhere off the scre
 Create a new color tuple and set the background to another color. This will be similar to `WHITE = (255, 255, 255)`, but with the new color and RGB values.
 
 ### 4. Create New Assets
-Using [piskel](https://piskelapp.com), MS paint, or any other drawing tool, create new assets for the **main character**, **door**, and **key**. These assets should all have a width and height of 32 pixels - otherwise, they may not appear properly.
+Using [piskel](http://piskelapp.com), MS paint, or any other drawing tool, create new assets for the **main character**, **door**, and **key**. These assets should all have a width and height of 32 pixels - otherwise, they may not appear properly.
 
 Once the new images have been created, add the files to the Repl project, and update the code to properly use them.
 
@@ -62,7 +62,7 @@ Watch this video to check out the gameplay:
 This game shows more of what is possible with a very simple set of features. Creating stories and puzzles does not require fancy 3D graphics - a game like Chip's Challenge still holds up to this day. Use it as inspiration to develop a game in the same style.
 
 ### More Tutorials
-Visit [this page](http://inventwithpython.com/pygame/) to see some additional tutorials. That site walks through the re-creation of several classic games
+Visit [this page](http://inventwithpython.com/pygame/) to see some additional tutorials. That site walks through the re-creation of several classic games.
 
 ### Other Games
 There are hundreds of games that have been created with Pygame. Take a look at [this page](https://www.pygame.org/tags/all) to see a few of them.
