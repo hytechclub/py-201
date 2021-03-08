@@ -1,5 +1,5 @@
 # Pygame Challenges
-Work on the challenges below, or come up with something entirely different! Use the [Top-down Code-Along gmae](TopDownCodeAlong.md) as a starting point.
+Work on the challenges below, or come up with something entirely different! Use the [Top-down Code-Along game](TopDownCodeAlong.md) as a starting point.
 
 ## Starter Challenges
 Start by working on these challenges to practice using Pygame.
