@@ -24,3 +24,7 @@
   - [Pygame Warm-up](PyGame/PygameWarmup.md)
   - [Top-down Code-Along](PyGame/TopDownCodeAlong.md)
   - [Pygame Challenges](PyGame/PygameChallenges.md)
+- [Week 8 - Database](Database/StudentDesc.md)
+  - [Restaurant Review Code-Along](Database/RestaurantReviewCodeAlong.md)
+  - [Database Challenges](Database/DatabaseChallenges.md)
+- [Week 9 - Final Project](FinalProject/StudentDesc.md)

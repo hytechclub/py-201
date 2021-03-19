@@ -30,9 +30,9 @@ Follow the links below to view each week of material.
 - **NO CLUB 3/31**
 - [Week 7 (4/7) - PyGame](PyGame/StudentDesc.md)
 - [Week 8 (4/14) - Repl.it DB](Database/StudentDesc.md)
-- Week 9 (4/21) - Final Project Work
-- Week 10 (4/28) - Final Project Work
-- Week 11 (5/5) - Final Project Presentations
+- [Week 9 (4/21) - Final Project Work](FinalProject/StudentDesc.md)
+- [Week 10 (4/28) - Final Project Work](FinalProject/StudentDesc.md)
+- [Week 11 (5/5) - Final Project Presentations](FinalProject/StudentDesc.md)
 
 ## Goals
 By the end of this course, each student should:
@@ -43,7 +43,7 @@ By the end of this course, each student should:
 - create at least one new, unique, and complex Python application
 
 ### Why Learn Python?
-If you have learned to code in other languages (like C# or JavaScript), learning Python can enhance your programming skills profoundly. Applying the same concepts in multiple languages will help you reinforce your mastery of those concepts, and make it much easier for you to learn new languages in the future. Python is generally less verbose than a lot of other languages, and there are so many things you can do with very few lines of code. Python is also very popular for industry and personal projects.
+If you have learned to code in other languages (like C# or JavaScript), learning Python can enhance your programming skills profoundly. Applying the same concepts in multiple languages will help reinforce your mastery of those concepts, and make it much easier for you to learn new languages in the future. Python is generally less verbose than a lot of other languages, and there are several things you can do with very few lines of code. Python is also very popular for industry and personal projects.
 
 ## Points
 Earn points throughout the semester by asking good questions, answering questions, helping others, working hard, and behaving well!
