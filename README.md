@@ -14,7 +14,6 @@ Explore the possibilities of Python in this advanced course. After learning the 
 1. [Flask Web Apps](Flask/)
 1. [PyGame](PyGame/)
 1. [Repl.it Database](Database/)
-   - Contacts List terminal app
-1. Final Project
-1. Final Project
-1. Final Project
+1. [Final Project](FinalProject/)
+1. [Final Project](FinalProject/)
+1. [Final Project](FinalProject/)
