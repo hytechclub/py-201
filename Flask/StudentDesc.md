@@ -1,6 +1,9 @@
 # Web Server with Flask
 Learn how to use [Flask](https://flask.palletsprojects.com/en/1.1.x/) to build a simple web server in Python. Start with by reading through the **Flask Basics Warm-up**. Next, complete the **Random Joke Code-Along Activity**. Once that's done, work on the **Flask Challenges**.
 
+## Session Recording
+[ShareBase Link](https://app.sharebase.com/#/document/10192852/share/3-PiknJFDc80q9uIzHYPhLtctghYE)
+
 ## Flask Basics Warm-up
 Read the overview on [this page](FlaskBasics.md) to become familiar with Flask. Don't worry about fully understanding all of it yet; just try to remember some of the key points.
 
