@@ -1,6 +1,9 @@
 # Game Development with Pygame
 Learn how to use [Pygame](https://www.pygame.org/) to build a simple top-down game in Python. Start with by playing a game in the **Pygame Warm-up**. Next, review the **Pygame PowerPoint Presentation** and complete the **Top-Down Game Code-Along Activity**. Once that's done, work on the **Pygame Challenges**.
 
+## Session Recording
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/x6-ca9iGc7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Pygame Warm-up
 Play the game linked on [this page](PygameWarmup.md) to see some of what is possible with Pygame.
 
