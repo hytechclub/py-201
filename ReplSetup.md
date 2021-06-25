@@ -1,7 +1,7 @@
 # Repl Setup for Python
-Create a **repl.it** account in order to save and share Python projects.
+Create a **Replit** account in order to save and share Python projects.
 
-1. Click the "Start coding" button on [repl.it](https://repl.it)  
+1. Click the "Start coding" button on [replit.com](https://replit.com)  
     ![](https://i.imgur.com/ygMJyvv.png)
 1. Fill out a username, email, and password, and click the "Sign up" button  
     ![](https://i.imgur.com/IkJs2cp.png)
@@ -15,8 +15,8 @@ Create a **repl.it** account in order to save and share Python projects.
 1. Click the "Create repl" button to create the new project!  
     ![](https://i.imgur.com/lSe267F.png)
 
-## Repl.it Overview
-**repl.it** is a website that allows developers to _write_ and _run_ code right from a web browser!
+## Replit Overview
+**replit** is a website that allows developers to _write_ and _run_ code right from a web browser!
 
 ![](https://i.imgur.com/IG9Y96K.png)
 
