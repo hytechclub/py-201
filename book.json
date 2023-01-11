@@ -3,5 +3,6 @@
         "readme": "BOOKREADME.md",
         "summary": "SUMMARY.md"
     },
+    "title": "Python 201",
     "plugins": ["toggle-chapters"]
 }
