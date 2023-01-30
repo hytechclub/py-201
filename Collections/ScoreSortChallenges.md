@@ -4,10 +4,10 @@ After completing the [code-along](ScoreSortCodeAlong.md), attempt the challenges
 ## _Optional Practice: Bug Fixes_
 View these buggy Repl projects and try to fix them. To make things easier, reference the completed code from the code-along, and compare it to the buggy code. Test each program and make sure that they all work properly!
 
-- [Bug 1](https://repl.it/@JosephMaxwell/ScoreSortBug-1)
-- [Bug 2](https://repl.it/@JosephMaxwell/ScoreSortBug-2)
-- [Bug 3](https://repl.it/@JosephMaxwell/ScoreSortBug-3)
-- [Bug 4](https://repl.it/@JosephMaxwell/ScoreSortBug-4)
+- [Bug 1](https://replit.com/@JosephMaxwell/ScoreSortBug-1)
+- [Bug 2](https://replit.com/@JosephMaxwell/ScoreSortBug-2)
+- [Bug 3](https://replit.com/@JosephMaxwell/ScoreSortBug-3)
+- [Bug 4](https://replit.com/@JosephMaxwell/ScoreSortBug-4)
   - Note: there are **3** bugs in the last one!
 
 ## 1. Add More Data

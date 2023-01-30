@@ -4,7 +4,7 @@ In this activity, build a rudimentary top-down game using [Pygame](https://www.p
 ## Setting Up
 Get ready to go with a starter project.
 
-1. Go to this [Starter Repl Project](https://repl.it/@HylandOutreach/Top-Down-Game#main.py)
+1. Go to this [Starter Repl Project](https://replit.com/@HylandOutreach/Top-Down-Game#main.py)
 1. Click the "Fork" button
 1. Log into Repl if necessary
 1. Open the **main.py** file

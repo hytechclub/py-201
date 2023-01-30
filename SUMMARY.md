@@ -1,4 +1,5 @@
-- [Repl Setup](ReplSetup.md)
+- [Python 201](BOOKREADME.md)
+- [Repl Setup](https://hylandtechclub.com/ReplitSetup)
 - [Week 1 - Hello Python](HelloPython/StudentDesc.md)
   - [Turtle Code-Along](HelloPython/TurtleCodeAlong.md)
   - [Turtle Challenges](HelloPython/TurtleChallenges.md)

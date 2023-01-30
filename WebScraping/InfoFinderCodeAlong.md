@@ -2,7 +2,9 @@
 In this activity, create a program that uses Wikipedia to find information. The goal is for the user to enter a search term, and then show the first paragraph of the Wikipedia article for that subject.
 
 ## Setting Up
-1. Go to [repl.it](https://repl.it)
+Set up by creating a new Replit project.
+
+1. Go to [Replit](https://replit.com)
 1. Log in
 1. Create a new Python Repl project named "Info Finder"
 

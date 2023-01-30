@@ -109,4 +109,4 @@ At this point, any person who enters the application will be able to add a revie
 Feel free to learn more about authentication before diving into this challenge.
 
 ## Beyond
-There are infinite possibilities with the Repl.it DB. Try to build a completely new application, possibly a Flask web app, a Pygame game, or a Discord bot, that uses a database. This can also lead directly into the [final project](../FinalProject/StudentDesc.md).
+There are infinite possibilities with the Replit DB. Try to build a completely new application, possibly a Flask web app, a Pygame game, or a Discord bot, that uses a database. This can also lead directly into the [final project](../FinalProject/StudentDesc.md).

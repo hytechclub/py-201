@@ -13,7 +13,7 @@ The [activity](InfoFinderCodeAlong.md) walks through the construction of an info
 ## Challenges
 The [challenges](InfoFinderChallenges.md) task students with building on the information-finding application.
 
-## Suggested Schedule 
+## Agenda 
 | Activity | Time |
 |-|-|
 | Warm-up Activity | 20m |

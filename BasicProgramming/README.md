@@ -26,7 +26,7 @@ The [activity](RPSCodeAlong.md) walks through the construction of a console-base
 ## Challenges
 The [challenges](RPSChallenges.md) task students with building on the Rock Paper Scissors game.
 
-## Suggested Schedule 
+## Agenda 
 | Activity | Time |
 |-|-|
 | Warm-up Activity | 15m |

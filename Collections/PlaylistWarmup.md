@@ -3,10 +3,10 @@ The goal of this warm-up is to create a playlist program. This program will prin
 
 This activity should be completed in groups. **Each group will present their playlist at the end of the activity**. Here are the multiplayer Repl projects for the groups:
 
-- Group 1: https://repl.it/join/lftiuzlq-josephmaxwell
-- Group 2: https://repl.it/join/tmtybbae-josephmaxwell
-- Group 3: https://repl.it/join/antfmhcx-josephmaxwell
-- Group 4: https://repl.it/join/empfwtps-josephmaxwell
+- Group 1: https://replit.com/join/uaborkiuzb-hylandoutreach
+- Group 2: https://replit.com/join/msfvutocvf-hylandoutreach
+- Group 3: https://replit.com/join/rzvofsiwbx-hylandoutreach
+- Group 4: https://replit.com/join/njidlpvysl-hylandoutreach
 
 Click on the link for your assigned group to begin.
 

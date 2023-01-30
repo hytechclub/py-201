@@ -1,10 +1,10 @@
 # Flask Basics Warm-up Activity
 [Flask](https://flask.palletsprojects.com/en/1.1.x/foreword/) is a Python web framework - a tool for creating web applications with Python. Read through some of the basic concepts to become familiar with them.
 
-## Flask Boiler-Plate and Repl.it
-When creating a new Python project on [repl.it](https://repl.it), it is possible to load some Flask boiler-plate code. Running that code will spin up a webserver. Repl.it hosts the server and navigates to the website. It looks like this:
+## Flask Boiler-Plate and Replit
+When creating a new Python project on [Replit](https://replit.com), it is possible to load some Flask boiler-plate code. Running that code will spin up a webserver. Replit hosts the server and navigates to the website. It looks like [this](https://replit.com/@JosephMaxwell/FlaskBoilerPlate#main.py):
 
-<iframe height="1000px" width="100%" src="https://repl.it/@JosephMaxwell/FlaskBoilerPlate?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+![](Assets/FlaskExampleReplit.png)
 
 ## Routing
 When building a web app, it is important to determine which things happen at which URLs. This is called _routing_.

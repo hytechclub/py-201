@@ -4,10 +4,10 @@ After completing the [code-along](RPSCodeAlong.md), attempt the challenges below
 ## _Optional Practice: Bug Fixes_
 View these buggy Repl projects and try to fix them. Test the program and make sure that all outcomes are reachable.
 
-- [Bug 1](https://repl.it/@JosephMaxwell/RPSBug-1#main.py)
-- [Bug 2](https://repl.it/@JosephMaxwell/RPSBug-2#main.py)
-- [Bug 3](https://repl.it/@JosephMaxwell/RPSBug-3#main.py)
-- [Bug 4](https://repl.it/@JosephMaxwell/RPSBug-4#main.py)
+- [Bug 1](https://replit.com/@JosephMaxwell/RPSBug-1#main.py)
+- [Bug 2](https://replit.com/@JosephMaxwell/RPSBug-2#main.py)
+- [Bug 3](https://replit.com/@JosephMaxwell/RPSBug-3#main.py)
+- [Bug 4](https://replit.com/@JosephMaxwell/RPSBug-4#main.py)
 
 ## 1. Nicer Printing
 While the program should be functional after the code-along, it does not have the best user experience. Update the code to make it a little easier to read for the user.

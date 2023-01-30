@@ -2,7 +2,7 @@
 Complete the activity below to review some HTML and CSS concepts.
 
 ## Getting Started
-1. Open the [starter Repl project](https://repl.it/@JosephMaxwell/WebScrapingWarmUp#index.html)
+1. Open the [starter Repl project](https://replit.com/@JosephMaxwell/WebScrapingWarmUp#index.html)
 1. Fork the project, making sure to be logged in
 1. Run the code to see how it works so far
 

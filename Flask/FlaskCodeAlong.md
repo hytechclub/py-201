@@ -2,7 +2,9 @@
 In this activity, create a Flask Web Server that serves a random joke website. The goal is for the user to be able to see a random joke every time the joke page loads.
 
 ## Setting Up
-1. Go to [repl.it](https://repl.it)
+Luckily, there is code for a basic Flask app built into Replit through an example.
+
+1. Go to [Replit](https://replit.com)
 1. Log in
 1. Create a new Python Repl project named "Random Joke Website"
 1. At the top of the **main.py** file, click on the "examples" link  
@@ -46,7 +48,7 @@ Update the `hello_world` function so that it returns `<h1>Hello, World!</h1>`. R
 ### Creating an HTML File
 This is working, but it would be difficult to write an entire HTML document in Python. Luckily, the `Flask` library has the ability to render full HTML files too. The first step is to create one.
 
-1. On the left side of the Repl.it page, click the "Add folder" icon  
+1. On the left side of the Replit page, click the "Add folder" icon  
     ![](https://i.imgur.com/8xPcA41.png)
 1. Enter "templates" for the folder name, and press **Enter**  
     ![](https://i.imgur.com/gxAoC8N.png)
@@ -262,7 +264,7 @@ Add the following code to the **home.html** and **joke.html** files (within the 
 ```
 
 ### Seeing the Website
-Sometimes, Repl.it has issues with static CSS files. This is because they can be cached, which means they don't always refresh with changes.
+Sometimes, Replit has issues with static CSS files. This is because they can be cached, which means they don't always refresh with changes.
 
 To help with this, open the Repl project in another tab:
 ![](https://i.imgur.com/L3KNb5f.png)
@@ -270,7 +272,7 @@ To help with this, open the Repl project in another tab:
 From there, it should be possible to press **Ctrl**+**F5** to clear the cache and refresh the page. Verify that the pages are nicely styled!
 
 ## Final Code
-Review the final code for each file. Make sure to note the folder structure of the project. There is also a [Repl project](https://repl.it/@JosephMaxwell/FlaskCodeAlongSimplified) containing the complete web app.
+Review the final code for each file. Make sure to note the folder structure of the project. There is also a [Repl project](https://replit.com/@JosephMaxwell/FlaskCodeAlongSimplified) containing the complete web app.
 
 **main.py**
 ```py
