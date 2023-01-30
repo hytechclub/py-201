@@ -15,6 +15,8 @@ Complete a warm-up activity to kick off the meeting. This warm-up is designed to
 1. When all groups are complete, bring everybody back to the main room
 1. Have each group present their work
 
+[Here is a base version of the Multiplayer Repl the teams should fork.](https://replit.com/@HylandOutreach/PlaylistWarmUp-Base)
+
 ## PowerPoint Presentation
 Present the [Collections](Collections.pptx) PowerPoint Presentation. Review the presentation ahead of time, including the notes in the slides. There are several animations.
 
@@ -27,7 +29,7 @@ The [activity](ScoreSortCodeAlong.md) walks through the construction of a sort-b
 ## Challenges
 The [challenges](ScoreSortChallenges.md) task students with building on the sort-by-score application.
 
-## Suggested Schedule 
+## Agenda 
 | Activity | Time |
 |-|-|
 | Warm-up Activity | 25m |

@@ -18,7 +18,7 @@ The [challenges](FlaskChallenges.md) task students with building on the existing
 ## Student Presentations
 Toward the end of the meeting, have each student present their websites. They are not required to complete any of the challenges, other than updating the list of random jokes/quotes. The purpose of this is not to test the students or put them on the spot; it is meant to be fun.
 
-## Suggested Schedule 
+## Agenda 
 | Activity | Time |
 |-|-|
 | Warm-up Activity | 10m |

@@ -2,7 +2,9 @@
 In this activity, create a program that can sort some players by their score. The sport/game/event in which they participate is up to you! These could be tennis players, basketball players, chess players, Super Smash Bros Melee players, or anything at all. The important thing is that they must have some numeric "score" attached to them.
 
 ## Setting Up
-1. Go to [repl.it](https://repl.it)
+Set up by creating a new Replit project.
+
+1. Go to [Replit](https://replit.com)
 1. Log in
 1. Create a new Python Repl project named "Score Sort"
 

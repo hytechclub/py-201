@@ -1,10 +1,10 @@
 # Restaurant Review Code-Along
-In this activity, use [Repl.it's Database](https://docs.repl.it/misc/database) to create a console-based Restaurant Review application. The most interesting part of this program will be that the data stored in the application will persist across runs.
+In this activity, use [Replit's Database](https://docs.replit.com/hosting/databases/replit-database) to create a console-based Restaurant Review application. The most interesting part of this program will be that the data stored in the application will persist across runs.
 
 ## Getting Started
 There is a starter version of the app, but it is really just the facade with no functionality. It has all the "user interface" without the actual data; a `while` loop menu, and functions to retrieve information from the user and presumably create, read, update, and delete reviews. All that's missing is the actual database.
 
-1. Go to the [starter Repl project](https://repl.it/@HylandOutreach/FakeYelpStart)
+1. Go to the [starter Repl project](https://replit.com/@HylandOutreach/FakeYelpStart)
 1. Click the "Fork" button to fork it
 1. Run the application to see how it currently works
 
@@ -82,10 +82,10 @@ review = {
 }
 ```
 
-Those dictionaries would then be stored within the Repl.it database.
+Those dictionaries would then be stored within the Replit database.
 
 ### Keys
-Because the Repl.it database uses a simple key-value store, different types of data can be represented with _prefixes_. For example, each review object stored in the database could have a key that begins with `review_`. That way, it would be possible to find all review keys using `db.prefix`:
+Because the Replit database uses a simple key-value store, different types of data can be represented with _prefixes_. For example, each review object stored in the database could have a key that begins with `review_`. That way, it would be possible to find all review keys using `db.prefix`:
 
 ```py
 review_keys = db.prefix("review_")
@@ -152,7 +152,7 @@ review_1 = db[db_key]
 Now that the structure of the database has been determined, it's time to start using it.
 
 ## [CREATE] Adding a Review
-The first thing to do when working with the Repl.it database is add some data to it! Create a function that can add a new review to the database. The function should take in the various **Review** object properties as parameters. It should generate a new ID, increment the next ID, create a db key, create the dictionary object, and add the object to the db with the key.
+The first thing to do when working with the Replit database is add some data to it! Create a function that can add a new review to the database. The function should take in the various **Review** object properties as parameters. It should generate a new ID, increment the next ID, create a db key, create the dictionary object, and add the object to the db with the key.
 
 ### Function Definition - Setup
 Start with the stubbed out form of the function definition.
@@ -509,6 +509,6 @@ def delete_review(review_id):
 ```
 
 ## Next Steps
-While this app may be quite simple, it demonstrates some of the key capabilities of the Repl.it database. Working from these fundamentals, it is possible to build almost anything. Databases can be incorporated into any type of app, be it a web server, a game, a discord bot, or anything else.
+While this app may be quite simple, it demonstrates some of the key capabilities of the Replit database. Working from these fundamentals, it is possible to build almost anything. Databases can be incorporated into any type of app, be it a web server, a game, a discord bot, or anything else.
 
 Feel free to experiment further with the database functionality. If desired, there are some guided [challenges](DatabaseChallenges.md) to complete as well.

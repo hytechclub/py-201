@@ -2,7 +2,9 @@
 Follow the instructions below to create a simple Rock Paper Scissors game in Python!
 
 ## Setting Up
-1. Go to [repl.it](https://repl.it)
+Set up by creating a new Replit project.
+
+1. Go to [Replit](https://replit.com)
 1. Log in
 1. Create a new Python Repl project named "Rock Paper Scissors"
 

@@ -100,7 +100,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Python 201
             
                 </a>
             
@@ -108,9 +108,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../ReplSetup.md">
+        <li class="chapter " data-level="1.2" >
             
-                <span>
+                <a target="_blank" href="https://hylandtechclub.com/ReplitSetup">
             
                     
                     Repl Setup
@@ -605,11 +605,11 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="restaurant-review-code-along">Restaurant Review Code-Along</h1>
-<p>In this activity, use <a href="https://docs.repl.it/misc/database" target="_blank">Repl.it&apos;s Database</a> to create a console-based Restaurant Review application. The most interesting part of this program will be that the data stored in the application will persist across runs.</p>
+<p>In this activity, use <a href="https://docs.replit.com/hosting/databases/replit-database" target="_blank">Replit&apos;s Database</a> to create a console-based Restaurant Review application. The most interesting part of this program will be that the data stored in the application will persist across runs.</p>
 <h2 id="getting-started">Getting Started</h2>
 <p>There is a starter version of the app, but it is really just the facade with no functionality. It has all the &quot;user interface&quot; without the actual data; a <code>while</code> loop menu, and functions to retrieve information from the user and presumably create, read, update, and delete reviews. All that&apos;s missing is the actual database.</p>
 <ol>
-<li>Go to the <a href="https://repl.it/@HylandOutreach/FakeYelpStart" target="_blank">starter Repl project</a></li>
+<li>Go to the <a href="https://replit.com/@HylandOutreach/FakeYelpStart" target="_blank">starter Repl project</a></li>
 <li>Click the &quot;Fork&quot; button to fork it</li>
 <li>Run the application to see how it currently works</li>
 </ol>
@@ -678,9 +678,9 @@
     <span class="hljs-string">&apos;text&apos;</span>: <span class="hljs-string">&apos;I ordered a burrito with only guacamole in it and it was delicious&apos;</span>
 }
 </code></pre>
-<p>Those dictionaries would then be stored within the Repl.it database.</p>
+<p>Those dictionaries would then be stored within the Replit database.</p>
 <h3 id="keys">Keys</h3>
-<p>Because the Repl.it database uses a simple key-value store, different types of data can be represented with <em>prefixes</em>. For example, each review object stored in the database could have a key that begins with <code>review_</code>. That way, it would be possible to find all review keys using <code>db.prefix</code>:</p>
+<p>Because the Replit database uses a simple key-value store, different types of data can be represented with <em>prefixes</em>. For example, each review object stored in the database could have a key that begins with <code>review_</code>. That way, it would be possible to find all review keys using <code>db.prefix</code>:</p>
 <pre><code class="lang-py">review_keys = db.prefix(<span class="hljs-string">&quot;review_&quot;</span>)
 <span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> review_keys:
     review = db[key]
@@ -729,7 +729,7 @@ review_1 = db[db_key]
 </code></pre>
 <p>Now that the structure of the database has been determined, it&apos;s time to start using it.</p>
 <h2 id="create-adding-a-review">[CREATE] Adding a Review</h2>
-<p>The first thing to do when working with the Repl.it database is add some data to it! Create a function that can add a new review to the database. The function should take in the various <strong>Review</strong> object properties as parameters. It should generate a new ID, increment the next ID, create a db key, create the dictionary object, and add the object to the db with the key.</p>
+<p>The first thing to do when working with the Replit database is add some data to it! Create a function that can add a new review to the database. The function should take in the various <strong>Review</strong> object properties as parameters. It should generate a new ID, increment the next ID, create a db key, create the dictionary object, and add the object to the db with the key.</p>
 <h3 id="function-definition---setup">Function Definition - Setup</h3>
 <p>Start with the stubbed out form of the function definition.</p>
 <ol>
@@ -1069,7 +1069,7 @@ success = reviews.delete_review(delete_id)
   <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
 </code></pre>
 <h2 id="next-steps">Next Steps</h2>
-<p>While this app may be quite simple, it demonstrates some of the key capabilities of the Repl.it database. Working from these fundamentals, it is possible to build almost anything. Databases can be incorporated into any type of app, be it a web server, a game, a discord bot, or anything else.</p>
+<p>While this app may be quite simple, it demonstrates some of the key capabilities of the Replit database. Working from these fundamentals, it is possible to build almost anything. Databases can be incorporated into any type of app, be it a web server, a game, a discord bot, or anything else.</p>
 <p>Feel free to experiment further with the database functionality. If desired, there are some guided <a href="DatabaseChallenges.html">challenges</a> to complete as well.</p>
 
                                 
@@ -1114,7 +1114,7 @@ success = reviews.delete_review(delete_id)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Restaurant Review Code-Along","level":"1.11.1","depth":2,"next":{"title":"Database Challenges","level":"1.11.2","depth":2,"path":"Database/DatabaseChallenges.md","ref":"Database/DatabaseChallenges.md","articles":[]},"previous":{"title":"Week 9 - Database","level":"1.11","depth":1,"path":"Database/StudentDesc.md","ref":"Database/StudentDesc.md","articles":[{"title":"Restaurant Review Code-Along","level":"1.11.1","depth":2,"path":"Database/RestaurantReviewCodeAlong.md","ref":"Database/RestaurantReviewCodeAlong.md","articles":[]},{"title":"Database Challenges","level":"1.11.2","depth":2,"path":"Database/DatabaseChallenges.md","ref":"Database/DatabaseChallenges.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"Database/RestaurantReviewCodeAlong.md","mtime":"2023-01-11T16:57:53.985Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-11T16:58:27.193Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Restaurant Review Code-Along","level":"1.11.1","depth":2,"next":{"title":"Database Challenges","level":"1.11.2","depth":2,"path":"Database/DatabaseChallenges.md","ref":"Database/DatabaseChallenges.md","articles":[]},"previous":{"title":"Week 9 - Database","level":"1.11","depth":1,"path":"Database/StudentDesc.md","ref":"Database/StudentDesc.md","articles":[{"title":"Restaurant Review Code-Along","level":"1.11.1","depth":2,"path":"Database/RestaurantReviewCodeAlong.md","ref":"Database/RestaurantReviewCodeAlong.md","articles":[]},{"title":"Database Challenges","level":"1.11.2","depth":2,"path":"Database/DatabaseChallenges.md","ref":"Database/DatabaseChallenges.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"Database/RestaurantReviewCodeAlong.md","mtime":"2023-01-30T20:41:32.411Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-30T20:42:04.455Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

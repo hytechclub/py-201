@@ -100,7 +100,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Python 201
             
                 </a>
             
@@ -108,9 +108,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../ReplSetup.md">
+        <li class="chapter " data-level="1.2" >
             
-                <span>
+                <a target="_blank" href="https://hylandtechclub.com/ReplitSetup">
             
                     
                     Repl Setup
@@ -607,8 +607,9 @@
                                 <h1 id="random-joke-website">Random Joke Website</h1>
 <p>In this activity, create a Flask Web Server that serves a random joke website. The goal is for the user to be able to see a random joke every time the joke page loads.</p>
 <h2 id="setting-up">Setting Up</h2>
+<p>Luckily, there is code for a basic Flask app built into Replit through an example.</p>
 <ol>
-<li>Go to <a href="https://repl.it" target="_blank">repl.it</a></li>
+<li>Go to <a href="https://replit.com" target="_blank">Replit</a></li>
 <li>Log in</li>
 <li>Create a new Python Repl project named &quot;Random Joke Website&quot;</li>
 <li>At the top of the <strong>main.py</strong> file, click on the &quot;examples&quot; link<br> <img src="https://i.imgur.com/LL0KY6R.png" alt=""></li>
@@ -642,7 +643,7 @@ app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>, port=<span cl
 <h3 id="creating-an-html-file">Creating an HTML File</h3>
 <p>This is working, but it would be difficult to write an entire HTML document in Python. Luckily, the <code>Flask</code> library has the ability to render full HTML files too. The first step is to create one.</p>
 <ol>
-<li>On the left side of the Repl.it page, click the &quot;Add folder&quot; icon<br> <img src="https://i.imgur.com/8xPcA41.png" alt=""></li>
+<li>On the left side of the Replit page, click the &quot;Add folder&quot; icon<br> <img src="https://i.imgur.com/8xPcA41.png" alt=""></li>
 <li>Enter &quot;templates&quot; for the folder name, and press <strong>Enter</strong><br> <img src="https://i.imgur.com/gxAoC8N.png" alt=""></li>
 <li>Click the three dots by the &quot;templates&quot; folder, and then the &quot;Add file&quot; button<br> <img src="https://i.imgur.com/Oh396ma.png" alt=""></li>
 <li>Enter &quot;home.html&quot; for the name of the file</li>
@@ -824,12 +825,12 @@ app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>, port=<span cl
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
 <h3 id="seeing-the-website">Seeing the Website</h3>
-<p>Sometimes, Repl.it has issues with static CSS files. This is because they can be cached, which means they don&apos;t always refresh with changes.</p>
+<p>Sometimes, Replit has issues with static CSS files. This is because they can be cached, which means they don&apos;t always refresh with changes.</p>
 <p>To help with this, open the Repl project in another tab:
 <img src="https://i.imgur.com/L3KNb5f.png" alt=""></p>
 <p>From there, it should be possible to press <strong>Ctrl</strong>+<strong>F5</strong> to clear the cache and refresh the page. Verify that the pages are nicely styled!</p>
 <h2 id="final-code">Final Code</h2>
-<p>Review the final code for each file. Make sure to note the folder structure of the project. There is also a <a href="https://repl.it/@JosephMaxwell/FlaskCodeAlongSimplified" target="_blank">Repl project</a> containing the complete web app.</p>
+<p>Review the final code for each file. Make sure to note the folder structure of the project. There is also a <a href="https://replit.com/@JosephMaxwell/FlaskCodeAlongSimplified" target="_blank">Repl project</a> containing the complete web app.</p>
 <p><strong>main.py</strong></p>
 <pre><code class="lang-py"><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask, render_template
 <span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> choice
@@ -953,7 +954,7 @@ app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>, port=<span cl
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Random Joke Code-Along","level":"1.9.2","depth":2,"next":{"title":"Flask Challenges","level":"1.9.3","depth":2,"path":"Flask/FlaskChallenges.md","ref":"Flask/FlaskChallenges.md","articles":[]},"previous":{"title":"Flask Basics Warm-up","level":"1.9.1","depth":2,"path":"Flask/FlaskBasics.md","ref":"Flask/FlaskBasics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"Flask/FlaskCodeAlong.md","mtime":"2023-01-11T16:57:54.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-11T16:58:27.193Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Random Joke Code-Along","level":"1.9.2","depth":2,"next":{"title":"Flask Challenges","level":"1.9.3","depth":2,"path":"Flask/FlaskChallenges.md","ref":"Flask/FlaskChallenges.md","articles":[]},"previous":{"title":"Flask Basics Warm-up","level":"1.9.1","depth":2,"path":"Flask/FlaskBasics.md","ref":"Flask/FlaskBasics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"Flask/FlaskCodeAlong.md","mtime":"2023-01-30T20:41:32.503Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-30T20:42:04.455Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

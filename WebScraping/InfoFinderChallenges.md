@@ -4,10 +4,10 @@ After completing the [code-along](InfoFinderCodeAlong.md), attempt the challenge
 ## _Optional Practice: Bug Fixing_
 Find and fix all of the bugs in the programs below. Note that the projects may have multiple bugs - fix all of them!
 
-- [Bug 1](https://repl.it/@JosephMaxwell/WSBug-1#main.py)
-- [Bug 2](https://repl.it/@JosephMaxwell/WSBug-2#main.py)
-- [Bug 3](https://repl.it/@JosephMaxwell/WSBug-3#main.py)
-- [Bug 4](https://repl.it/@JosephMaxwell/WSBug-4#main.py)
+- [Bug 1](https://replit.com/@JosephMaxwell/WSBug-1#main.py)
+- [Bug 2](https://replit.com/@JosephMaxwell/WSBug-2#main.py)
+- [Bug 3](https://replit.com/@JosephMaxwell/WSBug-3#main.py)
+- [Bug 4](https://replit.com/@JosephMaxwell/WSBug-4#main.py)
 
 ## 1. All Paragraphs
 Get back into the Info Finder code. Update it so that instead of simply displaying the first paragraph, it displays all of them.

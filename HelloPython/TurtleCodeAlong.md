@@ -4,9 +4,9 @@ In this introductory activity, use [turtle graphics](https://en.wikipedia.org/wi
 ![](https://upload.wikimedia.org/wikipedia/commons/f/f9/Emoji_u1f422.svg)
 
 ## Getting Started
-Setup using **repl.it** is fairly simple.
+Setup using **Replit** is fairly simple.
 
-1. Go to the [TurtleStart](https://repl.it/@JosephMaxwell/TurtleStart#main.py) repl.it project
+1. Go to the [TurtleStart](https://replit.com/@JosephMaxwell/TurtleStart#main.py) Replit project
 1. Fork the project, and make sure to log in!
 1. In the code section, add the following line to _import_ everything from the **turtle** library:
     ```py
@@ -86,6 +86,7 @@ shelly.forward(50)
 Click the Run button to see the turtle move across the screen! Specifically, it moves **forward** `50` pixels in the direction it is currently facing (90 degrees).
 
 It is also possible to turn the turtle. Add the following command on the next line:
+
 ```python
 shelly.right(90)
 ```
@@ -96,6 +97,7 @@ Run the program again to see the turtle move to the right, then turn to face dow
 
 ### Drawing a Square
 Add the following commands to the file, under the existing commands:
+
 ```python
 shelly.forward(50)
 shelly.right(90)
@@ -126,6 +128,7 @@ crush.color("white")
 This new turtle will be completely separate from the other one. Instead of drawing a square, it will draw a circle.
 
 Add the following code to draw a half circle:
+
 ```py
 crush.circle(50, 180)
 ```
@@ -138,6 +141,7 @@ In the example, the radius of the circle will be `50`, and it will complete a `1
 Currently, the two turtles are kind of on top of each other. Fix this by adding a new starting point for the `crush` turtle.
 
 _Before_ the commands that make crush draw the circle, add the following command:
+
 ```python
 crush.setpos(-100, 100)
 ```
@@ -148,6 +152,7 @@ Run the program to see what happens. Crush moves, but there is another issue now
 When Crush moves to the starting point, the pen draws an extra line! Instead of doing this, the program should lift up the pen before this movement.
 
 When working with turtles, it is possible to control whether the pen is "up" or "down" (like real life drawing). _Before_ the `crush.setpos` command, add the following command:
+
 ```python
 crush.penup()
 ```
@@ -156,6 +161,7 @@ This will allow Crush to move without drawing anything! Run the program to see w
 
 #### Putting the Pen Back Down
 Oh no! After lifting up the pen, Crush no longer draws the triangle! Fix this by adding the following command _after_ the `crush.setpos` command:
+
 ```python
 crush.pendown()
 ```
@@ -176,6 +182,8 @@ shelly.color("gold")
 paper = shelly.getscreen()
 paper.bgcolor("maroon")
 
+shelly.forward(50)
+shelly.right(90)
 shelly.forward(50)
 shelly.right(90)
 shelly.forward(50)
