@@ -606,219 +606,240 @@
                                 
                                 <h1 id="discord-chat-bot">Discord Chat Bot</h1>
 <p>In this activity, create a Discord chat bot that can respond to messages in a Discord server. How the chat bot responds and what it says is for you to decide! The chat bot could respond to common phrases, or respond to commands with useful features like rolling dice, posting pictures, or acting as a calculator.</p>
-<h2 id="setting-up">Setting Up</h2>
+<h2 id="part-1-running-the-starter-bot">Part 1: Running the Starter Bot</h2>
+<p>The most involved part of this activity will be getting the basic bot connected to Discord. This does not involve changing any code - it&apos;s all setup. Follow these instructions to join the sandbox server, create the bot application, and hooking up the code.</p>
+<h3 id="joining-the-sandbox-server">Joining the Sandbox Server</h3>
+<p><a href="https://discord.gg/9T7y7R9CJY" target="_blank">Click here to join the Sandbox Server.</a></p>
+<p>You will need a Discord account to complete this activity. If you do not have one, you can follow <a href="https://hylandtechclub.com/DiscordUse#setup" target="_blank">these instructions</a> after clicking the invite link above.</p>
+<h3 id="creating-the-bot-application-in-discord">Creating the Bot Application in Discord</h3>
+<p>After you&apos;ve joined the server, you need to create the <strong>Application</strong>. You can create many types of Discord applications, including bots!</p>
 <ol>
-<li>Go to <a href="https://repl.it" target="_blank">repl.it</a></li>
-<li>Log in</li>
-<li>Fork the <a href="https://repl.it/@brebory/HyTechClub-Robot-Start" target="_blank">HyTechClub-Robot-Start repl</a></li>
-<li>Make sure you have a Discord account so you can create and register your bot</li>
-</ol>
-<h2 id="creating-and-registering-the-bot">Creating and Registering the Bot</h2>
-<p>The first step is to navigate to the <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a>. You&apos;ll be prompted to log in, so use your Discord account that you created during set up.</p>
-<ol>
-<li>Make sure that you&apos;re on the Applications tab, and then click the blue &quot;New Application&quot; button in the top right</li>
-<li>The &quot;Create An Application&quot; dialog will appear, so give your appliction a name, then click Create</li>
-<li>You will be taken to your new application&apos;s General Information page. In the left-hand sidebar, click on &quot;Bot&quot;</li>
-<li>On the Bot page, click the &quot;Add Bot&quot; button</li>
-</ol>
-<p>If you get an error about &quot;Too many users share this name&quot;, then you will need to change your application&apos;s name on the General Information page first, then try again with the new name.</p>
-<h2 id="saving-the-bot-token-in-the-env-file">Saving the Bot Token in the .env File</h2>
-<p>Repl.it has a special feature that allows you to create environment variables for your Repl application. In your Repl, create a new file called <code>.env</code>. In this plaintext file, you can create environment variables by making key-value pairs like this:</p>
-<pre><code class="lang-text">ENVIRONMENT_VARIABLE_NAME=Value
-ANOTHER_VARIABLE=anothervalue
-</code></pre>
-<p>Each environment variable should be on it&apos;s own line within this file.</p>
-<ol>
-<li>In the .env file, create a new variable called <code>DISCORD_BOT_SECRET</code></li>
-<li>Back in the Discord Developer Portal, navigate to your bot&apos;s page, and find the &quot;Copy&quot; button for your bot&apos;s &quot;Token&quot;
-<img src="discord-bot-settings-cropped.jpg" alt="Discord Bot Settings"></li>
-<li>Click the copy button and paste the Bot Token into your Repl&apos;s <code>.env</code> file</li>
-</ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-text">DISCORD_BOT_SECRET=ABCD.EFGHIJKLMNOPQR.STUVWXYZ
-</code></pre>
-<p>Your secret value should exactly match the value that you copied from your discord bot page.</p>
-<h2 id="adding-the-bot-to-the-sandbox-server">Adding the Bot to the Sandbox Server</h2>
-<ol>
-<li>If you haven&apos;t already created a Discord account, you&apos;ll need to for this step</li>
-<li>Join the <a href="https://discord.gg/7VUAKkHEvm" target="_blank">Hy-Tech Club Chat Bot Sandbox</a></li>
-<li>In the <code>#welcome</code> channel, click the beaker reaction on MEE6&apos;s message to give yourself the Bot Tester role</li>
-<li><p>Copy the &quot;Client ID&quot; from your Discord Application</p>
-<p> <img src="discord-app-settings-cropped.jpg" alt="Discord Application Client ID"></p>
+<li>Go to your <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a><ul>
+<li>Note: you must be logged into Discord in the browser for this</li>
+</ul>
 </li>
-<li><p>Invite your bot to the Sandbox server by opening your bot&apos;s invite link in a browser. Use the following link format, but replace the <code>client_id</code> url parameter with your application&apos;s client id</p>
-<p> <a href="https://discord.com/oauth2/authorize?client_id=xxxxxx&amp;scope=bot" target="_blank">https://discord.com/oauth2/authorize?client_id=xxxxxx&amp;scope=bot</a></p>
-</li>
-<li><p>Follow the prompts in the dialog to add your bot</p>
-<p> <img src="discord-bot-add-to-server.jpg" alt="Discord Bot Invite"></p>
-</li>
+<li>Click the &quot;New Application&quot; button in the upper right<br> <img src="Assets/NewApplicationButton.png" alt=""></li>
+<li>Enter a unique name for your bot (e.g., &quot;Robot Bot&quot;) and click the &quot;Create&quot; button<br> <img src="Assets/CreateAppName.png" alt=""></li>
+<li>From the menu on the left, click the &quot;Bot&quot; option</li>
+<li>On that page, click the &quot;Add Bot&quot; button on the right<br> <img src="Assets/AddBot.png" alt=""></li>
+<li>When the pop-up appears, click the &quot;Yes, do it!&quot; button
+ <img src="Assets/AddBotYesDoIt.png" alt=""></li>
 </ol>
-<h2 id="testing-the-bot">Testing the Bot</h2>
-<p>With the starter code from the Repl, your Bot Token in the <code>.env</code> file, and your bot added to the Hy-Tech Club Bot Testing Sandbox, you should now be able to run your Repl and see your bot successfully log in! Click the Run button at the top of the repl and you should see output similar to the following, except the username should match the username that you gave your bot. Additionally, in the list of users for the Hy-Tech Club Bot Testing Sandbox, your bot should appear as online.</p>
-<pre><code class="lang-text">Logged in as: HyTechClub Robot#9248
-Command prefix is: !
-</code></pre>
-<h2 id="using-the-discordpy-library">Using the discord.py Library</h2>
-<p>For the rest of the lesson, we will be using the <a href="https://pypi.org/project/discord.py/" target="_blank">discord.py</a> library. <a href="https://repl.it" target="_blank">Repl.it</a> automatically handles downloading the library for you when you <code>import</code> it, thanks to the <a href="https://python-poetry.org" target="_blank">Poetry Package Manager</a>. When you run your Repl, you will see output similar to the following:</p>
-<pre><code class="lang-text">Repl.it: Updating package configuration
+<video width="100%" height="450px" controls>
+  <source src="Assets/DoIt.mp4" type="video/mp4">
+</video>
 
---&gt; python3 -m poetry install
-Installing dependencies from lock file
-
-
-Package operations: 2 installs, 2 updates, 0 removals
-
-  - Updating idna (2.10 -&gt; 3.1)
-  - Updating chardet (4.0.0 -&gt; 3.0.4)
-  - Installing discord.py (1.6.0)
-  - Installing discord (1.0.1)
-</code></pre>
-<p>You will want to reference the <a href="https://discordpy.readthedocs.io/en/latest/" target="_blank">documentation for the discord.py library</a> while following this code-along, and you will also need to look up features from this library when completing the challenges for this lesson, so keep it open in another tab for reference.</p>
-<h2 id="review-the-repls-starting-code">Review the Repl&apos;s Starting Code</h2>
-<p>Let&apos;s break down the starting code from the <a href="https://repl.it/@brebory/HyTechClub-Robot-Start" target="_blank">HyTechClub-Robot-Start repl</a>. Take a look at the <strong>main.py</strong> file.</p>
-<h3 id="imports-and-initialization">Imports and Initialization</h3>
-<pre><code class="lang-py"><span class="hljs-keyword">from</span> discord.ext.commands <span class="hljs-keyword">import</span> Bot
+<p>Now you have yourself a shiny new bot application!</p>
+<h3 id="configuring-the-bot">Configuring the Bot</h3>
+<p>The next step is to setup the bot, and prepare it to join the server.</p>
+<ol>
+<li>On the &quot;Bot&quot; page, scroll down to the &quot;Privileged Gateway Intents&quot; section</li>
+<li>Toggle the &quot;MESSAGE CONTENT INTENT&quot; option<br> <img src="Assets/PrivilegedIntent.png" alt=""></li>
+<li>From the menu on the left, click the &quot;OAuth2&quot; option</li>
+<li>In the sub-menu on the left, click the &quot;URL Generator&quot; option</li>
+<li>There, check the &quot;bot&quot; checkbox under &quot;SCOPES&quot;<br> <img src="Assets/UrlGenBot.png" alt=""></li>
+<li>In the &quot;BOT PERMISSIONS&quot; sections, select the necessary checkboxes:<ul>
+<li>Read Messages/View Channels</li>
+<li>Send Messages</li>
+<li>Read Message History</li>
+</ul>
+</li>
+<li>Click the &quot;Copy&quot; button on the right under &quot;GENERATED URL&quot;<br> <img src="Assets/PermissionsUrl.png" alt=""></li>
+</ol>
+<p>This copied link will allow you to invite your bot to any server where you have the &quot;Manage Server&quot; permission!</p>
+<h3 id="inviting-the-bot-to-the-sandbox-server">Inviting the Bot to the Sandbox Server</h3>
+<p>Everyone who joins the <strong>Python 201 Sandbox</strong> server should have &quot;Manage Server&quot; permissions, which means everyone should be able to add bots! Follow these steps to add yours.</p>
+<ol>
+<li>Paste the copied link into your browser</li>
+<li>In the &quot;ADD TO SERVER&quot; dropdown, select <strong>Python 201 Sandbox</strong></li>
+<li>Click the &quot;Continue&quot; button<br> <img src="Assets/ContinueInviteBot.png" alt=""></li>
+<li>On the next screen, click the &quot;Authorize&quot; button<br> <img src="Assets/AuthorizeBot.png" alt=""></li>
+<li>Verify humanity if needed</li>
+<li>Close the tab</li>
+</ol>
+<p>Now, your bot should be in the server! Make sure you see them appear.</p>
+<h3 id="copying-the-token">Copying the Token</h3>
+<p>You&apos;ll need one last thing from Discord - your bot&apos;s token. Every bot has a secret token that allows developers to log in and write code that uses the application. You can reset and copy the token in the developer portal.</p>
+<ol>
+<li>Return to the <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a></li>
+<li>Click on your bot application under &quot;My Applications&quot;<br> <img src="Assets/MyApplications.png" alt=""></li>
+<li>From the menu on the left, click the &quot;Bot&quot; option</li>
+<li>On that page, click the &quot;Reset Token&quot; button under &quot;Build-a-Bot&quot;<br> <img src="Assets/ResetToken.png" alt=""></li>
+<li>When the pop-up appears, click the &quot;Yes, do it!&quot; button<br> <img src="Assets/YesResetBotToken.png" alt=""></li>
+<li>When the token appears, click the &quot;Copy&quot; button under it<br> <img src="Assets/CopyToken.png" alt=""></li>
+</ol>
+<p>With that token, you will be able to connect to Discord with your bot!</p>
+<h3 id="updating-and-running-the-repl">Updating and Running the Repl</h3>
+<p>There is a starter Repl project with some basic bot code. Add your secret token and run the bot!</p>
+<ol>
+<li>Open and fork the <a href="https://replit.com/@HylandOutreach/DiscordBot#main.py" target="_blank">starter Repl project</a></li>
+<li>On the left, in the &quot;Tools&quot; section, click the &quot;Secrets&quot; button<br> <img src="Assets/ReplitSecrets.png" alt=""></li>
+<li>If this is your first time using Secrets, click the &quot;Got it&quot; button<br> <img src="Assets/SecretsGotIt.png" alt=""></li>
+<li>On the next screen, enter &quot;DISCORD_BOT_SECRET&quot; in the &quot;key&quot; field</li>
+<li>Paste your copied secret token in the &quot;value&quot; field</li>
+<li>Click the &quot;Add new secret&quot; button<br> <img src="Assets/AddSecret.png" alt=""></li>
+<li>Click the &quot;Run&quot; button to bring the bot to life</li>
+</ol>
+<p>In the console, a <code>Logged in as:</code> message should appear - that means the bot is online!</p>
+<h3 id="testing-the-bot">Testing the Bot</h3>
+<p>With the bot up and running, you should be able to test it out!</p>
+<ol>
+<li>Go to Discord</li>
+<li>Verify that your bot appears as &quot;ONLINE&quot; in the server</li>
+<li>Go into your specific channel</li>
+<li>Post any message</li>
+<li>Go back to the Repl project, and make sure the message author and content appeared in the console</li>
+<li>Go back to Discord, and send &quot;ping&quot;</li>
+<li>Verify that the bot responds with &quot;pong&quot;</li>
+</ol>
+<p>That&apos;s just about all the bot can do at the moment, but it lays the groundwork for a much more powerful application.</p>
+<h2 id="part-2-reviewing-the-starter-code">Part 2: Reviewing the Starter Code</h2>
+<p>Before attempting to update the bot, it may be helpful to understand what the code is already doing.</p>
+<h3 id="imports">Imports</h3>
+<p>The first couple lines use <code>import</code> to pull in some helpful libraries:</p>
+<ul>
+<li>The <a href="https://discordpy.readthedocs.io/en/stable/" target="_blank"><code>discord</code></a> library wraps the Discord API and allows code to interact with Discord</li>
+<li>The <a href="https://docs.python.org/3/library/os.html" target="_blank"><code>os</code></a> library allows code to interact with the operating system</li>
+</ul>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> discord
 <span class="hljs-keyword">import</span> os
-
-bot = Bot(command_prefix = <span class="hljs-string">&quot;$&quot;</span>)
 </code></pre>
-<p>This code imports the <a href="https://discordpy.readthedocs.io/en/latest/ext/commands/api.html#bots" target="_blank"><code>Bot</code></a> class from the discord.ext.commands library, as well as the os package. Then, a new bot is created by calling the <code>Bot</code> constructor, providing a default <code>command_prefix</code>, and saving the result in the <code>bot</code> variable.</p>
-<h3 id="the-onready-event">The on_ready Event</h3>
-<p>Next, the starter code defines an <code>on_ready</code> event handler. Event handlers allow you to write code that executes in response to something that happens, also known as events. You can view a reference of all of the events supported by the <a href="https://pypi.org/project/discord.py/" target="_blank">discord.py</a> library <a href="https://discordpy.readthedocs.io/en/latest/api.html#event-reference" target="_blank">here</a>. In this code-along, we will focus on the <code>on_ready</code> and <code>on_message</code> events, but there are many other events your bot could handle.</p>
-<pre><code class="lang-py"><span class="hljs-meta">@bot.event</span>
+<h3 id="intents">Intents</h3>
+<p>The next couple lines create the &quot;intents&quot; object for the bot - this object tells the Discord API what the bot should be able to do. In this case, the bot needs the ability to access the content of messages, so the <code>message_content</code> property is set to <code>True</code> - everything else is kept default.</p>
+<pre><code class="lang-py">intents = discord.Intents.default()
+intents.message_content = <span class="hljs-keyword">True</span>
+</code></pre>
+<h3 id="client-creation">Client Creation</h3>
+<p>The next line uses the <code>discord</code> library to create the client - this is the intermediary between the code and the API. It passes in the <code>intents</code> object so it knows what it should be able to do.</p>
+<pre><code class="lang-py">client = discord.Client(intents=intents)
+</code></pre>
+<h3 id="onready-function"><code>on_ready</code> Function</h3>
+<p>The next few lines define the <code>on_ready</code> function, which is wrapped by the <code>@client.event</code> decorator. The decorator tells the <code>client</code> object that this function should be used when responding to an event - specifically, the <code>on_ready</code> event.</p>
+<p>The function is marked <code>async</code> because it must be able to be run dynamically based on the events sent from the Discord API.</p>
+<p>When the client has successfully logged into the server, this function prints a message with the bot&apos;s username.</p>
+<pre><code class="lang-py"><span class="hljs-meta">@client.event</span>
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_ready</span><span class="hljs-params">()</span>:</span>
-  print(<span class="hljs-string">&quot;Logged in as: {}&quot;</span>.format(bot.user))
-  print(<span class="hljs-string">&quot;Command prefix is: {}&quot;</span>.format(bot.command_prefix))
+  print(f<span class="hljs-string">&quot;Logged in as: {client.user}&quot;</span>)
 </code></pre>
-<p>This code registers the <code>on_ready</code> event for the <code>bot</code>, with a simple implementation that prints the bot&apos;s username and tag, as well as the command prefix when the bot starts. This is helpful to verify that the bot was able to start successfully.</p>
-<p>Note that the <code>on_ready</code> function is <code>async</code>, which means that the function is a <a href="https://www.python.org/dev/peps/pep-0492" target="_blank">coroutine</a>. You don&apos;t need to understand all the details about coroutines - just know that making a function a codroutine allows it to be scheduled in an <em>event loop</em>. This allows your code to respond to real-time events.</p>
-<p>All of the functions we create as event handlers must be defined as coroutines.</p>
-<h3 id="starting-the-bot">Starting the Bot</h3>
-<pre><code class="lang-py">token = os.environ.get(<span class="hljs-string">&quot;DISCORD_BOT_SECRET&quot;</span>)
-bot.run(token)
-</code></pre>
-<p>This code reads the <code>DISCORD_BOT_SECRET</code> token you set up earlier as an environment variable (through <code>.env</code> file feature on Repl.it) using the <a href="https://docs.python.org/3/library/os.html#os.environ" target="_blank"><code>os.environ</code></a> dictionary. Then, it passes the token to the bot and runs it, which starts the bot and logs it in to Discord.</p>
-<h2 id="responding-to-the-onmessage-event">Responding to the on_message Event</h2>
-<p>The next step is to allow your bot to respond to messages in servers that it has joined. In order to accomplish this, you will use the <code>@bot.event</code> decorator. This decorator will take a function and add it to your bot as an &quot;event handler&quot;. The event that the handler responds to is drawn from the function name, so the function <code>on_message</code> will respond to the <a href="https://discordpy.readthedocs.io/en/latest/api.html#discord.on_message" target="_blank"><code>on_message</code></a> event.</p>
-<ol>
-<li>Define an async function called <code>on_message</code></li>
-<li>Add the <code>@bot.event</code> decorator above your new <code>on_message</code> function</li>
-<li>Add one parameter to your <code>on_message</code> function, called <code>message</code></li>
-<li>For now, give your function an empty body, using the <code>pass</code> keyword</li>
-</ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-py"><span class="hljs-meta">@bot.event</span>
+<h3 id="onmessage-function"><code>on_message</code> Function</h3>
+<p>The next several lines define the <code>on_message</code> function. It has the <code>@client.event</code> decorator so that it can run when a new message appears in the server. It takes in a <code>message</code> object as a parameter, and then responds appropriately based on the message <code>author</code>, <code>channel</code>, and <code>content</code>.</p>
+<p>It is marked <code>async</code> so that it can respond to multiple messages without freezing up.</p>
+<p>The function does a few different things.</p>
+<pre><code class="lang-py"><span class="hljs-meta">@client.event</span>
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_message</span><span class="hljs-params">(message)</span>:</span>
-  <span class="hljs-keyword">pass</span>
 </code></pre>
-<h2 id="limiting-the-bots-responses">Limiting the Bot&apos;s Responses</h2>
-<p>The first thing your bot should do is <em>not respond to other bots</em>. With all the other students working on bots at the same time, things could get a bit crazy if all the bots would respond to each other, or even themselves! You will achieve this by using properties from discord.py&apos;s <a href="https://discordpy.readthedocs.io/en/latest/api.html#message" target="_blank"><code>Message</code></a> and <a href="https://discordpy.readthedocs.io/en/latest/api.html#user" target="_blank"><code>User</code></a> classes. Specifically, the <code>message.author</code> property, and the <code>user.bot</code> property will allow you to verify whether or not a particular message was sent by a bot.</p>
-<ol>
-<li>Remove the <code>pass</code> keyword in your <code>on_message</code> function</li>
-<li>Add an <code>if</code> statement inside the <code>on_message</code> function</li>
-<li>As the condition for the if statement, check properties of the <code>message</code> parameter: <code>message.author.bot</code></li>
-<li>Add the colon to denote the start of the <code>if</code> statement body</li>
-<li>On the next line, add an empty <code>return</code></li>
-</ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-py"><span class="hljs-meta">@bot.event</span>
-<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_message</span><span class="hljs-params">(message)</span>:</span>
-  <span class="hljs-keyword">if</span> message.author.bot:
-    <span class="hljs-keyword">return</span>
+<h4 id="author-check">Author Check</h4>
+<p>The function will immediately return if the new message is coming from a bot.</p>
+<pre><code class="lang-py"><span class="hljs-keyword">if</span> message.author.bot:
+  <span class="hljs-keyword">return</span>
 </code></pre>
-<h2 id="logging-received-messages">Logging Received Messages</h2>
-<p>Currently, the <code>on_message</code> event handler doesn&apos;t have any visible side effects, so it&apos;s not easy to test if it&apos;s working correctly. Let&apos;s add a log message so we can tell when the bot is handling messages.</p>
-<ol>
-<li>Under the if statement within the <code>on_message</code> function, add a print statement</li>
-<li>Print a message that logs both the <code>message.author</code> and <code>message.content</code> from the received message.</li>
-</ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-py">print(<span class="hljs-string">&quot;Received message: {} &gt; {}&quot;</span>.format(message.author, message.content))
+<h4 id="print">Print</h4>
+<p>If the message is not from a bot, the function will print out the content of the message, along with the author, using an f-string.</p>
+<pre><code class="lang-py">print(f<span class="hljs-string">&quot;Message from {message.author}: {message.content}&quot;</span>)
 </code></pre>
-<h2 id="adding-the-ping-pong-response">Adding the Ping Pong Response</h2>
-<p>So, the bot currently writes to your Repl&apos;s console, but the whole point of the chat bot is to send messages in the Discord server! Let&apos;s get the bot to respond to a simple prompt. When anyone says &quot;ping&quot;, the bot should respond with &quot;pong&quot;. Or, if you&apos;re feeling creative, add any other simple call-and-response you want, like &quot;Marco&quot;, &quot;Polo&quot; or anything else you like.</p>
-<ol>
-<li>At the bottom of the <code>on_message</code> event handler, add another <code>if</code> statement</li>
-<li>In the condition for the <code>if</code> statement, check if <code>message.content</code> equals your desired prompt</li>
-<li>In the body for the <code>if</code>, respond to the prompt with your desired answer, using the <code>message.channel.send</code> method</li>
-<li>Use the <code>await</code> keyword to wait for the bot to send the response</li>
-</ol>
-<p>Test out your code by posting the message <code>ping</code> in the Discord server&apos;s <strong>#general</strong> channel. Your bot should respond, and probably some of your classmate&apos;s bots will as well! Additionally, you should see messages logged in the console for your Repl for every message sent in the channel.</p>
-<h3 id="code">Code</h3>
-<pre><code class="lang-py"><span class="hljs-keyword">if</span> message.content == <span class="hljs-string">&quot;ping&quot;</span>
+<h4 id="prompt-response">Prompt Response</h4>
+<p>Finally, the fun part - the function will check the content of the message. For now, it only responds if <code>message.content</code> is <code>&quot;ping&quot;</code>. In that case, it uses <code>message.channel.send</code> to send <code>&quot;pong&quot;</code> back in the same channel.</p>
+<p>The <code>await</code> keyword is used in front of the <code>send</code> function because it needs to go through the internet to reach the Discord API - that can take a while.</p>
+<pre><code class="lang-py"><span class="hljs-keyword">if</span> message.content == <span class="hljs-string">&quot;ping&quot;</span>:
   <span class="hljs-keyword">await</span> message.channel.send(<span class="hljs-string">&quot;pong&quot;</span>)
 </code></pre>
-<h2 id="adding-more-prompts-and-responses">Adding More Prompts and Responses</h2>
-<p>Now, if you wanted to add more prompts and responses to the bot, you could add more hard-coded <code>if</code> statements to get the job done, but what if your bot needs to respond to hundreds of phrases? Or what if you need to add more prompts and responses on-the-fly? Dictionaries can solve this problem! Next, add a dictionary of prompts and responses and allow your bot to respond in even more ways.</p>
+<h3 id="secret-token-retrieval">Secret Token Retrieval</h3>
+<p>After the <code>on_message</code> function definition, the next line retrieves the secret token from the Repl. It uses the <code>os</code> library to access the system&apos;s environment variables (the <code>environ</code> object), and then finds the <code>&quot;DISCORD_BOT_SECRET&quot;</code> value - this is the one set in the <strong>Secrets</strong> for the project.</p>
+<pre><code class="lang-py">token = os.environ[<span class="hljs-string">&quot;DISCORD_BOT_SECRET&quot;</span>]
+</code></pre>
+<h3 id="run">Run!</h3>
+<p>After all the setup, the last line actually runs the client using the secret token to log in!</p>
+<pre><code class="lang-py">client.run(token)
+</code></pre>
+<h2 id="part-3-updating-the-bot-code">Part 3: Updating the Bot Code</h2>
+<p>The bot code does quite a bit, but it could do quite a bit more. Update it so that it responds to more messages!</p>
+<h3 id="prompts--responses-refactoring">Prompts &amp; Responses: Refactoring</h3>
+<p>You could add more hard-coded <code>if</code> statements to make the chat bot more responsive, but what if it needs to respond to hundreds of phrases? Or what if you need to add more prompts and responses on-the-fly? Dictionaries can solve this problem! Add a dictionary with prompts as keys and responses as values to lay the groundwork for a more functional chat bot.</p>
 <ol>
-<li>At the top of the <strong>main.py</strong> file, right after the line that creates the <code>bot</code> variable, create a new variable called <code>prompts_and_responses</code></li>
-<li>Set <code>prompts_and_responses</code> to a new dictionary <code>{}</code></li>
-<li>Add pairs of prompt and response strings to the <code>prompts_and_responses</code> dictionary, at least 3</li>
+<li>At the top of the <strong>main.py</strong> file, right after the line that creates the <code>client</code> variable, create a new variable called <code>responses</code></li>
+<li>Set <code>responses</code> to a new dictionary <code>{}</code></li>
+<li>Add a key of <code>&quot;ping&quot;</code> with a value of <code>&quot;pong&quot;</code></li>
 </ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-py">prompts_and_responses = {
-    <span class="hljs-string">&quot;hello&quot;</span>: <span class="hljs-string">&quot;Hello there!&quot;</span>,
-    <span class="hljs-string">&quot;sup&quot;</span>: <span class="hljs-string">&quot;Hi, I&apos;m HyTechClub Robot!&quot;</span>,
-    <span class="hljs-string">&quot;how are you?&quot;</span>: <span class="hljs-string">&quot;I am fine!&quot;</span>
+<pre><code class="lang-py">responses = {
+  <span class="hljs-string">&quot;ping&quot;</span>: <span class="hljs-string">&quot;pong&quot;</span>
 }
 </code></pre>
-<h2 id="looping-over-the-prompts-and-response-dictionary">Looping Over the Prompts and Response Dictionary</h2>
-<p>The <code>prompts_and_responses</code> dictionary can be used by the <code>on_message</code> event handler, which will make it much easier and faster to add new prompts and responses to your bot. By using the <code>keys</code> method of the dictionary, you can easily loop over all the prompts and search within the message content for those prompts.</p>
+<h3 id="checking-for-the-prompt">Checking for the Prompt</h3>
+<p>Now, the <code>responses</code> dictionary can be used by the <code>on_message</code> event handler. By using the <code>in</code> keyword, it will be simple to check if the user has sent a message that matches one of the keys from the dictionary.</p>
 <ol>
 <li>Find the bottom of the <code>on_message</code> function</li>
-<li>Add a <code>for</code> loop that saves each key from <code>prompts_and_messages.keys()</code> in a variable called <code>prompt</code></li>
-<li>Within the body of the <code>for</code>, add an <code>if</code> statement that checks if the <code>prompt</code> exists <code>in</code> the <code>message.content</code></li>
-<li>If the <code>prompt</code> was found, print a message that reports that the <code>prompt</code> was found in the <code>message.content</code>.</li>
-<li>If the <code>prompt</code> was found, <code>message.channel.send</code> the corresponding response from the <code>prompts_and_responses</code> dict, and <code>await</code> it</li>
+<li>Find the <code>if message.content == &quot;ping&quot;</code> statement</li>
+<li>Instead of checking if <code>content</code> is <code>&quot;ping&quot;</code>, check if it is <code>in</code> the <code>responses</code> dict</li>
+<li>In the body of the <code>if</code>, remove the <code>&quot;pong&quot;</code></li>
+<li>Replace it with the proper response: the value of the <code>responses</code> dict for a key of <code>message.content</code></li>
 </ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-py"><span class="hljs-keyword">for</span> prompt <span class="hljs-keyword">in</span> prompts_and_responses.keys():
-  <span class="hljs-keyword">if</span> prompt <span class="hljs-keyword">in</span> message.content:
-    print(<span class="hljs-string">&quot;Found prompt: {} in message {}&quot;</span>
-      .format(prompt, message.content))
-    <span class="hljs-keyword">await</span> message.channel.send(prompts_and_responses[prompt])
+<p>The updated <code>if</code> statement should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">if</span> message.content <span class="hljs-keyword">in</span> responses:
+  <span class="hljs-keyword">await</span> message.channel.send(responses[message.content])
 </code></pre>
-<h2 id="testing-the-bot-again">Testing the Bot (Again)</h2>
-<p>You can test your bot by writing messages that match your prompt in the #general channel in the Hy-Tech Club Chat Bot Sandbox server. If your bot shows as offline, it&apos;s possible that your Repl has timed out - if that&apos;s the case you may need to refresh your Repl and re-run it. Your bot should then show up as online again.</p>
-<h2 id="final-code">Final Code</h2>
-<pre><code class="lang-py"><span class="hljs-keyword">from</span> discord.ext.commands <span class="hljs-keyword">import</span> Bot
+<p>Re-run the project, and make sure the &quot;ping&quot; message still receives the &quot;pong&quot; response!</p>
+<h3 id="adding-more-promptresponse-pairs">Adding More Prompt/Response Pairs</h3>
+<p>The next step is to simply fill out the <code>responses</code> dictionary object with more responses! Keep it mind that it is possible to use emoji like <code>:smile:</code>. You can use whatever (appropriate) prompts and responses you want, but make sure to add <strong>at least three more</strong>.</p>
+<p>Your <code>responses</code> object could end up looking something like this:</p>
+<pre><code class="lang-py">responses = {
+  <span class="hljs-string">&quot;ping&quot;</span>: <span class="hljs-string">&quot;pong&quot;</span>,
+  <span class="hljs-string">&quot;hi&quot;</span>: <span class="hljs-string">&quot;howdy :cowboy:&quot;</span>,
+  <span class="hljs-string">&quot;sup&quot;</span>: <span class="hljs-string">&quot;yo :sunglasses:&quot;</span>,
+  <span class="hljs-string">&quot;how are you?&quot;</span>: <span class="hljs-string">&quot;i am incapable of emotion :no_mouth:&quot;</span>
+}
+</code></pre>
+<h3 id="testing-the-bot-again">Testing the Bot (Again)</h3>
+<p>You can test your bot by writing messages that match your prompts. Make sure to post in your specific channel so it doesn&apos;t get too annoying. If your bot shows as offline, it&apos;s possible that your Repl has timed out - if that&apos;s the case you may need to refresh your Repl and re-run it. Your bot should then show up as online again.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>By the end of this activity, you should have been able to create a fun and functional conversational bot. The code should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-comment"># import libraries to use</span>
+<span class="hljs-keyword">import</span> discord
 <span class="hljs-keyword">import</span> os
-<span class="hljs-keyword">import</span> random
 
-bot = Bot(command_prefix=<span class="hljs-string">&quot;$&quot;</span>)
+<span class="hljs-comment"># setup bot intents - allow to read messages</span>
+intents = discord.Intents.default()
+intents.message_content = <span class="hljs-keyword">True</span>
 
-prompts_and_responses = {
-  <span class="hljs-string">&quot;hello&quot;</span>: <span class="hljs-string">&quot;Hello there!&quot;</span>,
-  <span class="hljs-string">&quot;sup&quot;</span>: <span class="hljs-string">&quot;Hi, I&apos;m HyTechClub Robot!&quot;</span>,
-  <span class="hljs-string">&quot;how are you?&quot;</span>: <span class="hljs-string">&quot;I am fine!&quot;</span>
+<span class="hljs-comment"># create client with intents</span>
+client = discord.Client(intents=intents)
+
+<span class="hljs-comment"># dictionary of responses</span>
+responses = {
+  <span class="hljs-string">&quot;ping&quot;</span>: <span class="hljs-string">&quot;pong&quot;</span>,
+  <span class="hljs-string">&quot;hi&quot;</span>: <span class="hljs-string">&quot;howdy :cowboy:&quot;</span>,
+  <span class="hljs-string">&quot;sup&quot;</span>: <span class="hljs-string">&quot;yo :sunglasses:&quot;</span>,
+  <span class="hljs-string">&quot;how are you?&quot;</span>: <span class="hljs-string">&quot;i am incapable of emotion :no_mouth:&quot;</span>
 }
 
-<span class="hljs-meta">@bot.event</span>
+<span class="hljs-comment"># print message when client is online</span>
+<span class="hljs-meta">@client.event</span>
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_ready</span><span class="hljs-params">()</span>:</span>
-  print(<span class="hljs-string">&quot;Logged in as: {}&quot;</span>.format(bot.user))
-  print(<span class="hljs-string">&quot;Command prefix is: {}&quot;</span>.format(bot.command_prefix))
+  print(f<span class="hljs-string">&quot;Logged in as: {client.user}&quot;</span>)
 
-<span class="hljs-meta">@bot.event</span>
+<span class="hljs-comment"># respond to incoming messages</span>
+<span class="hljs-meta">@client.event</span>
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">on_message</span><span class="hljs-params">(message)</span>:</span>
+  <span class="hljs-comment"># don&apos;t do anything if the message comes from a bot</span>
   <span class="hljs-keyword">if</span> message.author.bot:
     <span class="hljs-keyword">return</span>
 
-  print(<span class="hljs-string">&quot;Received message: {} &gt; {}&quot;</span>.format(message.author, message.content))
+  <span class="hljs-comment"># print the incoming message</span>
+  print(f<span class="hljs-string">&quot;Message from {message.author}: {message.content}&quot;</span>)
 
-  <span class="hljs-keyword">if</span> message.content == <span class="hljs-string">&quot;ping&quot;</span>:
-    <span class="hljs-keyword">await</span> message.channel.send(<span class="hljs-string">&quot;pong&quot;</span>)
+  <span class="hljs-comment"># send a response to a particular message</span>
+  <span class="hljs-keyword">if</span> message.content <span class="hljs-keyword">in</span> responses:
+    <span class="hljs-keyword">await</span> message.channel.send(responses[message.content])
 
-  <span class="hljs-keyword">for</span> prompt <span class="hljs-keyword">in</span> prompts_and_responses.keys():
-    <span class="hljs-keyword">if</span> prompt <span class="hljs-keyword">in</span> message.content:
-      print(<span class="hljs-string">&quot;Found prompt: {} in message {}&quot;</span>
-        .format(prompt, message.content))
-      <span class="hljs-keyword">await</span> message.channel.send(prompts_and_responses[prompt])
+<span class="hljs-comment"># get token from secret</span>
+token = os.environ[<span class="hljs-string">&quot;DISCORD_BOT_SECRET&quot;</span>]
 
-token = os.environ.get(<span class="hljs-string">&quot;DISCORD_BOT_SECRET&quot;</span>)
-bot.run(token)
+<span class="hljs-comment"># run the bot!</span>
+client.run(token)
 </code></pre>
-<h2 id="challenges">Challenges</h2>
-<p>After the activity, start working on the <a href="DiscordChallenges.html">Discord Bot Challenges</a>.</p>
+<p>Remember, the code won&apos;t work unless you have the bot application setup in Discord, and have the proper token stored in the Repl&apos;s Secrets.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>The actual Discord setup may have been tedious and challenging, but now that that&apos;s out of the way, you should feel empowered to create any type of bot you would like! This lesson only scratches the surface of what&apos;s possible with the Discord API and the discord.py library.</p>
+<p>Feel free to continue working on your bot as you see fit, or check out the <a href="DiscordChallenges.html">challenges</a> for some ideas.</p>
 
                                 
                                 </section>
@@ -862,7 +883,7 @@ bot.run(token)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Discord Code-Along","level":"1.6.1","depth":2,"next":{"title":"Discord Challenges","level":"1.6.2","depth":2,"path":"DiscordBot/DiscordChallenges.md","ref":"DiscordBot/DiscordChallenges.md","articles":[]},"previous":{"title":"Week 4 - Discord Bot","level":"1.6","depth":1,"path":"DiscordBot/StudentDesc.md","ref":"DiscordBot/StudentDesc.md","articles":[{"title":"Discord Code-Along","level":"1.6.1","depth":2,"path":"DiscordBot/DiscordCodeAlong.md","ref":"DiscordBot/DiscordCodeAlong.md","articles":[]},{"title":"Discord Challenges","level":"1.6.2","depth":2,"path":"DiscordBot/DiscordChallenges.md","ref":"DiscordBot/DiscordChallenges.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"DiscordBot/DiscordCodeAlong.md","mtime":"2023-02-02T20:02:17.218Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-02T20:02:49.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Discord Code-Along","level":"1.6.1","depth":2,"next":{"title":"Discord Challenges","level":"1.6.2","depth":2,"path":"DiscordBot/DiscordChallenges.md","ref":"DiscordBot/DiscordChallenges.md","articles":[]},"previous":{"title":"Week 4 - Discord Bot","level":"1.6","depth":1,"path":"DiscordBot/StudentDesc.md","ref":"DiscordBot/StudentDesc.md","articles":[{"title":"Discord Code-Along","level":"1.6.1","depth":2,"path":"DiscordBot/DiscordCodeAlong.md","ref":"DiscordBot/DiscordCodeAlong.md","articles":[]},{"title":"Discord Challenges","level":"1.6.2","depth":2,"path":"DiscordBot/DiscordChallenges.md","ref":"DiscordBot/DiscordChallenges.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"DiscordBot/DiscordCodeAlong.md","mtime":"2023-02-03T21:22:35.217Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-03T21:23:06.001Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

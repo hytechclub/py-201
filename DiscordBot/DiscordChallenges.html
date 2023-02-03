@@ -614,76 +614,29 @@
 <li><a href="https://discordpy.readthedocs.io/en/latest/api.html#discord.TextChannel" target="_blank">TextChannel</a></li>
 </ul>
 <h2 id="2-add-more-prompts-and-responses">2. Add More Prompts and Responses</h2>
-<p>Add at least 3 more prompts and responses to the <code>prompts_and_responses</code> dictionary!</p>
+<p>Add at least three more prompts and responses to the <code>responses</code> dictionary!</p>
 <ol>
 <li>Add a comma to the end of the <em>last item</em> in the dictionary</li>
 <li>After the last item on a new line, add a string for a new prompt, followed by a <code>:</code>, and then a string for the new response</li>
-<li>Repeat until there are at least 3 new items</li>
+<li>Repeat until there are at least three new items</li>
 <li>Run the code, and verify that your Discord bot responds to the new prompts!</li>
 </ol>
 <h2 id="3-add-prompts-and-responses-for-a-specific-user">3. Add Prompts and Responses for a Specific User</h2>
-<p>Add another dictionary of prompts and responses, called <code>user_prompts_and_responses</code>. This should be a nested dictionary, where the first level of nesting is keyed by username, and the second level contains the prompts and responses. Then, modify the <code>on_message</code> event handler to allow the bot to search <code>user_prompts_and_responses</code> dict for the <code>message.author.name</code>, and then use the user&apos;s specific dictionary of prompts and responses to process the message in the same way the &quot;global&quot; prompts and responses are handled.</p>
+<p>Add another dictionary of prompts and responses, called <code>user_responses</code>. This should be a nested dictionary, where the first level of nesting is keyed by username, and the second level contains the prompts and responses. Then, modify the <code>on_message</code> event handler to allow the bot to search <code>user_responses</code> dict for the <code>message.author.name</code>, and then use the user&apos;s specific dictionary of prompts and responses to process the message in the same way the &quot;global&quot; prompts and responses are handled.</p>
 <p>If you notice that you are repeating code in the <code>on_message</code> event handler, the second part of this challenge is to create a <em>helper function</em> and refactor the <code>on_message</code> event handler so that no code is duplicated, through the use of the new helper function.</p>
 <h2 id="4-randomize-responses">4. Randomize Responses</h2>
 <p>Next, modify your dictionaries of prompts and responses so that some responses are lists of strings, rather than a single string. Then, use <code>random.choice</code> to pick a random response from the list so that the bot can have some variation when responding to the same prompt.</p>
 <p>You will want to use the <a href="https://docs.python.org/3/library/functions.html#isinstance" target="_blank"><code>isinstance</code></a> function in the <code>on_message</code> event handler (or your helper function) to determine if a particular response is a straight-up string, or a list of strings, to handle the result accordingly.</p>
-<h2 id="commands">Commands</h2>
-<p>The Discord library also allows special message handling, called commands, that allow a user to send a message with arguments to the bot, just like calling a function! To add a command to the bot, use the <code>@bot.command()</code> decorator. Note that this decorator requires the parenthesis, while the <code>@bot.event</code> decorator does not. In order for your bot to work correctly with commands, the <code>on_message</code> event handler should await the <code>bot.process_commands</code> method. Let&apos;s add a command to our bot that simulates rolling a 6-sided die using the <a href="https://docs.python.org/3/library/random.html" target="_blank"><code>random</code></a> library!</p>
-<ol>
-<li>At the top of the file with the other <code>import</code> statements, add <code>import random</code></li>
-<li>At the bottom of the <code>on_message</code> function, add <code>await bot.process_commands(message)</code></li>
-<li>Below the <code>on_message</code> function, add a new async function called <code>roll</code> that takes two parameters: <code>ctx</code> and <code>count</code></li>
-<li>Add an annotation to the <code>count</code> parameter to specify that it should be an <code>int</code>: <code>count: int</code></li>
-<li>Above the new <code>roll</code> function, add the <code>@bot.command()</code> decorator</li>
-<li>In the body of the <code>roll</code> function, create a new variable called <code>message</code> and set it to the string <code>&quot;You rolled:\n&quot;</code></li>
-<li>Use the <code>range</code> function to create a <code>for</code> loop that executes <code>count</code> times</li>
-<li>In the body of the <code>for</code> loop, create a new variable called <code>roll</code> and set it to the result of <code>random.randint(1, 6)</code> to simulate a 6-sided die roll </li>
-<li>Append to the <code>message</code> variable the following string: <code>&quot;:game_die: {}&quot;.format(roll)</code> to show a dice emoji and the rolled result</li>
-<li>Outside of the <code>for</code> loop, at the bottom of the <code>roll</code> function, use the <code>ctx.send</code> method to send the <code>message</code> and <code>await</code> it</li>
-</ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-py"><span class="hljs-keyword">import</span> random 
-
-<span class="hljs-meta">@bot.command()</span>
-<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">roll</span><span class="hljs-params">(ctx, count: int)</span>:</span>
-  message = <span class="hljs-string">&quot;You rolled:\n&quot;</span>
-
-  <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(count):
-    roll = random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>)
-    message += <span class="hljs-string">&quot;:game_die: {}&quot;</span>.format(roll)
-
-  <span class="hljs-keyword">await</span> ctx.send(message)
-</code></pre>
-<h2 id="function-annotations-and-converters">Function Annotations and Converters</h2>
-<p>In the preceding section, a couple new concepts were introduced. Specifically, the <em>function annotation</em> for the <code>count</code> variable - this is a newer Python feature that allows you to specify the type that a parameter expects. You may also see this concept referred to as a <em>type hint</em>. The Discord library uses this annotation to convert the message&apos;s content into whatever type you specify. You&apos;ll notice if you send a message like <code>$roll one</code>, your bot will not respond, and your Repl&apos;s console will have a large error message starting with <code>Ignoring exception in command roll:</code>. This is expected - the user did not respond with the expected parameter, so the command did not execute.</p>
-<p>Specifically, the <a href="https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html#basic-converters" target="_blank"><code>Converter</code></a> for the argument was unable to parse the user&apos;s message. If you&apos;re interested in customizing and improving this behavior, you can check out the documentation for <a href="https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html#special-converters" target="_blank">Special Converters</a> for more information. This page will come in handy for some of the challenges this week!</p>
-<h2 id="5-create-a-command-to-add-more-prompts-and-responses">5. Create a Command to Add More Prompts and Responses</h2>
-<p>Create a new command, called <code>add</code>, that will allow the user to add a new prompt and response to the dictionary. The command should take two string parameters,<code>prompt</code> and <code>response</code>, and add them to the <code>prompts_and_responses</code> dictionary.</p>
-<p>For example, a user should be able to call the command like this:</p>
-<pre><code class="lang-text">$add &quot;Hakuna&quot; &quot;Matata&quot;
-</code></pre>
-<h2 id="6-create-a-command-to-change-the-command-prefix">6. Create a Command to Change the Command Prefix</h2>
-<p>Next, the bot should have a command that allows users to change the <code>command_prefix</code>, called <code>prefix</code>.</p>
-<p>For example, a user should be able to call the command like this:</p>
-<pre><code class="lang-text">$prefix %
-</code></pre>
-<p>After executing the command, the bot should only process commands with the new prefix.</p>
-<h2 id="7-using-special-converters-for-the-add-command">7. Using Special Converters for the Add Command</h2>
-<p>Read this <a href="https://discordpy.readthedocs.io/en/latest/ext/commands/commands.html#special-converters" target="_blank">documentation on Special Converters</a>, then modify the <code>add</code> command to take a third optional boolean parameter, called <code>overwrite</code>, that uses the <code>typing.Optional</code> type hint. This parameter should default to <code>False</code> and control whether or not the user can overwrite an existing prompt when using the command.</p>
-<ol>
-<li>At the top of <strong>main.py</strong> add <code>import typing</code></li>
-<li>Find the <code>add</code> function and give it a new parameter <code>overwrite</code></li>
-<li>Add the optional type hint to the new parameter: <code>typing.Optional[bool] = False</code></li>
-</ol>
-<p>Then, use the new <code>overwrite</code> parameter to modify the control flow of the <code>add</code> method to either allow or disallow the overwriting of existing prompts.</p>
-<h2 id="more-commands">More Commands</h2>
-<p>The sky is the limit for what you can accomplish with commands! Try to think of other fun commands to implement. Here&apos;s some ideas to get you started:</p>
-<ol>
-<li>Create a command to start a countdown timer (<a href="https://discordpy.readthedocs.io/en/latest/ext/tasks/index.html" target="_blank"><code>Tasks</code></a> will help with this challenge!)</li>
-<li>Create some commands to manage a to-do list (Try creating subcommands with <a href="https://discordpy.readthedocs.io/en/latest/faq.html#how-do-i-make-a-subcommand" target="_blank"><code>Group</code></a> to make this more user-friendly!)</li>
-<li>Create some commands to control a multiplayer game like Battleship</li>
-<li>Create a command to schedule a reminder to tag a user in the future</li>
-</ol>
+<h2 id="5-emoji-reactions">5. Emoji Reactions</h2>
+<p>In addition to responding with messages, figure out how to allow your bot to <em>react</em> to certain prompts. <a href="https://discordpy.readthedocs.io/en/stable/faq.html#how-can-i-add-a-reaction-to-a-message" target="_blank">Check out this page for more information.</a></p>
+<p>It may be necessary to go back to the <a href="https://discord.com/developers/applications/" target="_blank">Discord Developer Portal</a> and generate a new URL for the bot that includes the &quot;Add Reactions&quot; permission:</p>
+<p><img src="Assets/AddReactions.png" alt=""></p>
+<p>Copy that URL and re-invite the bot!</p>
+<h2 id="6-file-uploads">6. File Uploads</h2>
+<p>Add the ability to respond with certain messages by sending image files. <a href="https://discordpy.readthedocs.io/en/stable/faq.html#how-do-i-upload-an-image" target="_blank">Check out this page for more information.</a></p>
+<p>It may be necessary to go back to the <a href="https://discord.com/developers/applications/" target="_blank">Discord Developer Portal</a> and generate a new URL for the bot that includes the &quot;Attach Files&quot; permission:</p>
+<p><img src="Assets/AttachFiles.png" alt=""></p>
+<p>Copy that URL and re-invite the bot!</p>
 
                                 
                                 </section>
@@ -727,7 +680,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Discord Challenges","level":"1.6.2","depth":2,"next":{"title":"Week 5 - Web Scraping","level":"1.7","depth":1,"path":"WebScraping/StudentDesc.md","ref":"WebScraping/StudentDesc.md","articles":[{"title":"HTML Review Warm-up","level":"1.7.1","depth":2,"path":"WebScraping/HtmlReviewWarmup.md","ref":"WebScraping/HtmlReviewWarmup.md","articles":[]},{"title":"Info Finder Code-Along","level":"1.7.2","depth":2,"path":"WebScraping/InfoFinderCodeAlong.md","ref":"WebScraping/InfoFinderCodeAlong.md","articles":[]},{"title":"Info Finder Challenges","level":"1.7.3","depth":2,"path":"WebScraping/InfoFinderChallenges.md","ref":"WebScraping/InfoFinderChallenges.md","articles":[]}]},"previous":{"title":"Discord Code-Along","level":"1.6.1","depth":2,"path":"DiscordBot/DiscordCodeAlong.md","ref":"DiscordBot/DiscordCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"DiscordBot/DiscordChallenges.md","mtime":"2023-02-02T20:02:17.218Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-02T20:02:49.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Discord Challenges","level":"1.6.2","depth":2,"next":{"title":"Week 5 - Web Scraping","level":"1.7","depth":1,"path":"WebScraping/StudentDesc.md","ref":"WebScraping/StudentDesc.md","articles":[{"title":"HTML Review Warm-up","level":"1.7.1","depth":2,"path":"WebScraping/HtmlReviewWarmup.md","ref":"WebScraping/HtmlReviewWarmup.md","articles":[]},{"title":"Info Finder Code-Along","level":"1.7.2","depth":2,"path":"WebScraping/InfoFinderCodeAlong.md","ref":"WebScraping/InfoFinderCodeAlong.md","articles":[]},{"title":"Info Finder Challenges","level":"1.7.3","depth":2,"path":"WebScraping/InfoFinderChallenges.md","ref":"WebScraping/InfoFinderChallenges.md","articles":[]}]},"previous":{"title":"Discord Code-Along","level":"1.6.1","depth":2,"path":"DiscordBot/DiscordCodeAlong.md","ref":"DiscordBot/DiscordCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"DiscordBot/DiscordChallenges.md","mtime":"2023-02-03T21:22:35.217Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-03T21:23:06.001Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
