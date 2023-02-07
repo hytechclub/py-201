@@ -4,5 +4,12 @@
         "summary": "SUMMARY.md"
     },
     "title": "Python 201",
-    "plugins": ["toggle-chapters"]
+    "plugins": ["toggle-chapters", "scripts"],
+    "pluginsConfig": {
+        "scripts": {
+            "files": [
+                "./passwordProtectedPages.js"
+            ]
+        }
+    }
 }
