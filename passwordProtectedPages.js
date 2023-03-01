@@ -4,7 +4,6 @@ let passwordProtectedPages = {
     "BasicProgramming/RPSCodeAlong.md": "junkenpo",
     "Collections/ScoreSortCodeAlong.md": "welikesports",
     "Database/RestaurantReviewCodeAlong.md": "reviewrevue",
-    "DiscordBot/DiscordCodeAlong.md": "rogerian",
     "Flask/FlaskCodeAlong.md": "hahahaha",
     "HelloPython/TurtleCodeAlong.md": "masterofdisguise",
     "PyGame/TopDownCodeAlong.md": "link2thepast",

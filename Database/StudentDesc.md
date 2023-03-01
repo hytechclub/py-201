@@ -5,6 +5,8 @@ Learn how to use [the Replit DB](https://docs.replit.com/hosting/databases/repli
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/py-201/Database/DatabasesOverview.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Restaurant Review Code-Along Activity
+[Click here for the code-along **starter code**.](https://replit.com/@HylandOutreach/FakeYelpStart)
+
 Follow the instructions on [this page](RestaurantReviewCodeAlong.md) to create a basic "Fake Yelp" application using the Replit DB.
 
 ## Database Challenges

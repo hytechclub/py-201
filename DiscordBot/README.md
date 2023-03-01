@@ -15,6 +15,8 @@ Make sure to cover each topic **briefly** - there will be more time to dive into
 ## Code-Along: Discord Chat Bot
 The [activity](DiscordCodeAlong.md) walks through the creation of a Discord bot, including registering the bot as a Discord application, adding the bot to the server, and making the bot respond to messages. This will use the concepts introduced in the PowerPoint, including using 3rd Party APIs and decorators.
 
+_Note: These code-along instructions are not password protected._
+
 ### Discord Server
 Before running through the code-along, make sure each student in the class has their own channel created in the **Python 201 Sandbox** server, under the "STUDENT CHANNELS" category.
 
