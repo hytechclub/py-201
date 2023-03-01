@@ -8,6 +8,8 @@ Play the game linked on [this page](PygameWarmup.md) to see some of what is poss
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/py-201/PyGame/Pygame.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Top-Down Game Code-Along Activity
+[Click here for the code-along **starter code**.](https://replit.com/@HylandOutreach/Top-Down-Game#main.py)
+
 Follow the instructions on [this page](TopDownCodeAlong.md) to create a basic tile-based top-down game in Pygame.
 
 ## Pygame Challenges
