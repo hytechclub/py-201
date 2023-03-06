@@ -1,6 +1,17 @@
 # Basic Programming in Python
 This lesson introduces a variety of core programming concepts in the context of Python. It is expected that students will already be proficient in the concepts; the goal is to translate their knowledge into the world of Python.
 
+## Topics
+This lesson covers the following topics:
+
+- Variables
+- Data Types
+- Input/Output
+- Conditional Statements
+- While Loops
+- Functions
+- Pythonic Syntax
+
 ## Warm-up Activity
 Complete a brief warm-up activity to kick off the meeting. The purpose of the warm-up is to energize and motivate the students.
 
