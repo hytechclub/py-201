@@ -138,6 +138,7 @@ Every Wikipedia page is a little different, so it's important to make sure the H
 1. Notice that that `p` element is within a `div` element
 1. Notice that the `div` element has a `class` attribute of `mw-parser-output`
 1. Notice that the important `p` is not the first `p` within that `div`
+1. Also notice that the `div` is within another `div` with an `id` of `bodyContent`
 
 All of this investigation should help when writing the code.
 
@@ -150,27 +151,63 @@ Now it's time to get into the code!
 1. Set the `html_document` variable to the result of a call to the `BeautifulSoup` function
     - Pass in `html_text` as the first parameter
     - Pass in `"html.parser"` (don't forget the quotes) as the second parameter
-1. Under that, create a new variable named `search_criteria`
-    - Consider what the program needs to find first
-1. Set the `search_criteria` variable to a new dictionary: `{}`
-1. Add a key of `"class"` to the dictionary, with a value of `"mw-parser-output"`
-    - This will be able to find the appropriate `div` in the HTML
-1. Under that, create a variable named `content_div`
-1. Set the `content_div` variable to `html_document.find("div", search_criteria)`
-    - This searches the `html_document` for `div` elements with a `class` of `mw-parser-output`
-1. Under that, create a new variable named `paragraphs`
-1. Set the `paragraphs` variable to `content_div.find_all("p")`
-    - This will be all of the `p` elements within the `div`
+
+Now the document should be properly objectified. The code should look something like this:
 
 ```py
 html_document = BeautifulSoup(html_text, "html.parser")
+```
 
-search_criteria = {
-    "class": "mw-parser-output"
+### Getting the Container `<div>`
+The next step is to pull the container `<div id="bodyContent">` element out of the entire document.
+
+1. Under the `html_document` variable, create a new variable named `content_criteria`
+    - Consider what the program needs to find first
+1. Set the `content_criteria` variable to a new dictionary: `{}`
+1. Add a key of `"id"` to the dictionary, with a value of `"bodyContent"`
+    - This will be able to find the appropriate `div` in the HTML
+1. Under that, create a variable named `content_div`
+1. Set the `content_div` variable to `html_document.find("div", content_criteria)`
+    - This searches the `html_document` for `div` elements with an `id` of `bodyContent`
+
+Now, the container `<div>` is stored in a variable! The code should look like this:
+
+```py
+content_criteria = {
+    "id": "bodyContent"
 }
 
-content_div = html_document.find("div", search_criteria)
-paragraphs = content_div.find_all("p")
+content_div = html_document.find("div", content_criteria)
+```
+
+### Getting the Inner `<div>`
+Next, pull the inner `<div class="mw-parser-output">` out of the `content_div`.
+
+1. Under the `content_div` variable, create a new variable named `inner_div`
+1. Set the `inner_div` variable to a call to `html_document.find`
+1. For the first argument, pass in `"div"`
+1. For the second argument, pass in a new object with `{` and `}`
+    - Set a `"class"` property in the new object to be `"mw-parser-output"`
+
+Now, `inner_div` should be the `<div class="mw-parser-output">` that contains the information. The code looks something like this:
+
+```py
+inner_div = content_div.find("div", {
+    "class": "mw-parser-output"
+})
+```
+
+### Getting the `<p>` Elements
+Finally, it's time to get down to the paragraphs!
+
+1. Under the `inner_div` variable, create a new variable named `paragraphs`
+1. Set the `paragraphs` variable to `inner_div.find_all("p")`
+    - This will be all of the `p` elements within the `div`
+
+The `paragraphs` variable should contain all of the content `<p>` elements in a list. The code looks like this:
+
+```py
+paragraphs = inner_div.find_all("p")
 ```
 
 ## The Right Paragraph
@@ -229,12 +266,16 @@ def get_information(search_term):
     html_text = response.text
     html_document = BeautifulSoup(html_text, "html.parser")
 
-    search_criteria = {
-        "class": "mw-parser-output"
+    content_criteria = {
+        "id": "bodyContent"
     }
 
-    content_div = html_document.find("div", search_criteria)
-    paragraphs = content_div.find_all("p")
+    content_div = html_document.find("div", content_criteria)
+    inner_div = content_div.find("div", {
+      "class": "mw-parser-output"
+    })
+
+    paragraphs = inner_div.find_all("p")
 
     for paragraph in paragraphs:
         p_text = paragraph.get_text()
