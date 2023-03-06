@@ -727,6 +727,7 @@ print(html_text)
 <li>Notice that that <code>p</code> element is within a <code>div</code> element</li>
 <li>Notice that the <code>div</code> element has a <code>class</code> attribute of <code>mw-parser-output</code></li>
 <li>Notice that the important <code>p</code> is not the first <code>p</code> within that <code>div</code></li>
+<li>Also notice that the <code>div</code> is within another <code>div</code> with an <code>id</code> of <code>bodyContent</code></li>
 </ol>
 <p>All of this investigation should help when writing the code.</p>
 <h3 id="parsing-the-html-in-python">Parsing the HTML in Python</h3>
@@ -740,34 +741,62 @@ print(html_text)
 <li>Pass in <code>&quot;html.parser&quot;</code> (don&apos;t forget the quotes) as the second parameter</li>
 </ul>
 </li>
-<li>Under that, create a new variable named <code>search_criteria</code><ul>
+</ol>
+<p>Now the document should be properly objectified. The code should look something like this:</p>
+<pre><code class="lang-py">html_document = BeautifulSoup(html_text, <span class="hljs-string">&quot;html.parser&quot;</span>)
+</code></pre>
+<h3 id="getting-the-container-div">Getting the Container <code>&lt;div&gt;</code></h3>
+<p>The next step is to pull the container <code>&lt;div id=&quot;bodyContent&quot;&gt;</code> element out of the entire document.</p>
+<ol>
+<li>Under the <code>html_document</code> variable, create a new variable named <code>content_criteria</code><ul>
 <li>Consider what the program needs to find first</li>
 </ul>
 </li>
-<li>Set the <code>search_criteria</code> variable to a new dictionary: <code>{}</code></li>
-<li>Add a key of <code>&quot;class&quot;</code> to the dictionary, with a value of <code>&quot;mw-parser-output&quot;</code><ul>
+<li>Set the <code>content_criteria</code> variable to a new dictionary: <code>{}</code></li>
+<li>Add a key of <code>&quot;id&quot;</code> to the dictionary, with a value of <code>&quot;bodyContent&quot;</code><ul>
 <li>This will be able to find the appropriate <code>div</code> in the HTML</li>
 </ul>
 </li>
 <li>Under that, create a variable named <code>content_div</code></li>
-<li>Set the <code>content_div</code> variable to <code>html_document.find(&quot;div&quot;, search_criteria)</code><ul>
-<li>This searches the <code>html_document</code> for <code>div</code> elements with a <code>class</code> of <code>mw-parser-output</code></li>
+<li>Set the <code>content_div</code> variable to <code>html_document.find(&quot;div&quot;, content_criteria)</code><ul>
+<li>This searches the <code>html_document</code> for <code>div</code> elements with an <code>id</code> of <code>bodyContent</code></li>
 </ul>
 </li>
-<li>Under that, create a new variable named <code>paragraphs</code></li>
-<li>Set the <code>paragraphs</code> variable to <code>content_div.find_all(&quot;p&quot;)</code><ul>
+</ol>
+<p>Now, the container <code>&lt;div&gt;</code> is stored in a variable! The code should look like this:</p>
+<pre><code class="lang-py">content_criteria = {
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;bodyContent&quot;</span>
+}
+
+content_div = html_document.find(<span class="hljs-string">&quot;div&quot;</span>, content_criteria)
+</code></pre>
+<h3 id="getting-the-inner-div">Getting the Inner <code>&lt;div&gt;</code></h3>
+<p>Next, pull the inner <code>&lt;div class=&quot;mw-parser-output&quot;&gt;</code> out of the <code>content_div</code>.</p>
+<ol>
+<li>Under the <code>content_div</code> variable, create a new variable named <code>inner_div</code></li>
+<li>Set the <code>inner_div</code> variable to a call to <code>html_document.find</code></li>
+<li>For the first argument, pass in <code>&quot;div&quot;</code></li>
+<li>For the second argument, pass in a new object with <code>{</code> and <code>}</code><ul>
+<li>Set a <code>&quot;class&quot;</code> property in the new object to be <code>&quot;mw-parser-output&quot;</code></li>
+</ul>
+</li>
+</ol>
+<p>Now, <code>inner_div</code> should be the <code>&lt;div class=&quot;mw-parser-output&quot;&gt;</code> that contains the information. The code looks something like this:</p>
+<pre><code class="lang-py">inner_div = content_div.find(<span class="hljs-string">&quot;div&quot;</span>, {
+    <span class="hljs-string">&quot;class&quot;</span>: <span class="hljs-string">&quot;mw-parser-output&quot;</span>
+})
+</code></pre>
+<h3 id="getting-the-p-elements">Getting the <code>&lt;p&gt;</code> Elements</h3>
+<p>Finally, it&apos;s time to get down to the paragraphs!</p>
+<ol>
+<li>Under the <code>inner_div</code> variable, create a new variable named <code>paragraphs</code></li>
+<li>Set the <code>paragraphs</code> variable to <code>inner_div.find_all(&quot;p&quot;)</code><ul>
 <li>This will be all of the <code>p</code> elements within the <code>div</code></li>
 </ul>
 </li>
 </ol>
-<pre><code class="lang-py">html_document = BeautifulSoup(html_text, <span class="hljs-string">&quot;html.parser&quot;</span>)
-
-search_criteria = {
-    <span class="hljs-string">&quot;class&quot;</span>: <span class="hljs-string">&quot;mw-parser-output&quot;</span>
-}
-
-content_div = html_document.find(<span class="hljs-string">&quot;div&quot;</span>, search_criteria)
-paragraphs = content_div.find_all(<span class="hljs-string">&quot;p&quot;</span>)
+<p>The <code>paragraphs</code> variable should contain all of the content <code>&lt;p&gt;</code> elements in a list. The code looks like this:</p>
+<pre><code class="lang-py">paragraphs = inner_div.find_all(<span class="hljs-string">&quot;p&quot;</span>)
 </code></pre>
 <h2 id="the-right-paragraph">The Right Paragraph</h2>
 <p>Now all the possible paragraphs have been found, but only the first non-empty one is needed. Loop through the paragraphs, and <code>return</code> the text for the first non-empty one!</p>
@@ -820,12 +849,16 @@ paragraphs = content_div.find_all(<span class="hljs-string">&quot;p&quot;</span>
     html_text = response.text
     html_document = BeautifulSoup(html_text, <span class="hljs-string">&quot;html.parser&quot;</span>)
 
-    search_criteria = {
-        <span class="hljs-string">&quot;class&quot;</span>: <span class="hljs-string">&quot;mw-parser-output&quot;</span>
+    content_criteria = {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;bodyContent&quot;</span>
     }
 
-    content_div = html_document.find(<span class="hljs-string">&quot;div&quot;</span>, search_criteria)
-    paragraphs = content_div.find_all(<span class="hljs-string">&quot;p&quot;</span>)
+    content_div = html_document.find(<span class="hljs-string">&quot;div&quot;</span>, content_criteria)
+    inner_div = content_div.find(<span class="hljs-string">&quot;div&quot;</span>, {
+      <span class="hljs-string">&quot;class&quot;</span>: <span class="hljs-string">&quot;mw-parser-output&quot;</span>
+    })
+
+    paragraphs = inner_div.find_all(<span class="hljs-string">&quot;p&quot;</span>)
 
     <span class="hljs-keyword">for</span> paragraph <span class="hljs-keyword">in</span> paragraphs:
         p_text = paragraph.get_text()
@@ -896,7 +929,7 @@ paragraphs = content_div.find_all(<span class="hljs-string">&quot;p&quot;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Info Finder Code-Along","level":"1.7.2","depth":2,"next":{"title":"Info Finder Challenges","level":"1.7.3","depth":2,"path":"WebScraping/InfoFinderChallenges.md","ref":"WebScraping/InfoFinderChallenges.md","articles":[]},"previous":{"title":"HTML Review Warm-up","level":"1.7.1","depth":2,"path":"WebScraping/HtmlReviewWarmup.md","ref":"WebScraping/HtmlReviewWarmup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"WebScraping/InfoFinderCodeAlong.md","mtime":"2023-03-06T14:38:27.583Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-06T14:39:01.974Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Info Finder Code-Along","level":"1.7.2","depth":2,"next":{"title":"Info Finder Challenges","level":"1.7.3","depth":2,"path":"WebScraping/InfoFinderChallenges.md","ref":"WebScraping/InfoFinderChallenges.md","articles":[]},"previous":{"title":"HTML Review Warm-up","level":"1.7.1","depth":2,"path":"WebScraping/HtmlReviewWarmup.md","ref":"WebScraping/HtmlReviewWarmup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"scripts":{"files":["./passwordProtectedPages.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python 201","gitbook":"*"},"file":{"path":"WebScraping/InfoFinderCodeAlong.md","mtime":"2023-03-06T15:15:10.680Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-06T15:15:42.158Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
