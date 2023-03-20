@@ -5,7 +5,7 @@ In this activity, create a Discord chat bot that can respond to messages in a Di
 The most involved part of this activity will be getting the basic bot connected to Discord. This does not involve changing any code - it's all setup. Follow these instructions to join the sandbox server, create the bot application, and hooking up the code.
 
 ### Joining the Sandbox Server
-[Click here to join the Sandbox Server.](https://discord.gg/9T7y7R9CJY)
+[Click here to join the Sandbox Server.](https://discord.gg/ev9t26vu5W)
 
 You will need a Discord account to complete this activity. If you do not have one, you can follow [these instructions](https://hylandtechclub.com/DiscordUse#setup) after clicking the invite link above.
 
