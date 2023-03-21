@@ -10,7 +10,7 @@ This lesson deals with web development. To kick things off, watch the first 45 s
 The [activity](FlaskCodeAlong.md) walks through the construction of a web server that provides random jokes. **At the end of the activity, go over the expectations for the challenges: each student will have to present their updated programs at the end of the meeting.**
 
 ## Review Activity
-Present the [review Quizizz game](https://quizizz.com/admin/quiz/6005c1ba7bff8b001d55cbeb/flask-quiz). Try using the "Team Quiz" option to make it a little more fun. The quiz covers material from the code-along activity. Go over any questions that need review. 
+Present the [review Blooket game](https://dashboard.blooket.com/set/641a097ca04c6868564d4b06). Note that an account is required. The quiz covers material from the code-along activity. Go over any questions that need review. 
 
 ## Challenges
 The [challenges](FlaskChallenges.md) task students with building on the existing web server. The top priority is the first challenge: students should update the jokes (or quotes) and choose their own. This should not require any new coding, other than changing some text. Every student should be able to achieve this.
@@ -23,7 +23,7 @@ Toward the end of the meeting, have each student present their websites. They ar
 |-|-|
 | Warm-up Activity | 10m |
 | Code-Along | 35m |
-| Quizizz | 15m |
+| Blooket | 15m |
 | Break | 5m |
 | Challenges | 30m |
 | Student Presentations | 20m |
