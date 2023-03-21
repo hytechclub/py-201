@@ -6,10 +6,10 @@ Each of the following replit.com projects contains a bug. Diagnose them and try 
 
 >HINT: Check the console for error messages!
 
-- [Bug 1](https://replit.com/@JosephMaxwell/TurtleBug-1)
-- [Bug 2](https://replit.com/@JosephMaxwell/TurtleBug-2)
-- [Bug 3](https://replit.com/@JosephMaxwell/TurtleBug-3)
-- [Bug 4](https://replit.com/@JosephMaxwell/TurtleBug-4)
+- [Bug 1](https://replit.com/@HylandOutreach/TurtleBug-1)
+- [Bug 2](https://replit.com/@HylandOutreach/TurtleBug-2)
+- [Bug 3](https://replit.com/@HylandOutreach/TurtleBug-3)
+- [Bug 4](https://replit.com/@HylandOutreach/TurtleBug-4)
 
 ## Other Turtle Powers
 Turtles can do a whole lot. Play around with some of these different capabilities.

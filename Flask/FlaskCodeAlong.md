@@ -272,7 +272,7 @@ To help with this, open the Repl project in another tab:
 From there, it should be possible to press **Ctrl**+**F5** to clear the cache and refresh the page. Verify that the pages are nicely styled!
 
 ## Final Code
-Review the final code for each file. Make sure to note the folder structure of the project. There is also a [Repl project](https://replit.com/@JosephMaxwell/FlaskCodeAlongSimplified) containing the complete web app.
+Review the final code for each file. Make sure to note the folder structure of the project. There is also a [Repl project](hhttps://replit.com/@HylandOutreach/FlaskCodeAlongSimplified) containing the complete web app.
 
 **main.py**
 ```py

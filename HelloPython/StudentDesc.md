@@ -5,7 +5,7 @@ Welcome to the wonderful world of Python!
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/py-201/HelloPython/HelloPython.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Turtle Code-Along Activity
-[Click here for the code-along **starter code**.](https://replit.com/@JosephMaxwell/TurtleStart#main.py)
+[Click here for the code-along **starter code**.](https://replit.com/@HylandOutreach/TurtleStart)
 
 Follow the instructions on [this page](TurtleCodeAlong.md) to create a simple Python program that draws on the screen.
 

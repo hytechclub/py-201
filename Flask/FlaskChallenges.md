@@ -95,7 +95,7 @@ Use Flask to create a completely new website! There are several options. If desi
 ## _Optional Practice: Bug Fixing_
 Find and fix all of the bugs in the programs below. Note that the projects may have multiple bugs - fix all of them!
 
-- [Bug 1](https://replit.com/@JosephMaxwell/FlaskBug-1#main.py)
-- [Bug 2](https://replit.com/@JosephMaxwell/FlaskBug-2#main.py)
-- [Bug 3](https://replit.com/@JosephMaxwell/FlaskBug-3#main.py)
-- [Bug 4](https://replit.com/@JosephMaxwell/FlaskBug-4#main.py)
+- [Bug 1](https://replit.com/@HylandOutreach/FlaskBug-1)
+- [Bug 2](https://replit.com/@HylandOutreach/FlaskBug-2)
+- [Bug 3](https://replit.com/@HylandOutreach/FlaskBug-3)
+- [Bug 4](https://replit.com/@HylandOutreach/FlaskBug-4)
