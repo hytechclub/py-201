@@ -6,7 +6,7 @@ In this introductory activity, use [turtle graphics](https://en.wikipedia.org/wi
 ## Getting Started
 Setup using **Replit** is fairly simple.
 
-1. Go to the [TurtleStart](https://replit.com/@JosephMaxwell/TurtleStart#main.py) Replit project
+1. Go to the [TurtleStart](https://replit.com/@HylandOutreach/TurtleStart) Replit project
 1. Fork the project, and make sure to log in!
 1. In the code section, add the following line to _import_ everything from the **turtle** library:
     ```py

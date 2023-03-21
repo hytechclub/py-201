@@ -2,7 +2,7 @@
 [Flask](https://flask.palletsprojects.com/en/1.1.x/foreword/) is a Python web framework - a tool for creating web applications with Python. Read through some of the basic concepts to become familiar with them.
 
 ## Flask Boiler-Plate and Replit
-When creating a new Python project on [Replit](https://replit.com), it is possible to load some Flask boiler-plate code. Running that code will spin up a webserver. Replit hosts the server and navigates to the website. It looks like [this](https://replit.com/@JosephMaxwell/FlaskBoilerPlate#main.py):
+When creating a new Python project on [Replit](https://replit.com), it is possible to load some Flask boiler-plate code. Running that code will spin up a web server. Replit hosts the server and navigates to the website. It looks like [this](https://replit.com/@HylandOutreach/FlaskBoilerPlate):
 
 ![](Assets/FlaskExampleReplit.png)
 
