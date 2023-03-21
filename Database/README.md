@@ -4,8 +4,8 @@ This lesson introduces the [Replit DB](https://docs.replit.com/misc/database). I
 ## PowerPoint Presentation
 Present the [Databases Overview](DatabasesOverview.pptx) PowerPoint Presentation. Review the presentation ahead of time, including the notes in the slides. There are several animations.
 
-## Kahoot
-Facilitate the [Kahoot quiz](https://create.kahoot.it/details/python-repl-it-db/ccceab58-f7dd-47fc-a5a4-811b1703d7c0) covering the content from the lecture.
+## Blooket
+Facilitate the [Blooket quiz](https://dashboard.blooket.com/set/6419ccb43360ef9962e2fe22) covering the content from the lecture. Note that an account is required to host the game.
 
 ## Code-Along Activity
 The [activity](RestaurantReviewCodeAlong.md) walks through the construction of a Restaurant Review application (with data backed by the Replit DB). This should reinforce all of the concepts from the PowerPoint.
@@ -20,7 +20,7 @@ Toward the end of the lesson, it may be a good idea to introduce the [final proj
 | Activity | Time |
 |-|-|
 | PowerPoint | 15m |
-| Kahoot | 10m |
+| Blooket | 10m |
 | Break | 5m |
 | Code-Along | 45m |
 | Challenges | 45m |
