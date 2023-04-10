@@ -9,13 +9,12 @@ Follow the links below to view each week of material.
 - [Week 3 (3/14) - Collections](Collections/StudentDesc.md)
 - [Week 4 (3/21) - Discord Bot](DiscordBot/StudentDesc.md)
 - [Week 5 (3/28) - Web Scraping](WebScraping/StudentDesc.md)
-- [Week 6 (4/4) - Review + Check-Ins](MidSemesterReview/StudentDesc.md)
-- [Week 7 (4/11) - Flask Web Server](Flask/StudentDesc.md)
-- [Week 8 (4/18) - PyGame](PyGame/StudentDesc.md)
-- [Week 9 (4/25) - Replit DB](Database/StudentDesc.md)
-- [Week 10 (5/2) - Final Project Work](FinalProject/StudentDesc.md)
-- [Week 11 (5/9) - Final Project Work](FinalProject/StudentDesc.md)
-- [Week 12 (5/16) - Final Project Presentations](FinalProject/StudentDesc.md)
+- [Week 6 (4/11) - Review + Check-Ins](MidSemesterReview/StudentDesc.md)
+- [Week 7 (4/18) - Flask Web Server](Flask/StudentDesc.md)
+- [Week 8 (4/25) - PyGame](PyGame/StudentDesc.md)
+- [Week 9 (5/2) - Replit DB](Database/StudentDesc.md)
+- [Week 10 (5/9) - Final Project Work](FinalProject/StudentDesc.md)
+- [Week 11 (5/16) - Final Project Presentations](FinalProject/StudentDesc.md)
 
 ## Goals
 By the end of this course, each student should:
